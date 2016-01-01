@@ -17,21 +17,11 @@
  (front-context-string . "best_f4.png\n  -r")
  (rear-context-string . "96 sep 24 13:56 ")
  (position . 304))
-("benjamin_RMAwA"
- (filename . "~/current/RMAwA_todo/RMAwA_revision2/")
- (front-context-string . "  /home/daniel/c")
- (rear-context-string)
- (position . 1))
 ("backup"
  (filename . "~/.duply/")
  (front-context-string . "correo\n  drwx---")
  (rear-context-string . "096 12-10 14:18 ")
  (position . 221))
-("caepia_articulo"
- (filename . "~/current/caepia_articulo/progress_article.tex")
- (front-context-string . "%%%%%%%%%%%%%%%%")
- (rear-context-string)
- (position . 1))
 ("cap"
  (filename . "~/current/docencia/master/2014/cap/")
  (front-context-string . ".#byvectorv.c ->")
@@ -42,11 +32,6 @@
  (front-context-string . "\"\"\"\nThis program")
  (rear-context-string)
  (position . 1))
-("org"
- (filename . "~/current/RMAwA_todo/RMAwA_revision2/")
- (front-context-string . "response_reviewe")
- (rear-context-string . "63 jun  9 16:40 ")
- (position . 1687))
 (".emacs"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "(setq package-ar")
