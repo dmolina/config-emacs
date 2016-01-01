@@ -227,7 +227,8 @@ para hacer los experimentos sin los update hay que poner la opcion -u
 debido a un archivo lleno.
 
 
-*** TODO Revisión de Paco:
+*** DONE Revisión de Paco:
+    CLOSED: [2016-01-01 vie 18:41]
 
 - [X] Cambiar dirección de Paco.
 - [X] Título 5.3.1.
@@ -273,7 +274,8 @@ Manuscript (including abstract) 	*Manuscript remarking changes from previous ver
 LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 Sep 2015 		Download
 
 
-** TODO [#A] Artículo de CAEPIA
+** DONE [#A] Artículo de CAEPIA
+   CLOSED: [2016-01-01 vie 18:41]
 
 *** DONE Terminando introducción
     CLOSED: [2015-11-25 mié 11:10]
@@ -293,38 +295,16 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
     CLOCK: [2015-11-26 jue 10:20]--[2015-11-26 jue 10:40] =>  0:20
 
 
-*** TODO Revisar Artículo de CAEPIA, homogeneizando referencias y repasando texto.
+*** DONE Revisar Artículo de CAEPIA, homogeneizando referencias y repasando texto.
+    CLOSED: [2016-01-01 vie 18:41]
 
-*** TODO Aplicar cambios pedidos por Paco
+*** DONE Aplicar cambios pedidos por Paco
+    CLOSED: [2016-01-01 vie 18:41]
 * Sueltas <2015-11-25 mié>
 
-* DONE Guardar enlaces de TDD y enlazarlos en el campus de DSS
-  CLOSED: [2015-11-25 mié 09:45]
-  CLOCK: [2015-11-25 mié 09:20]--[2015-11-25 mié 09:45] =>  0:25
-
-* DONE 
-  CLOSED: [2015-12-28 lun 11:34]
-
-* Tareas <2015-11-25 mié>
-
-*** Reunión con Manuel sobre las clases
-    CLOCK: [2015-11-25 mié 11:20]--[2015-11-25 mié 12:24] =>  1:04
 
 
-*** Charla sobre la web
-    CLOCK: [2015-11-25 mié 12:43]--[2015-11-25 mié 13:03] =>  0:20
+* Prueba
 
-
-
-* DONE Acostarse
-  CLOSED: [2015-12-28 lun 11:34] SCHEDULED: <2015-12-16 mié ++1 00:15>
-
-* Diarias <2015-12-16 mié>
-
-** DONE Comer con Iván
-   CLOSED: [2015-12-28 lun 11:34] SCHEDULED: <2015-12-16 mié 14:15>
-
-** TODO Mover todo lo relativo de .emacs a .emacs.d
-
-** 
-
+- Uno.
+- Dos.

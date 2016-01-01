@@ -555,3 +555,66 @@ Falta memoria de Magdalena.
   :END:
 
 
+
+* DONE Mover todo lo relativo de .emacs a .emacs.d
+  CLOSED: [2016-01-01 vie 18:41]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-01 vie 18:42
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_OLPATH: Diarias <2015-12-16 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+
+
+* DONE Guardar enlaces de TDD y enlazarlos en el campus de DSS
+  CLOSED: [2015-11-25 mié 09:45]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-01 vie 18:42
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+  CLOCK: [2015-11-25 mié 09:20]--[2015-11-25 mié 09:45] =>  0:25
+
+
+* DONE Tareas <2015-11-25 mié>
+  CLOSED: [2016-01-01 vie 18:42]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-01 vie 18:42
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+*** Reunión con Manuel sobre las clases
+    CLOCK: [2015-11-25 mié 11:20]--[2015-11-25 mié 12:24] =>  1:04
+
+
+*** Charla sobre la web
+    CLOCK: [2015-11-25 mié 12:43]--[2015-11-25 mié 13:03] =>  0:20
+
+
+
+* DONE Acostarse
+  CLOSED: [2015-12-28 lun 11:34] SCHEDULED: <2015-12-16 mié ++1 00:15>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-01 vie 18:42
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Comer con Iván
+  CLOSED: [2015-12-28 lun 11:34] SCHEDULED: <2015-12-16 mié 14:15>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-01 vie 18:42
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_OLPATH: Diarias <2015-12-16 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+

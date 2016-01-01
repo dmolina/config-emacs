@@ -983,3 +983,8 @@ in the analysis and conclusion, it cannot be published.
 * TODO Entender artículo de Corales
 
 ** [[~/Dropbox/revisar/CRO_Model_Type_Selection_IJBC_revised.pdf][Acceso]]
+
+* Test
+  :LOGBOOK:
+  CLOCK: [2016-01-01 vie 17:34]--[2016-01-01 vie 17:34] =>  0:00
+  :END:
