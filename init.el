@@ -6,7 +6,7 @@
 			  auctex auctex-latexmk auto-complete
 			  change-inner cmake-mode cmake-font-lock
 			  ; Programming in C
-			  auto-complete-c-headers auto-complete-exuberant-ctags helm-gtags ggtags ctags ctags-update
+			  auto-complete-c-headers auto-complete-exuberant-ctags helm helm-gtags ggtags ctags ctags-update
 			  ; Directories
 			  dired+ dired-imenu direx image-dired+
 			  ; SVC
@@ -14,14 +14,19 @@
 			  ; Theme
 			  monokai-theme
 			  names
+			  ; Google maps
+			  google-maps
 			  ; For puml-mode 
 			  puml-mode
 			  ; Several org-mode
-			  org ob-translate orgit org-pdfview pdf-tools
+			  org ob-translate orgit org-pdfview pdf-tools org-pdfview
 			  ; Python mode 
 			  elpy flymake-python-pyflakes pyflakes python-pylint elpy
 					; Vim
 			  undo-tree viper evil
+			  async
+		          ; spaceline
+			  spaceline fancy-battery
 			  ; Autocomplete in command options
 			  ace-popup-menu smex 
 			  sublime-themes
@@ -35,11 +40,17 @@
 			  markdown-mode markdown-mode+ matlab-mode yaml-mode 
 			  yasnippet
 					; Info commands
-			  discover-my-major guide-key
+			  discover-my-major guide-key multiple-cursors
+					; Predictive
+			  ; predictive
 			  ; Auto-complete of documentation
 			  zeal-at-point
+					; Several expand
+			  expand-region change-inner
+					; Fancy battery
+			  fancy-battery
 			  ; RSS
-			  elfeed
+			  elfeed 
 			  ; ztree is another tree visualiser
 			  ztree))
 
@@ -1217,3 +1228,19 @@ current line."
   (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
   )
 
+(use-package google-maps
+  :init
+  (require 'org-location-google-maps)
+  )
+
+(use-package spaceline
+  :init
+  (require 'spaceline-config)
+  (spaceline-spacemacs-theme)
+  (powerline-center-theme)
+  )
+
+(use-package fancy-battery
+  :init
+  (add-hook 'after-init-hook #'fancy-battery-mode)
+)
