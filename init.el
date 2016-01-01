@@ -1,8 +1,59 @@
+; list the packages you want
+(setq package-list '(elpy magit viper
+			  archive-region
+			  auctex auctex-latexmk auto-complete auto-yasnipper
+			  change-inner cmake-mode cmake-font-lock
+			  ; Programming in C
+			  auto-complete-c-headers auto-complete-exuberant-ctags helm-gtags ggtags ctags ctags-update 
+			  dired+ dired-imenu direx
+			  ; SVC
+			  magit monky
+			  ; Theme
+			  monokai-theme
+			  names
+			  ; For puml-mode 
+			  puml-mode
+			  ; Several org-mode
+			  ; require org?
+			  ob-translate orgit org-pdfview
+			  pdf-tools
+			  ; Python mode
+			  flymake-python-pyflakes pyflakes python-pylint elpy
+			  smex
+			  sublime-themes
+			  swiper
+			  tidy tablist
+			  use-package
+			  vagrant
+			  ; w3m mode
+			  w3m
+			  ; Several modes
+			  markdown-mode markdown-mode+ matlab-mode yaml-mode 
+			  yasnipper
+			  ; Auto-complete of documentation
+			  zeal-at-point
+			  ; ztree is another tree visualiser
+			  ztree))
+
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			("marmalade" . "https://marmalade-repo.org/packages/")
 			("melpa" . "http://melpa.org/packages/")))
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+
+; activate all the packages (in particular autoloads)
+(package-initialize)
+
+;; make sure to have downloaded archive description.
+;; Or use package-archive-contents as suggested by Nicolas Dudebout
+(or (file-exists-p package-user-dir)
+    (package-refresh-contents))
+
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
 ; Viper hotkeys in Emacs
 (setq viper-mode t)
 (require 'viper)
