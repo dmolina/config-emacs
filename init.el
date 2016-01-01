@@ -1,11 +1,14 @@
 ; list the packages you want
-(setq package-list '(elpy magit viper
+(setq package-list '(
 			  archive-region
-			  auctex auctex-latexmk auto-complete auto-yasnipper
+					; Asyn
+			  async
+			  auctex auctex-latexmk auto-complete
 			  change-inner cmake-mode cmake-font-lock
 			  ; Programming in C
-			  auto-complete-c-headers auto-complete-exuberant-ctags helm-gtags ggtags ctags ctags-update 
-			  dired+ dired-imenu direx
+			  auto-complete-c-headers auto-complete-exuberant-ctags helm-gtags ggtags ctags ctags-update
+			  ; Directories
+			  dired+ dired-imenu direx image-dired
 			  ; SVC
 			  magit monky
 			  ; Theme
@@ -14,28 +17,34 @@
 			  ; For puml-mode 
 			  puml-mode
 			  ; Several org-mode
-			  ; require org?
-			  ob-translate orgit org-pdfview
-			  pdf-tools
-			  ; Python mode
-			  flymake-python-pyflakes pyflakes python-pylint elpy
-			  smex
+			  org ob-translate orgit org-pdfview pdf-tools
+			  ; Python mode 
+			  elpy flymake-python-pyflakes pyflakes python-pylint elpy
+					; Vim
+			  undo-tree viper evil
+			  ; Autocomplete in command options
+			  ace-popup-menu smex 
 			  sublime-themes
-			  swiper
-			  tidy tablist
+			  ; html
+			  tidy
 			  use-package
 			  vagrant
 			  ; w3m mode
 			  w3m
 			  ; Several modes
 			  markdown-mode markdown-mode+ matlab-mode yaml-mode 
-			  yasnipper
+			  yasnippet
+					; Info commands
+			  discover-my-major guide-key
 			  ; Auto-complete of documentation
 			  zeal-at-point
+			  ; RSS
+			  elfeed
 			  ; ztree is another tree visualiser
 			  ztree))
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			("org" . "http://orgmode.org/elpa/")
 			("marmalade" . "https://marmalade-repo.org/packages/")
 			("melpa" . "http://melpa.org/packages/")))
 
@@ -1007,7 +1016,7 @@
    (plantuml . t)))
 
 (setq org-plantuml-jar-path
-      (expand-file-name "~/plantuml.jar"))
+      (expand-file-name "~/.emacs.d/plantuml.jar"))
 
 (setq org-confirm-babel-evaluate nil)
 
@@ -1183,3 +1192,27 @@ current line."
   (ispell-word)
   )
 (global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
+
+(use-package async
+  :init
+  (autoload 'dired-async-mode "dired-async.el" nil t)
+  (dired-async-mode 1)
+  (async-bytecomp-package-mode 1)
+  )
+
+(use-package discover-my-major
+  )
+
+(use-package guide-key
+  :init
+;(setq guide-key/guide-key-sequence '("C-x r" "C-x 4"))
+(setq guide-key/guide-key-sequence t)
+(guide-key-mode 1)  ; Enable guide-key-mode
+)
+
+(use-package multiple-cursors
+  :init
+  (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+  (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+  (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+  )
