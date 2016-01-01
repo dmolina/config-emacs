@@ -1,0 +1,70 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("revisar"
+ (filename . "~/Dropbox/revisar/")
+ (front-context-string . "145940.v1.pdf\n  ")
+ (rear-context-string . "351 08-28 12:04 ")
+ (position . 241))
+("RMAwA_source"
+ (filename . "~/current/RMAwA_todo/RMAwA_revision2/revision/source_envia3/librealea/ea/rmalsch/")
+ (front-context-string . "best_f4.png\n  -r")
+ (rear-context-string . "96 sep 24 13:56 ")
+ (position . 304))
+("benjamin_RMAwA"
+ (filename . "~/current/RMAwA_todo/RMAwA_revision2/")
+ (front-context-string . "  /home/daniel/c")
+ (rear-context-string)
+ (position . 1))
+("backup"
+ (filename . "~/.duply/")
+ (front-context-string . "correo\n  drwx---")
+ (rear-context-string . "096 12-10 14:18 ")
+ (position . 221))
+("caepia_articulo"
+ (filename . "~/current/caepia_articulo/progress_article.tex")
+ (front-context-string . "%%%%%%%%%%%%%%%%")
+ (rear-context-string)
+ (position . 1))
+("cap"
+ (filename . "~/current/docencia/master/2014/cap/")
+ (front-context-string . ".#byvectorv.c ->")
+ (rear-context-string . " 30 11-11 12:17 ")
+ (position . 327))
+("shade_cec2005.py"
+ (filename . "~/current/shade_2005/shade_cec2005.py")
+ (front-context-string . "\"\"\"\nThis program")
+ (rear-context-string)
+ (position . 1))
+("tareas"
+ (filename . "~/current/tareas/tareas.org")
+ (front-context-string . "1. Introducir la")
+ (rear-context-string . "*** Estructura\n\n")
+ (position . 495))
+("org"
+ (filename . "~/current/RMAwA_todo/RMAwA_revision2/")
+ (front-context-string . "response_reviewe")
+ (rear-context-string . "63 jun  9 16:40 ")
+ (position . 1687))
+(".emacs"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "(setq package-ar")
+ (rear-context-string)
+ (position . 1))
+("mejora_shade.tex"
+ (filename . "~/current/cec2015_server/LNCS/mejora_shade.tex")
+ (front-context-string . "\\documentclass[a")
+ (rear-context-string)
+ (position . 1))
+("as"
+ (filename . "~/current/docencia/as/")
+ (front-context-string . "compartida_vms\n ")
+ (rear-context-string . "96 mar 12  2014 ")
+ (position . 239))
+("dss"
+ (filename . "~/current/docencia/dss/2015/")
+ (front-context-string . "preparacion_dss.")
+ (rear-context-string . "250 09-29 17:02 ")
+ (position . 390))
+)
