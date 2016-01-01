@@ -8,7 +8,7 @@
 			  ; Programming in C
 			  auto-complete-c-headers auto-complete-exuberant-ctags helm-gtags ggtags ctags ctags-update
 			  ; Directories
-			  dired+ dired-imenu direx image-dired
+			  dired+ dired-imenu direx image-dired+
 			  ; SVC
 			  magit monky
 			  ; Theme
@@ -1216,3 +1216,4 @@ current line."
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
   )
+
