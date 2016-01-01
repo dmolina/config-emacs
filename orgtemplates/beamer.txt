@@ -1,0 +1,53 @@
+#+TITLE:     TITULO
+#+AUTHOR:    Grado en Ingeniería Informática
+#+EMAIL:     daniel.molina@uca.es
+#+DATE:      Curso \the\year/\NextYear
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger,xcolor=table,unknownkeysallowed]
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  es
+#+BEAMER_THEME: ucadoc
+
+# Defining NextYear
+#+LaTeX_HEADER: \newcommand\NextYear{\advance\year by 1 \the\year\advance\year by -1}
+# Listing usage
+#+LATEX_HEADER: \usepackage{listings}
+#+LaTeX_HEADER: \lstset{escapeinside={'}{'}}
+#+LaTeX: \newcommand*\srcsmall{ \lstset{basicstyle=\tiny} }
+#+LaTeX: \def\src#1{\lstinputlisting{#1}}
+
+# the beamer exporter expects to be told which level of headlines
+# defines the frames.  We use the first level headlines for sections
+# and the second (hence H:2) for frames.
+#+OPTIONS:   H:2 toc:nil
+# the following allow us to selectively choose headlines to export or not
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+
+# for a column view of options and configurations for the individual
+# frames
+#+COLUMNS: %20ITEM %13BEAMER_env(Env) %6BEAMER_envargs(Args) %4BEAMER_col(Col) %7BEAMER_extra(Extra)
+
+#+OPTIONS:   num:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LaTeX: \begin{frame}{Índice}\tableofcontents\end{frame}
+#+LaTeX: \AtBeginSection[]{ \begin{frame}{Índice}     \tableofcontents[currentsection]     \end{frame} }
+
+#+LATEX_HEADER: \usepackage[absolute,overlay]{textpos}
+#+LateX:  \def\textbf#1{{\color{blue}{#1}}}
+#+LaTeX: \setbeamercovered{transparent=0}
+#+LaTeX:\setlength{\TPHorizModule}{\textwidth}\setlength{\TPVertModule}{\textheight}
+#+LaTeX: \newcommand*\putpic[4]{ \begin{textblock}{10}(#1,#2)\includegraphics[width=#3\TPHorizModule]{#4}\end{textblock} }
+#+LaTeX: \newcommand*\putcaptiona[4]{  \begin{textblock}{10}(#1,#2) {\only<#3>{\Large{\color{blue}#4}}}\end{textblock} }
+#+LaTeX: \newcommand*\puttext[3]{  \begin{textblock}{10}(#1,#2) {#3} \end{textblock} }
+#+LaTeX: \newcommand*\putquestion[4]{  \begin{textblock}{10}(#1,#2) {\only<#3>{{\color{blue}#4}}}\end{textblock} }
+#+LaTeX: \newcommand*\putalert[3]{  \begin{textblock}{10}(#1,#2) {\huge {\color{red}#3}}\end{textblock} }
+#+LaTex: \newcommand*\putmsg[3]{  \begin{textblock}{10}(#1,#2) {\Large{\color{blue}#3}}\end{textblock} }
+#+LaTeX: \newcommand*\image[2]{\begin{center}\includegraphics[width=#1\textwidth]{#2}\end{center}}
+#+LaTeX: \newcommand*\setbg[1]{\setbeamercolor{background canvas}{bg=#1}}
+
+*

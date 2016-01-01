@@ -1,0 +1,557 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/daniel/current/tareas/tareas.org
+
+
+* Estructura
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-14 mié 10:49
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas a realizar/Preparar clase de DSS
+  :ARCHIVE_CATEGORY: tareas
+  :END:
+
+
+1. Plantear el concepto de dependencia.
+
+2. 
+
+3. En el kiss enseñar la diferencia de Java 8.
+
+4. En el kiss también enseñar video sobre Juego de la Vida en Python
+   (No classes Pycon).
+
+
+
+
+
+* DONE Reunión con José María
+  CLOSED: [2015-10-15 jue 09:34] SCHEDULED: <2015-10-14 mié 11:00>
+  CLOCK: [2015-10-14 mié 11:00]--[2015-10-14 mié 13:27] =>  2:27
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:07
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas a realizar
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Reunión con Alecia
+    CLOSED: [2015-10-15 jue 10:46] SCHEDULED: <2015-10-15 jue 10:00>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:07
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas a realizar
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+- Esperar a recibir versión de Alecia, y luego colgarla.
+
+
+* DONE Preparar clase de DSS
+  CLOSED: [2015-10-19 lun 17:57] DEADLINE: <2015-10-16 vie>
+  CLOCK: [2015-10-14 mié 10:24]--[2015-10-14 mié 11:00] =>  0:36
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:07
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas a realizar
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** Estructura
+
+1. Introducir las dependencias, y polimorfismo.
+
+2. En el kiss enseñar la diferencia de Java 8.
+
+3. En el kiss también enseñar vídeo sobre Juego de la Vida en Python
+   (No clases Pycon).
+
+4. En el DRY poner ejemplo del código de MPI del master.
+
+5. En el SRP poner ejemplos actuales.
+
+6. En el OCP poner ejemplos actuales.
+
+7. En el LSP usar el ejemplo de Rectángulo y Cubo.
+
+8. Plantear el concepto de dependencia.
+
+9. Plantear el símil con los robots.
+
+10. En el ISP indicar el SRP de Interfaces.
+
+11. Explicar el DSP antes que el ISP.
+
+
+* DONE Preparar clase de DSS
+  CLOSED: [2015-10-19 lun 17:57] DEADLINE: <2015-10-16 vie>
+  CLOCK: [2015-10-14 mié 10:24]--[2015-10-14 mié 11:00] =>  0:36
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:07
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas a realizar
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** Estructura
+
+1. Introducir las dependencias, y polimorfismo.
+
+2. En el kiss enseñar la diferencia de Java 8.
+
+3. En el kiss también enseñar vídeo sobre Juego de la Vida en Python
+   (No clases Pycon).
+
+4. En el DRY poner ejemplo del código de MPI del master.
+
+5. En el SRP poner ejemplos actuales.
+
+6. En el OCP poner ejemplos actuales.
+
+7. En el LSP usar el ejemplo de Rectángulo y Cubo.
+
+8. Plantear el concepto de dependencia.
+
+9. Plantear el símil con los robots.
+
+10. En el ISP indicar el SRP de Interfaces.
+
+11. Explicar el DSP antes que el ISP.
+
+
+* DONE Traducir a inglés el guión de prácticas
+  CLOSED: [2015-10-22 jue 11:00]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:07
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas a realizar
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Añadir a los alumnos del Campus
+  CLOSED: [2015-10-20 mar 11:53]
+  CLOCK: [2015-10-20 mar 10:50]--[2015-10-20 mar 11:23] =>  0:33
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:08
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE Reunión con Manuel
+  CLOSED: [2015-10-22 jue 10:59] SCHEDULED: <2015-10-20 mar>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-22 jue 11:08
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Pedir dar de alta a los alumnos del Máster en el Cluster
+  CLOSED: [2015-10-22 jue 11:35]
+  CLOCK: [2015-10-22 jue 11:12]--[2015-10-22 jue 11:35] =>  0:23
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-22 jue>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Escribir párrafo para el trabajo con José María
+  CLOSED: [2015-10-24 sáb 11:45]
+  CLOCK: [2015-10-22 jue 11:55]--[2015-10-22 jue 12:10] =>  0:15
+  CLOCK: [2015-10-22 jue 11:49]--[2015-10-22 jue 11:54] =>  0:05
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-22 jue>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** Ejemplos
+
+J.M. Rodríguez Corral received his Master degree in Computer
+Engineering and his Ph.D. from the University of Seville (Spain) in
+1993 and 2002 respectively.  From November 1993 to June 1995 he worked
+on robot control with the “Robotics and Computer Technology” research
+group at the University of Seville. After working as Associate
+Professor at the University of Cádiz (Spain) from 1995 to 1998, he is
+currently “Profesor Titular” of Computer Languages and Systems at the
+same University, and his research interests include robotics, bus
+emulation and parallel systems. He is a member of the “Applied
+Robotics” group at the University of Cádiz, and he is author of
+various papers and research reports on computer architecture.
+
+Arturo Morgado-Estévez received his Master degree in Industrial
+Organization Engineering and his Ph.D. from the University of Cádiz
+(Spain) in 1997 and 2003 respectively.  After working on ASIC design
+with the “Microelectronics” research group at the same University from
+1989 to 1998, and with the “Robotics and Computer Technology” group at
+the University of Seville from 1998 to 2010, he is currently the
+director of the “Applied Robotics” group at the University of
+Cádiz. He is “Profesor Titular” of Computer Architecture at the
+University of Cádiz since 1991, and his research interests include
+robotics and life-inspired systems. He is author of various papers on
+computer architecture.
+
+Daniel Molina Cabrera received his Master degree in Computer
+Engineering and his Ph.D. in Artificial Intelligence from the
+University of Granada (Spain) in 1995 and 2007 respectively. After
+researching in the University of Granada, he starting teaching from
+2006 at the University of Cádiz, where he is actually working as
+associate professor.  He is member of the research group "Soft
+Computing and Intelligent Information Systems". His research interests
+include metaheuristics, automatic optimization (in continuous and 
+high-dimensional problems), and he has published several papers about
+statistical testing.  He has authored or co-authored more than 40
+refereed papers in journals and conferences, and an H-index of 10 till
+date.
+
+
+such as evolutionary algorithms for
+global optimization, niching optimization, large-scale optimization,
+and real-world applications. He has 1083+ citations in the Web of
+Science and an H-index of 10 till date.
+
+
+Daniel Molina received the Bachelor of Computer Engineering Degree
+from the University of Granada, Spain, and the Ph.D. from the same
+University at 2007. He is currently a Lecturer at the School of
+Engineering, University of Cadiz. He has authored or co-authored more
+than 40 refereed papers in journals and conferences. His research
+interests include metaheuristics, such as evolutionary algorithms for
+global optimization, niching optimization, large-scale optimization,
+and real-world applications. He has 1083+ citations in the Web of
+Science and an H-index of 10 till date. He has acted as a guest editor
+for a special issue on Large Scale Optimisation in Soft Computing,
+where he has been also editor. He is reviewer from important journals,
+and he has also organised previous special sessions in international
+conferences including IEEE CEC. He is the chair of the IEEE CIS Task
+Force on Large Scale Global Optimization.
+
+
+
+
+
+* DONE Preparar clase de DSS
+   CLOSED: [2015-10-24 sáb 11:45]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-22 jue>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+- 
+
+
+
+* DONE Responder a José María sobre las tablas
+  CLOSED: [2015-10-24 sáb 12:16]
+  CLOCK: [2015-10-24 sáb 11:59]--[2015-10-24 sáb 12:15] =>  0:16
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Buscar programa para romper claves
+  CLOSED: [2015-10-24 sáb 17:38]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Nuevos episodios de Big Bang Theory
+  CLOSED: [2015-10-24 sáb 20:34]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Enviar comentarios de última revisión
+  CLOSED: [2015-10-27 mar 09:33]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Publicar en la web
+  CLOSED: [2015-10-22 jue 11:48]
+  CLOCK: [2015-10-22 jue 11:54]--[2015-10-22 jue 11:55] =>  0:01
+  CLOCK: [2015-10-22 jue 11:35]--[2015-10-22 jue 11:48] =>  0:13
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-22 jue>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Charla con Manuel sobre Master
+  CLOSED: [2015-10-24 sáb 13:06]
+   CLOCK: [2015-10-24 sáb 12:35]--[2015-10-24 sáb 13:05] =>  0:30
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Responder mensaje de Carlos
+  CLOSED: [2015-10-27 mar 09:33]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Aviso de JDownloader
+  CLOSED: [2015-10-25 dom 17:18] SCHEDULED: <2015-10-24 sáb 12:15>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:35
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Aviso de JDownloader					    :ARCHIVE:
+  CLOSED: [2015-10-25 dom 17:18] SCHEDULED: <2015-10-24 sáb 12:15>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:39
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Responder mensaje de Carlos				    :ARCHIVE:
+  CLOSED: [2015-10-27 mar 09:33]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:39
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Visualizar gráfica de Sphero
+  CLOSED: [2015-10-24 sáb 11:45]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:39
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-22 jue>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Cambiar transparencias					    :ARCHIVE:
+  CLOSED: [2015-10-24 sáb 19:30]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-10-27 mar 09:39
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE Aceptar revisiones
+  CLOSED: [2015-10-31 sáb 10:42]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:51
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Publicar en la web?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-10-24 sáb>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Enviar informes positivos de Magdalena en prácticas
+   CLOSED: [2015-10-27 mar 09:52]
+   CLOCK: [2015-10-27 mar 09:41]--[2015-10-27 mar 09:52] =>  0:11
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas nuevas <2015-10-27 mar>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+Falta memoria de Magdalena.
+
+
+* DONE Preparar clase de MPI
+  CLOSED: [2015-10-29 jue 11:22] DEADLINE: <2015-10-28 mié>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas nuevas <2015-10-27 mar>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Enviar revisión corregida
+  CLOSED: [2015-10-27 mar 10:35]
+  CLOCK: [2015-10-27 mar 09:53]--[2015-10-27 mar 10:35] =>  0:42
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas nuevas <2015-10-27 mar>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Realizar experimentos de SHADE usando CEC2015
+  CLOSED: [2015-11-04 mié 14:52]
+  CLOCK: [2015-10-27 mar 13:17]--[2015-10-28 mié 09:22] => 20:05
+  CLOCK: [2015-10-27 mar 11:15]--[2015-10-27 mar 13:10] =>  1:55
+  CLOCK: [2015-10-27 mar 10:59]--[2015-10-27 mar 11:13] =>  0:14
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas nuevas <2015-10-27 mar>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** DONE Resolver problema de SHADE_CEC2005 con F4 y F17
+   CLOSED: [2015-11-04 mié 14:52]
+
+
+
+
+* DONE Subir solución del ejercicio de DSS en el campus
+  CLOSED: [2015-10-31 sáb 11:00]
+  CLOCK: [2015-10-31 sáb 10:44]--[2015-10-31 sáb 11:00] =>  0:16
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Publicar lo de la web, de Delegación de Alumnos
+  CLOSED: [2015-11-04 mié 14:47]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-04 mié 14:52
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Que se reordene en la presentación para móvil			:web:
+  CLOSED: [2015-11-04 mié 17:14]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-19 jue 14:28
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-11-04 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE Preparar material de MPI para Manuel 
+   CLOSED: [2015-11-19 jue 14:28]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-19 jue 14:28
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-11-04 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+- [ ] Programa mpi_multmatric.c
+- [ ] Añadir especificación.
+
+
+* DONE Modificar cronograma de DSS
+  CLOSED: [2015-11-19 jue 14:28]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-19 jue 14:28
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-11-04 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Resolver problema de MPI
+  CLOSED: [2015-11-18 mié 16:55]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-19 jue 14:28
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-11-04 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Poner enunciado de CAP
+  CLOSED: [2015-11-18 mié 16:55]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-11-19 jue 14:28
+  :ARCHIVE_FILE: ~/current/tareas/tareas.org
+  :ARCHIVE_OLPATH: Tareas <2015-11-04 mié>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+

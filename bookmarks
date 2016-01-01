@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("revisar"
+(("tareas.org"
+ (filename . "~/.emacs.d/tasks/tareas.org")
+ (front-context-string . "*** Cronograma\n*")
+ (rear-context-string)
+ (position . 1))
+("revisar"
  (filename . "~/Dropbox/revisar/")
  (front-context-string . "145940.v1.pdf\n  ")
  (rear-context-string . "351 08-28 12:04 ")
@@ -37,11 +42,6 @@
  (front-context-string . "\"\"\"\nThis program")
  (rear-context-string)
  (position . 1))
-("tareas"
- (filename . "~/current/tareas/tareas.org")
- (front-context-string . "1. Introducir la")
- (rear-context-string . "*** Estructura\n\n")
- (position . 495))
 ("org"
  (filename . "~/current/RMAwA_todo/RMAwA_revision2/")
  (front-context-string . "response_reviewe")

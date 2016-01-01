@@ -1,0 +1,330 @@
+*** Cronograma
+**** Tabla
+     :PROPERTIES:
+     :ORDERED:  t
+     :END:
+#+CAPTION: Cronograma de la asignatura
+#+ATTR_HTML: :border 2 :rules all :frame border
+|--------+----------+--------------------------------------------+--------------------------------|
+| Semana | Fecha    | Teoría                                     | Práctica                       |
+|--------+----------+--------------------------------------------+--------------------------------|
+|      1 | 02/10/15 | Introducción                               | -                              |
+|      2 | 09/10/15 | Diseño OO                                  | -                              |
+|      3 | 16/10/15 | Principios OO                              | Práctica Diseño I              |
+|      4 | 23/10/15 | Principios OO (Fin) y Ejercicio conjunto   | Práctica Diseño II             |
+|      5 | 30/10/15 | Dependencias y Tests                       | Entrega Práctica Diseño        |
+|      6 | 06/11/15 | Refactorización I                          | Evaluar principios             |
+|      7 | 17/11/15 | Refactorización II                         | Práctica Refactor              |
+|      8 | 20/11/15 | Introducción Patrones y patrones iniciales | Práctica Refactor/Patrones (I) |
+|--------+----------+--------------------------------------------+--------------------------------|
+|      9 | 27/11/15 | Patrones Creación (CRE1, CRE2)             | Ejercicios Patrones (II)       |
+|     10 | 04/12/15 | Patrones Estructurales I (EST3, EST4)      | Ejercicios Patrones (III)      |
+|     11 | 11/12/15 | Patrones Estructurales y Comp (EST5, CO06) | Ejercicios Patrones (IV)       |
+|     12 | 18/12/15 | Patrones Comportamiento (CO07, CO08)       | Ejercicios Patrones (V)        |
+|     13 | 08/01/15 | Aplicando Patrones                         | Conjuntos                      |
+|     14 | 15/01/05 | Repaso                                     | Repaso                         |
+|     15 | 26/01/05 | Repaso                                     | Repaso                         |
+|--------+----------+--------------------------------------------+--------------------------------|
+
+
+* Docencia
+
+** DONE Subir nuevo cronograma
+   CLOSED: [2015-11-19 jue 12:45]
+   CLOCK: [2015-11-19 jue 12:35]--[2015-11-19 jue 12:44] =>  0:09
+
+** DONE Anunciar calendario de presentaciones
+   CLOSED: [2015-11-19 jue 13:03]
+   CLOCK: [2015-11-19 jue 12:45]--[2015-11-19 jue 13:03] =>  0:18
+
+** DONE [#A] Preparar clase de patrones
+   CLOSED: [2015-11-19 jue 16:15] DEADLINE: <2015-11-20 vie>
+   CLOCK: [2015-11-19 jue 14:29]--[2015-11-19 jue 16:15] =>  1:46
+   CLOCK: [2015-11-19 jue 13:00]--[2015-11-19 jue 14:03] =>  1:03
+
+
+** TODO Corregir prácticas de alumnos de DSS
+
+** DONE Preparar clase de Big Data
+   CLOSED: [2015-12-28 lun 11:34]
+
+
+
+
+* Ideas sobre presentaciones del artedepresentar
+
+** Ensayar siempre, y lo más realista posible.
+
+** Aprender el principio y final.
+
+** Dividir en 3 ó 4 apartados
+
+- Luego se dividirá a su vez.
+
+** Imágenes amplias
+
+- Sin miedo, que puedan ocupar toda la presentación. 
+
+** Sin logos
+
+- Sólo al principio y al final.
+
+** Nada de transparencias de Gracias
+
+Al final con las preguntas es la que aparece más tiempo, así que es perfecto para usarla:
+
+- Resumiendo la presentación.
+- Datos de contacto (twitter, blog, email, ...).
+
+** Animar a preguntas
+
+- Ensayar posibles preguntas.
+- Animar a preguntar.
+
+* Investigación
+
+** DONE Experimentos de Benjamin (Decision on INS-D-15-498R2=
+   CLOSED: [2015-12-28 lun 11:35] DEADLINE: <2015-12-26 sáb>
+
+*** Respuesta de revisores
+
+
+The Editor's and the reviewers' comments are as follows:
+************************************************************
+Reviewer #2: In this new revision the authors have addressed most of
+my previous comments. However, one of the most important requests
+(increasing the scientific contribution of the paper) has not been
+properly fulfilled. It is true that the authors have decided to
+include an analysis of the diversity introduced by the algorithm in
+the population. But is also true that the provided analysis, which is
+not actually an analysis but a report of the results observed, is
+still poor. The new Section 5.3 just summarizes and plots the
+diversity of the population for three selected functions and describe
+what can be seen on the plots. Little discussion is provided on the
+reasons of the behaviour observed, which is very different for the
+three functions: there are a series of hypothesis for each of the
+functions but no way to assess if these are true.
+
+The authors should elaborate more this section conducting a
+comparison, for example, with a version of the algorithm without
+adjustment in the number of regions (keeping them static). This would
+confirm if the hypothesis about increasing the number of regions and
+thus the diversity holds for function F7. Another thing that could be
+done is plotting the density of explored solutions at different stages
+of the search, with different numbers of regions (plots similar to
+Figures 4-6 but at each of the different steps depicted in Figure 3).
+
+A discussion on why the region number adjustment strategy does not
+work for larger number of dimensions should also be included, as it
+seems that the algorithm only works for low numbers of dimensions.
+
+
+Finally, a found, again, a number of typos in the new sections.
+Please, play attention to the manuscript quality, as it does not help
+in giving a good appearance to your paper.
+
+I am sorry to say that, but I honestly think that the manuscript still
+lacks of enough scientific contribution to be accepted in its current
+form.
+
+
+
+
+Reviewer #3: The authors have successfully responded to all the
+comments. In my opinion, it is acceptable now.
+
+
+
+************************************************************
+<br><br><b><font color="red">Note</b>: Please double check the author
+names provided in the manuscript source file so that authorship
+related changes are made in the revision stage. If your manuscript is
+accepted, any authorship change will involve approval from co-authors
+and respective editor handling the submission and this may cause a
+significant delay in publishing your manuscript.</font><br/><br/>
+
+In view of these comments the Editor-in-Chief, Professor Witold
+Pedrycz, has decided that the paper can be reconsidered for
+publication after the points raised by the referees have been addressed.
+
+When you log-in to your Main Menu, you will see a menu item called
+'Submission Needing Revision'. You will find your submission record
+there. Also, the reviewer(s) may have uploaded a file with detailed
+comments on your manuscript. Click on "View Reviewer Attachments" to
+access any detailed comments from the reviewer(s) that may have been
+included.
+
+When submitting your revised manuscript, please make sure that you
+upload the source files (e.g. Word or .TeX and other files in a .zip
+file which the system will automatically unzip). Uploading a PDF file
+at this stage will create delays should your manuscript be finally
+accepted for publication. If your revised submission does not include
+the source files, we will contact you to request them.
+
+If the revised version is submitted within three months of receipt of
+this e-mail, the manuscript will retain the original submission date
+and reference number. After three months, your paper might be treated
+as a new submission and may be sent to new reviewers.
+
+We look forward to receiving the revised version of your paper
+together with a reply to the reports and a summary of the revisions made.
+
+Please note that this journal offers a new, free service called
+AudioSlides: brief, webcast-style presentations that are shown next to
+published articles on ScienceDirect (see also
+http://www.elsevier.com/audioslides). If your paper is accepted for
+publication, you will automatically receive an invitation to create an
+AudioSlides presentation.
+
+The revised version of your submission is due by 26 Dec 2015.
+
+Information Sciences features the Interactive Plot Viewer, see:
+http://www.elsevier.com/interactiveplots. Interactive Plots provide
+easy access to the data behind plots. To include one with your
+article, please prepare a .csv file with your plot data and test it
+online at
+http://authortools.elsevier.com/interactiveplots/verification before
+submission as supplementary material.
+
+Kind regards,
+
+Witold Pedrycz
+Editor-in-Chief
+Information Sciences
+
+*** Resultados con alta dimensión
+
+**** Parámetros opcionales
+
+- F18:
+
+  + P=70: 0.33 (PR1-PR5).
+
+  + P=200: 0.50.
+
+  + P=200, u=5, U=1.2:  
+
+*** Comentario de Benjamin
+
+Coincido con vosotros, el tema solo de lanzar el experimentos sobre
+esas functiones que ya tenemos (7 16 y 18) con un numero de divisiones
+fijo (2 4 7 12 21) y medir la diversidad y juntar la al las graficas
+que ya tenemos.  de hecho, ejecutar lo con un numero de division fijo
+sera problematico para un numeros de division y dimensiones bajos
+porque el archivo se va a llenar muy pronto. una ves que todas las
+regiones estan representadas en el archivo el numero de divisiones se
+update automaticamente. Eso no se puede quitar sino se para la
+busqueda.
+
+Dani, en el standard output si haces un grep update salen dos cosas:
+        - classical update con el nuevo numero de divisiones que se
+          hace ca x numeros de evaluacion
+        - archive full update que occure cuando el archivo esta
+          “lleno"
+
+para hacer los experimentos sin los update hay que poner la opcion -u
+0 (es decir 0 update) como lo notaras seguiran los update automatico
+debido a un archivo lleno.
+
+
+*** TODO Revisión de Paco:
+
+- [X] Cambiar dirección de Paco.
+- [X] Título 5.3.1.
+- [X] bad behaviour => low behaviour]
+- [X] División, usar dos.
+- [X] Eliminar el P08.
+
+Acabo de leerlo, disculpa el retraso en terminarlo. He vuelto sobre las 17:00 de la comida.
+
+Con los cambios actuales está muy bien justificado todo, no creo que los referees planteen más cuestiones, espero.
+
+Solo unos pequeños cometnarios incluidos en el pdf adjunto:
+
+a) Mi dirección, quita CITIC-UGR de la dirección de la UGR (vamos a crear un instituto de investigación al margen del CITIC, ya te contaré).
+Incluye la segunda dirección de KAU, como en el paper adjunto, pero sin NOrth Jeddah.  Solo como indico a continuación:
+
+Faculty of Computing and Information Technology, King Abdulaziz University, 21589, Jeddah, Saudi Arabia.
+
+b) Seccion 5.3.1.  ´Como quedaría el titulo siguiente:??   Population diversity: Inflluece of the Number of Divisions
+ (realmente este es el análisis que se hace).
+
+Sobre la formula de la división, hay que dividir por 2 el total, o lo que es lo mismo multiplicar por 2 el numerador porque está cogiendo solo (i,j) cuando i es mejor que j, y tambien habria que coger la pareja (j,i) para dividir por n(n-1).
+Se pueden dejar las mismas figuras, porque solo cambiaría una constante.
+
+c) En lugar de bad bheaviour,  ¿¿que tal sería low behaviour?? La palabra bad es dura, aunque es la realidad.
+
+d) Pag. 36-37.   This work opens varios future potencial studies:
+
+Ahora yo incluiría los 3 itemices asociados con los potenciales setudios.
+
+e) El proyecto P08 ya terminó y se cerró su informe,  ahora solo queda abiertos desde el P10 en adelante.
+
+Como ves son mínimos detalles.
+
+Adelante con la submission, y crucemos los dedos para conseguir el accept.
+
+Un abrazo; Paco
+
+*** Enviar
+
+Revision Note 	Response to reviewers 	response_reviewers.pdf 	146 KB 	27 Sep 2015 		Download
+Manuscript (including abstract) 	*Manuscript remarking changes from previous version 	RMAwA_changes_revision2.pdf 	1 MB 	27 Sep 2015 		Download
+LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 Sep 2015 		Download
+
+
+** TODO [#A] Artículo de CAEPIA
+
+*** DONE Terminando introducción
+    CLOSED: [2015-11-25 mié 11:10]
+   CLOCK: [2015-11-25 mié 09:47]--[2015-11-25 mié 11:10] =>  1:23
+
+*** DONE Present tendency
+    CLOSED: [2015-11-26 jue 10:36]
+    CLOCK: [2015-11-25 mié 13:35]--[2015-11-25 mié 14:11] =>  0:36
+    CLOCK: [2015-11-25 mié 13:03]--[2015-11-25 mié 13:34] =>  0:31
+    CLOCK: [2015-11-25 mié 12:36]--[2015-11-25 mié 12:43] =>  0:07
+
+
+*** DONE Conclusion
+    CLOSED: [2015-11-26 jue 16:52]
+    CLOCK: [2015-11-26 jue 12:05]--[2015-11-26 jue 14:40] =>  2:35
+    CLOCK: [2015-11-26 jue 11:19]--[2015-11-26 jue 11:55] =>  0:36
+    CLOCK: [2015-11-26 jue 10:20]--[2015-11-26 jue 10:40] =>  0:20
+
+
+*** TODO Revisar Artículo de CAEPIA, homogeneizando referencias y repasando texto.
+
+*** TODO Aplicar cambios pedidos por Paco
+* Sueltas <2015-11-25 mié>
+
+* DONE Guardar enlaces de TDD y enlazarlos en el campus de DSS
+  CLOSED: [2015-11-25 mié 09:45]
+  CLOCK: [2015-11-25 mié 09:20]--[2015-11-25 mié 09:45] =>  0:25
+
+* DONE 
+  CLOSED: [2015-12-28 lun 11:34]
+
+* Tareas <2015-11-25 mié>
+
+*** Reunión con Manuel sobre las clases
+    CLOCK: [2015-11-25 mié 11:20]--[2015-11-25 mié 12:24] =>  1:04
+
+
+*** Charla sobre la web
+    CLOCK: [2015-11-25 mié 12:43]--[2015-11-25 mié 13:03] =>  0:20
+
+
+
+* DONE Acostarse
+  CLOSED: [2015-12-28 lun 11:34] SCHEDULED: <2015-12-16 mié ++1 00:15>
+
+* Diarias <2015-12-16 mié>
+
+** DONE Comer con Iván
+   CLOSED: [2015-12-28 lun 11:34] SCHEDULED: <2015-12-16 mié 14:15>
+
+** TODO Mover todo lo relativo de .emacs a .emacs.d
+
+** 
+

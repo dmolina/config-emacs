@@ -1,6 +1,6 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")))
+			("marmalade" . "https://marmalade-repo.org/packages/")
+			("melpa" . "http://melpa.org/packages/")))
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 ; Viper hotkeys in Emacs
@@ -10,9 +10,9 @@
 ;Remove init message
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq confirm-nonexistent-file-or-buffer nil)
-;(setq ido-create-new-buffer 'always)
+(setq ido-create-new-buffer 'always)
 (setq inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
+     inhibit-startup-echo-area-message t)
 
 ;(require 'org-install)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
@@ -22,30 +22,6 @@
 ;(define-key mode-specific-map [?a] 'org-agenda)
 (define-key global-map "\C-cl" 'org-store-link)
 (setq org-log-done t)
-;(eval-after-load "org"
-;  '(progn
-;     (define-prefix-command 'org-todo-state-map)
-;
-;     (define-key org-mode-map "\C-cx" 'org-todo-state-map)
-;
-;     (define-key org-todo-state-map "x"
-;       #'(lambda nil (interactive) (org-todo "CANCELLED")))
-;     (define-key org-todo-state-map "d"
-;       #'(lambda nil (interactive) (org-todo "DONE")))
-;     (define-key org-todo-state-map "f"
-;       #'(lambda nil (interactive) (org-todo "DEFERRED")))
-;     (define-key org-todo-state-map "l"
-;       #'(lambda nil (interactive) (org-todo "DELEGATED")))
-;     (define-key org-todo-state-map "s"
-;       #'(lambda nil (interactive) (org-todo "STARTED")))
-;     (define-key org-todo-state-map "w"
-;       #'(lambda nil (interactive) (org-todo "WAITING")))
-;
-;     (define-key org-agenda-mode-map "\C-n" 'next-line)
-;     (define-key org-agenda-keymap "\C-n" 'next-line)
-;     (define-key org-agenda-mode-map "\C-p" 'previous-line)
-;     (define-key org-agenda-keymap "\C-p" 'previous-line)))
-
 
 ;; tell org to use listings with colors                                        
 ; (require 'org-latex)
@@ -60,35 +36,29 @@
 (define-key global-map [(control meta ?r)] 'remember)
 
 (global-set-key (kbd "C-c a") 'org-agenda)
-;; (setq org-agenda-custom-commands
-;;       '(("a" "My custom agenda"
-;; 	 ((org-agenda-list nil nil 1)
-;; 	  (tags "PROJECT-WAITING")
-;; /	  (tags-todo "WAITING")
-;; 	  (tags-todo "-MAYBE")))))
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (spolsky)))
- '(custom-safe-themes
-   (quote
-    ("196cc00960232cfc7e74f4e95a94a5977cb16fd28ba7282195338f68c84058ec" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "96998f6f11ef9f551b427b8853d947a7857ea5a578c75aa9c4e7c73fe04d10b4" "19352d62ea0395879be564fc36bc0b4780d9768a964d26dfae8aad218062858d" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "0092fbd53ec752848780eafa2400933a40f8b8f02ce0d1b49907106b276d1a93" "95a6ac1b01dcaed4175946b581461e16e1b909d354ada79770c0821e491067c6" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" "40303ef9ce569164fb1d0b8a941e425191588f25610324ebfa3456264bda1177" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" default)))
- '(fci-rule-color "#383838")
- '(helm-mode nil)
- '(inhibit-startup-screen t)
- '(ispell-local-dictionary-alist
-   (quote
-    (("castellano" "[A-Za-áéíóúÁÉÍÓÚü]" "[^A-Za-áéíóúÁÉÍÓÚ]" "[-]" nil nil "~latin1" iso-8859-1))))
- '(org-agenda-files
-   (quote
-    ("~/current/tareas/tareas.org" "~/current/docencia/dss/2015/preparacion_dss.org" "~/current/email.org" "~/current/review/review.org")))
+;; custom-set-variables was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
+'(ansi-color-faces-vector
+  [default default default italic underline success warning error])
+'(ansi-color-names-vector
+  ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+'(custom-enabled-themes (quote (spolsky)))
+'(custom-safe-themes
+  (quote
+   ("196cc00960232cfc7e74f4e95a94a5977cb16fd28ba7282195338f68c84058ec" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "96998f6f11ef9f551b427b8853d947a7857ea5a578c75aa9c4e7c73fe04d10b4" "19352d62ea0395879be564fc36bc0b4780d9768a964d26dfae8aad218062858d" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "0092fbd53ec752848780eafa2400933a40f8b8f02ce0d1b49907106b276d1a93" "95a6ac1b01dcaed4175946b581461e16e1b909d354ada79770c0821e491067c6" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" "40303ef9ce569164fb1d0b8a941e425191588f25610324ebfa3456264bda1177" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" default)))
+'(fci-rule-color "#383838")
+'(helm-mode nil)
+'(inhibit-startup-screen t)
+'(ispell-local-dictionary-alist
+  (quote
+   (("castellano" "[A-Za-áéíóúÁÉÍÓÚü]" "[^A-Za-áéíóúÁÉÍÓÚ]" "[-]" nil nil "~latin1" iso-8859-1))))
+'(org-agenda-files
+  (quote
+   ("~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
@@ -129,14 +99,6 @@
 (setq google-calendar-url           "http://www.google.com/calendar/ical/h7rkmngcs7qtk4anl2v0lc8318%40group.calendar.google.com/private-65f81a34d4a1cdfaba2728d2b7ba04ff/basic.ics")  ;;; URL TO YOUR GOOGLE CALENDAR
 (setq google-calendar-auto-update    t )                    ;;; DEFINE IF THE CALENDAR IS DOWNLOADED AFTER EVERY MODIFICATION
 
-
-
-; (setq view-diary-entries-initially t
-;       mark-diary-entries-in-calendar t
-;       number-of-diary-entries 7)
-; (add-hook 'diary-display-hook 'fancy-diary-display)
-; (add-hook 'today-visible-calendar-hook 'calendar-mark-today)
-
  (european-calendar)
     (setq calendar-week-start-day 1
           calendar-day-name-array
@@ -146,16 +108,6 @@
           ["Enero" "Febrero" "Marzo" "Abril"
            "Mayo" "Junio" "Julio" "Agosto" "Septiembre"
            "Octubre" "Noviembre" "Diciembre"])
-;; Personalización a español
-;;(setq european-calendar-style t)
-;;  (setq calendar-week-start-day 1)
-;;  (setq calendar-day-name-array
-;;         ["Domingo" "Lunes" "Martes" 
-;;          "Miercoles" "Jueves" "Viernes" "Sábado"])
-;;  (setq calendar-month-name-array
-;;         ["Enero" "Febrero" "Marzo" "Abril"
-;;          "Mayo" "Junio" "Julio" "Agosto" "Septiembre"
-;;          "Octubre" "Noviembre" "Diciembre"])
 
 (add-hook 'diary-display-hook 'diary-fancy-display)
 (add-hook 'org-mode-hgok 'my-org-mode-stuff)
@@ -215,7 +167,7 @@
 
 (require 'autoinsert)
 (auto-insert-mode)  ;;; Adds hook to find-files-hook
-(setq auto-insert-directory "~/templates/") ;;; Or use custom, *NOTE* Trailing slash important
+(setq auto-insert-directory "~/.emacs.d/orgtemplates/") ;;; Or use custom, *NOTE* Trailing slash important
 (setq auto-insert-query nil) ;;; If you don't want to be prompted before insertion
 (define-auto-insert "\.tpl" "latex.txt")
 (define-auto-insert "\.bea" "beamer.txt")
@@ -241,7 +193,7 @@
 (defun fd-switch-dictionary()
       (interactive)
       (let* ((dic ispell-current-dictionary)
-    	 (change (if (string= dic "american") "castellano" "american")))
+    	 (change (if (string= dic "british") "castellano" "british")))
         (ispell-change-dictionary change)
         (message "Dictionary switched from %s to %s" dic change)
         ))
@@ -372,11 +324,6 @@
 ;(add-hook 'java-mode-hook (lambda ()
 ;			    (setq c-basic-offset 4)))
 
-
-;; Auto-complete (TODO)
-;(add-to-list 'load-path "/home/dmolina/.emacs.d/")
-;(require 'auto-complete-config)
-;(add-to-list 'ac-dictionary-directories "/home/dmolina/.emacs.d//ac-dict")
 
 ;; Hippie mode
   (setq dcsh-command-list '("all_registers"
@@ -541,19 +488,6 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-; For python
-;(add-hook 'python-mode-hook 'jedi:setup)
-;(setq jedi:setup-keys t)                      ; optional
-;(setq jedi:complete-on-dot t)                 ; optional
-
-; Custom (y|n)
-;(fset 'yes-or-no-p 'y-or-n-p)
-; Disable Confirm messages
-;(setq confirm-nonexistent-file-or-buffer nil)
-(setq ido-create-new-buffer 'always)
-; Remove spash icon
-(setq inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
 
 ; Update recentf to C-x C-r see the last opened files
 (require 'recentf)
@@ -582,10 +516,6 @@
 (smex-initialize) ; Can be omitted. This might cause a (minimal) delay
                   ; when Smex is auto-initialized on its first run.
 
-;(global-set-key (kbd "M-x") 'smex)
-;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (add-to-list 'org-beamer-environments-extra
              '("only" "o" "\\only<2>{" "}"))
@@ -1202,5 +1132,3 @@ current line."
   (ispell-word)
   )
 (global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
-
-
