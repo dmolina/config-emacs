@@ -984,7 +984,16 @@ in the analysis and conclusion, it cannot be published.
 
 ** [[~/Dropbox/revisar/CRO_Model_Type_Selection_IJBC_revised.pdf][Acceso]]
 
-* Test
-  :LOGBOOK:
-  CLOCK: [2016-01-01 vie 17:34]--[2016-01-01 vie 17:34] =>  0:00
-  :END:
+** TODO Reescribir en python
+
+** TODO Compilar en C++
+
+* TODO Revisar PRAI
+  DEADLINE: <2016-01-07 jue>
+
+** Título: An Improved Structure of Genetic Algorithms for Global Optimisation
+
+** [[file:~/Dropbox/revisar/PRAI-D-15-00051.pdf][Acceso]]
+
+** Acceso:  http://PRAI.edmgr.com/
+*** Usuario/login: DMolina-748/  http://PRAI.edmgr.com/Default.aspx?pg=accountFinder.aspx&firstname=Daniel&lastname=Molina&email_address=daniel.molina@uca.es
