@@ -1237,7 +1237,8 @@ current line."
   :init
   (require 'spaceline-config)
   (spaceline-spacemacs-theme)
-  (powerline-center-theme)
+  ;(powerline-center-theme)
+  (powerline-default-theme)
   )
 
 (use-package fancy-battery
