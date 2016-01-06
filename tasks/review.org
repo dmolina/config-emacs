@@ -997,3 +997,11 @@ in the analysis and conclusion, it cannot be published.
 
 ** Acceso:  http://PRAI.edmgr.com/
 *** Usuario/login: DMolina-748/  http://PRAI.edmgr.com/Default.aspx?pg=accountFinder.aspx&firstname=Daniel&lastname=Molina&email_address=daniel.molina@uca.es
+
+* DONE Revisar ECJ
+  CLOSED: [2016-01-06 mié 01:20]
+
+** Título: Generating new space-filling test instances for continuous black-box optimization 
+
+** [[file:~/Dropbox/revisar/paper1308%20-%20annotated.pdf][Acceso]]
+
