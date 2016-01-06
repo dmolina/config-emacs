@@ -18,6 +18,9 @@ My personal emacs configuration (avoiding melpa/elpa packages).
 	- Spaceline: copied from spacemacs (included visualisation of battery).
 	
 	- Google Maps.
+	
+	- Specific plugins for python: detection in real time, tests, search documentation, .... 
+	
  
 	
 ## Templates for org-mode ##
