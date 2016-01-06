@@ -300,11 +300,28 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
 
 *** DONE Aplicar cambios pedidos por Paco
     CLOSED: [2016-01-01 vie 18:41]
-* Sueltas <2015-11-25 mié>
-
-
 
 * Prueba
 
 - Uno.
 - Dos.
+
+** Dirección 
+   :PROPERTIES:
+   :ADDRESS:  Calle Chueca, 9, 18004 Granada, Granada, Spain
+   :END:
+
+
+* Colonia de corales
+
+** DONE Adaptar el código de Matlab a Python
+   CLOSED: [2016-01-05 mar 13:28]
+   :LOGBOOK:
+   CLOCK: [2016-01-02 sáb 12:40]--[2016-01-02 sáb 13:27] =>  0:47
+   CLOCK: [2016-01-02 sáb 10:50]--[2016-01-02 sáb 11:30] =>  2:07
+   :END:
+
+** TODO Adaptar a usar número de evaluaciones el CRO
+
+** TODO Lanzar experimentos
+
