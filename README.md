@@ -42,3 +42,4 @@ All these templates are in ~/.emacs.d/orgtemplates.
 - **F10** Go to current org-clock active task.
 - **F11** fullscreen.
 - **F12** compile. 
+- **C-x u** see the undos.

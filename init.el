@@ -1281,3 +1281,8 @@ current line."
     ("o" pytest-one "one")
     ("d" pytest-directory "directory")))
 )
+
+(use-package undo-tree
+  :init
+  (global-undo-tree-mode)
+)
