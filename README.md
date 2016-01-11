@@ -21,7 +21,8 @@ My personal emacs configuration (avoiding melpa/elpa packages).
 	
 	- Specific plugins for python: detection in real time, tests, search documentation, .... 
 	
- 
+	- avy package (to move more quickly into the text).
+	
 	
 ## Templates for org-mode ##
 
@@ -43,3 +44,5 @@ All these templates are in ~/.emacs.d/orgtemplates.
 - **F11** fullscreen.
 - **F12** compile. 
 - **C-x u** see the undos.
+- **C-:** to go a specific char.
+- **C-;** to go a specific pair of chairs.

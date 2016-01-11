@@ -23,7 +23,7 @@
 			  ; Several org-mode
 			  org ob-translate orgit org-pdfview pdf-tools org-pdfview
 			  ; Python mode 
-			  elpy flymake-python-pyflakes pyflakes python-pylint elpy pycheck-mypy live-py-mode helm-pydoc pytest
+			  elpy flymake-python-pyflakes pyflakes python-pylint elpy live-py-mode helm-pydoc pytest
 					; Vim
 			  undo-tree viper evil
 			  async
@@ -122,19 +122,37 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+ '(clocker-mode nil)
+ '(compilation-message-face (quote default))
  '(custom-enabled-themes (quote (spolsky)))
  '(custom-safe-themes
    (quote
-    ("0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" "90e4b4a339776e635a78d398118cb782c87810cb384f1d1223da82b612338046" "196cc00960232cfc7e74f4e95a94a5977cb16fd28ba7282195338f68c84058ec" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "96998f6f11ef9f551b427b8853d947a7857ea5a578c75aa9c4e7c73fe04d10b4" "19352d62ea0395879be564fc36bc0b4780d9768a964d26dfae8aad218062858d" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "0092fbd53ec752848780eafa2400933a40f8b8f02ce0d1b49907106b276d1a93" "95a6ac1b01dcaed4175946b581461e16e1b909d354ada79770c0821e491067c6" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" "40303ef9ce569164fb1d0b8a941e425191588f25610324ebfa3456264bda1177" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" default)))
+    ("38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" "90e4b4a339776e635a78d398118cb782c87810cb384f1d1223da82b612338046" "196cc00960232cfc7e74f4e95a94a5977cb16fd28ba7282195338f68c84058ec" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "96998f6f11ef9f551b427b8853d947a7857ea5a578c75aa9c4e7c73fe04d10b4" "19352d62ea0395879be564fc36bc0b4780d9768a964d26dfae8aad218062858d" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "0092fbd53ec752848780eafa2400933a40f8b8f02ce0d1b49907106b276d1a93" "95a6ac1b01dcaed4175946b581461e16e1b909d354ada79770c0821e491067c6" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" "40303ef9ce569164fb1d0b8a941e425191588f25610324ebfa3456264bda1177" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" default)))
  '(fci-rule-color "#383838")
+ '(global-undo-tree-mode t)
  '(helm-mode nil)
+ '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
+ '(highlight-tail-colors
+   (quote
+    (("#49483E" . 0)
+     ("#67930F" . 20)
+     ("#349B8D" . 30)
+     ("#21889B" . 50)
+     ("#968B26" . 60)
+     ("#A45E0A" . 70)
+     ("#A41F99" . 85)
+     ("#49483E" . 100))))
  '(inhibit-startup-screen t)
  '(ispell-local-dictionary-alist
    (quote
     (("castellano" "[A-Za-áéíóúÁÉÍÓÚü]" "[^A-Za-áéíóúÁÉÍÓÚ]" "[-]" nil nil "~latin1" iso-8859-1))))
+ '(magit-diff-use-overlays nil)
  '(org-agenda-files
    (quote
     ("~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
+ '(persp-mode t)
+ '(pos-tip-background-color "#A6E22E" t)
+ '(pos-tip-foreground-color "#272822" t)
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
@@ -156,7 +174,9 @@
      (320 . "#8CD0D3")
      (340 . "#94BFF3")
      (360 . "#DC8CC3"))))
- '(vc-annotate-very-old-color "#DC8CC3"))
+ '(vc-annotate-very-old-color "#DC8CC3")
+ '(weechat-color-list
+   (unspecified "#272822" "#49483E" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0")))
 ; Quitando fiestas
 '(holiday-hebrew-holidays nil)
 
@@ -1285,4 +1305,21 @@ current line."
 (use-package undo-tree
   :init
   (global-undo-tree-mode)
+  )
+
+
+; JavaScript
+(use-package js2-mode
+  :ensure t
+  :defer t
+  )
+
+; Avy-to mode using a char
+(use-package avy
+  :ensure t
+  :init
+  (global-set-key (kbd "C-:") 'avy-goto-char)
+  (global-set-key (kbd "C-;") 'avy-goto-char-2)
 )
+
+
