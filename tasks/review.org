@@ -980,7 +980,8 @@ in the analysis and conclusion, it cannot be published.
 
 ** [[file:~/Dropbox/revisar/s1-ln21703275-718916013-1939656818Hwf444406726IdV135281872021703275PDF_HI0001.pdf][Acceso]]
 
-* TODO Entender artículo de Corales
+* DONE Entender artículo de Corales
+  CLOSED: [2016-01-06 mié 13:35]
 
 ** [[~/Dropbox/revisar/CRO_Model_Type_Selection_IJBC_revised.pdf][Acceso]]
 
@@ -988,8 +989,11 @@ in the analysis and conclusion, it cannot be published.
 
 ** TODO Compilar en C++
 
-* TODO Revisar PRAI
-  DEADLINE: <2016-01-07 jue>
+* DONE Revisar PRAI
+  CLOSED: [2016-01-09 sáb 13:29] DEADLINE: <2016-01-07 jue>
+  :LOGBOOK:
+  CLOCK: [2016-01-09 sáb 12:17]--[2016-01-09 sáb 13:17] =>  1:00
+  :END:
 
 ** Título: An Improved Structure of Genetic Algorithms for Global Optimisation
 

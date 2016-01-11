@@ -322,6 +322,48 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
    :END:
 
 ** TODO Adaptar a usar número de evaluaciones el CRO
+   :LOGBOOK:
+   CLOCK: [2016-01-11 lun 14:04]--[2016-01-11 lun 14:24] =>  0:20
+   CLOCK: [2016-01-11 lun 12:16]--[2016-01-11 lun 13:40] =>  1:48
+   CLOCK: [2016-01-11 lun 11:23]--[2016-01-11 lun 11:33] =>  0:10
+   CLOCK: [2016-01-11 lun 10:58]--[2016-01-11 lun 11:17] =>  0:19
+   CLOCK: [2016-01-09 sáb 16:57]--[2016-01-09 sáb 17:08] =>  0:11
+   CLOCK: [2016-01-09 sáb 16:54]--[2016-01-09 sáb 16:57] =>  0:03
+   :END:
 
+** Leer los porcentajes de valores
+   :LOGBOOK:
+   CLOCK: [2016-01-11 lun 14:55]
+   :END:
+
+
+
+*** [[file://~/current/cro][Acceso]]
 ** TODO Lanzar experimentos
 
+* TODO Pagar el piso
+  SCHEDULED: <2016-02-05 sáb ++1m>
+  :PROPERTIES:
+  :LAST_REPEAT: [2016-01-11 lun 10:57]
+  :END:
+  - State "DONE"       from "TODO"       [2016-01-11 lun 10:57]
+
+* DONE Ir al Ikea con Amalia
+  CLOSED: [2016-01-10 dom 00:00] SCHEDULED: <2016-01-09 sáb 19:00>
+
+* DONE Besar a Amalia
+  CLOSED: [2016-01-09 sáb 16:04]
+
+* <2016-01-11 lun>
+
+** Docencia
+
+*** DONE [#A] Poner la entrega de BigData para CAP
+    CLOSED: [2016-01-11 lun 10:56]
+    :LOGBOOK:
+    CLOCK: [2016-01-11 lun 10:26]--[2016-01-11 lun 10:56] =>  0:30
+    :END:
+
+** Investigación
+
+*** 
