@@ -149,7 +149,7 @@
  '(magit-diff-use-overlays nil)
  '(org-agenda-files
    (quote
-    ("~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
+    ("~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
  '(persp-mode t)
  '(pos-tip-background-color "#A6E22E" t)
  '(pos-tip-foreground-color "#272822" t)
@@ -1321,5 +1321,29 @@ current line."
   (global-set-key (kbd "C-:") 'avy-goto-char)
   (global-set-key (kbd "C-;") 'avy-goto-char-2)
 )
+
+; Select the current font
+(defvar TeX-font-current-word t)
+
+(defadvice TeX-font (before TeX-font-word (replace what))
+  "If nothing is selected and `TeX-font-current-word' is not nil,
+mark current word before calling `TeX-font'."
+  (when (and TeX-font-current-word 
+             (not replace)
+             (not (region-active-p))
+             (not (looking-at "\\s-")))
+    (unless (looking-back "\\s-") (backward-word))
+    (mark-word)))
+
+(ad-activate 'TeX-font)
+
+; Allow us to create items with only return, more easily.
+(use-package org-autolist
+  :ensure t
+  :init
+  (org-autolist-mode)
+  (add-hook 'org-mode-hook (lambda () (org-autolist-mode)))
+  )
+
 
 
