@@ -985,9 +985,9 @@ in the analysis and conclusion, it cannot be published.
 
 ** [[~/Dropbox/revisar/CRO_Model_Type_Selection_IJBC_revised.pdf][Acceso]]
 
-** TODO Reescribir en python
+** DONE Reescribir en python
+   CLOSED: [2016-01-18 lun 12:15]
 
-** TODO Compilar en C++
 
 * DONE Revisar PRAI
   CLOSED: [2016-01-09 sáb 13:29] DEADLINE: <2016-01-07 jue>
@@ -1009,3 +1009,20 @@ in the analysis and conclusion, it cannot be published.
 
 ** [[file:~/Dropbox/revisar/paper1308%20-%20annotated.pdf][Acceso]]
 
+
+* TODO Revisar PRAI
+  DEADLINE: <2016-02-11 jue>
+
+** Título: A Multimodal Firefly Optimization Algorithm Based on Coulomb's Law
+** web: http://www.editorialmanager.com/prai/default.aspx
+** [[file:~/Dropbox/revisar/PRAI-D-16-00006.pdf][Acceso]]
+
+* DONE Revisar prueba de PRAI
+  CLOSED: [2016-01-21 jue 11:19]
+  :LOGBOOK:
+  CLOCK: [2016-01-21 jue 10:48]--[2016-01-21 jue 11:19] =>  0:31
+  :END:
+
+** [[https://www.e-proof.sps.co.in/springer/ja.asp?rfp=authtsbfceryvan][Acceso para editar]]
+
+** [[~/Dropbox/revisar/13748_2016_82_Author.pdf][Versión para revisar (corrections)]]
