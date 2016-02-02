@@ -23,6 +23,13 @@ My personal emacs configuration (avoiding melpa/elpa packages).
 	
 	- avy package (to move more quickly into the text).
 	
+	- calfw calendar, with my calendar information.
+	
+	- Configurated capture with todo and review options.
+	
+	- Configurated org-caldav to interaction with google calendar, it syncronize with my trabajo (work)
+	  calendar (it can but personalised).
+	  
 	
 ## Templates for org-mode ##
 
@@ -38,6 +45,7 @@ All these templates are in ~/.emacs.d/orgtemplates.
 
 - **F3** Next window.
 - **F4** Go to list of buffer.
+- **F6** Org-capture.
 - **F8** Apply flyspell with dictionary.
 - **M-f8** Go to next wrong word detected by flyspell.
 - **F10** Go to current org-clock active task.

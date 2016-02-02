@@ -149,7 +149,7 @@
  '(magit-diff-use-overlays nil)
  '(org-agenda-files
    (quote
-    ("~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
+    ("~/.emacs.d/tasks/trabajo.org" "~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
  '(persp-mode t)
  '(pos-tip-background-color "#A6E22E" t)
  '(pos-tip-foreground-color "#272822" t)
@@ -369,7 +369,6 @@
 ; Set Capture
 ;(setq org-default-notes-file (concat org-directory "/notes.org"))
 ;(define-key global-map "\C-cc" 'org-capture)
-;(global-set-key (kbd "<f6>") 'org-capture)
 
 (setq x-super-keysym 'meta)
 (setq load-path (cons "/home/dmolina/.emacs.d/" load-path))
@@ -1347,3 +1346,44 @@ mark current word before calling `TeX-font'."
 
 
 
+(use-package org-gcal
+  :ensure t
+  :init
+(require 'org-gcal)
+(setq org-gcal-client-id "980686816323-481aaof44uim7mabfs35l3glq3j8a5uv.apps.googleusercontent.com"
+      org-gcal-client-secret "AIzaSyBSNu42PEou2PNbeEvXkkkIg2bN6TyXnto" 
+      org-gcal-file-alist '(("danimolina@gmail.com" .  "~/.emacs.d/tasks/examenes.org")
+			    )
+      )
+)
+
+; Calfw with default org-mode
+(use-package calfw
+  :ensure t
+  :init
+  (require 'calfw)
+  (require 'calfw-org)
+  (setq cfw:org-overwrite-default-keybinding t)
+(use-package calfw-gcal
+  :ensure t
+  :init
+  (define-key cfw:calendar-mode-map (kbd "a") 'cfw:gcal-main)
+)
+	   
+
+; Set in org-mode the capture mode
+(global-set-key (kbd "<f2>") 'org-capture)
+(setq org-capture-templates '(("t" "Todo"
+      entry (file+headline "~/.emacs.d/tasks/tareas.org" "Tasks")
+             "* TODO %?\n  %i\n  %a")
+        ("r" "Review" entry (file+datetree "~/.emacs.d/tasks/review.org")
+	 "* TODO: %?\nEntered on %U\n  %i\n  %a")))
+
+(use-package org-caldav
+  :init
+  (setq org-caldav-url "https://www.google.com/calendar/dav")
+  (setq org-caldav-calendars
+  '((:calendar-id "omq4rblg8ulqn725kkbsijka50@group.calendar.google.com" :files ("~/.emacs.d/tasks/prueba.org")
+     :inbox "~/.emacs.d/tasks/trabajo.org")))
+  (setq org-icalendar-timezone "Europe/Madrid")
+)
