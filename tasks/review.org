@@ -1010,8 +1010,8 @@ in the analysis and conclusion, it cannot be published.
 ** [[file:~/Dropbox/revisar/paper1308%20-%20annotated.pdf][Acceso]]
 
 
-* TODO Revisar PRAI
-  DEADLINE: <2016-02-11 jue>
+* DONE Revisar PRAI
+  CLOSED: [2016-02-11 jue 16:30] DEADLINE: <2016-02-11 jue>
 
 ** Título: A Multimodal Firefly Optimization Algorithm Based on Coulomb's Law
 ** web: http://www.editorialmanager.com/prai/default.aspx
@@ -1026,3 +1026,29 @@ in the analysis and conclusion, it cannot be published.
 ** [[https://www.e-proof.sps.co.in/springer/ja.asp?rfp=authtsbfceryvan][Acceso para editar]]
 
 ** [[~/Dropbox/revisar/13748_2016_82_Author.pdf][Versión para revisar (corrections)]]
+
+
+
+* DONE Revisar ZUSC-D-15-00287R1, Dolphin
+  CLOSED: [2016-02-09 mar 12:41] DEADLINE: <2016-02-21 dom>
+  :LOGBOOK:
+  CLOCK: [2016-02-09 mar 11:31]--[2016-02-09 mar 12:41] =>  1:00
+  :END:
+   Entered on [2016-02-06 sáb 10:52]
+  
+** [[http://www.editorialmanager.com/zusc/Default.aspx][Enlace en la web]]
+
+** [[http://www.editorialmanager.com/zusc/viewPrevVerPDFs.asp?sub_num=5429&ms_num=ZUSC-D-15-00287&rev=1][Enlace en la web de los trabajos]]
+
+** [[~/Dropbox/revisar/ZUSC-D-15-00287_R1.pdf][Revisión nueva]]
+
+* TODO Revisar Trabajos WCCI 2016
+
+* TODO Revisar PRAI-D-15-00051_R1
+  DEADLINE: <2016-03-03 jue>
+
+** [[http://www.editorialmanager.com/prai/default.aspx][Web]]
+
+** Acceso: DMolina-748/xxxx
+
+** [[file:~/Dropbox/revisar/PRAI-D-15-00051_R1.pdf][Acceso al PDF]]
