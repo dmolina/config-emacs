@@ -149,7 +149,7 @@
  '(magit-diff-use-overlays nil)
  '(org-agenda-files
    (quote
-    ("~/.emacs.d/tasks/trabajo.org" "~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
+    ("~/.emacs.d/tasks/trabajo.org" "~/.emacs.d/tasks/citas.org" "~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
  '(persp-mode t)
  '(pos-tip-background-color "#A6E22E" t)
  '(pos-tip-foreground-color "#272822" t)
@@ -335,25 +335,23 @@
 ;(require 'org-install)
 
 ; Some initial langauges we want org-babel to support
-;; (org-babel-do-load-languages
-;;  'org-babel-load-languages
-;;  '(
-;;    (sh . t)
-;;    (python . t)
-;;    (R . t)
-;;    (ruby . t)
-;;    (ditaa . t)
+ (org-babel-do-load-languages
+  'org-babel-load-languages
+  '(
+    (sh . t)
+    (python . t)
+    (R . t)
 ;;    (dot . t)
 ;;    (octave . t)
 ;;    (sqlite . t)
 ;;    (perl . t)
-;;    ))
-;;  (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
+    ))
+  (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
 
 ; Do not prompt to confirm evaluation
 ; This may be dangerous - make sure you understand the consequences
 ; of setting this -- see the docstring for details
-; (setq org-confirm-babel-evaluate nil)
+(setq org-confirm-babel-evaluate nil)
 
 ;; speedbar configuration
 
@@ -590,6 +588,8 @@
 ;; get rid of `find-file-read-only' and replace it with something
 ;; more useful.
 (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+
+(global-set-key (kbd "C-x <Left>") 'previous-buffer)
 
 ;; enable recent files mode.
 (recentf-mode t)
@@ -1219,14 +1219,14 @@ current line."
 
 ; Flyspell
 (global-set-key (kbd "<f8>") 'flyspell-buffer)
-(global-set-key (kbd "C-<f8>") 'flyspell-check-previous-highlighted-word)
+(global-set-key (kbd "<C-f8>") 'flyspell-check-previous-highlighted-word)
 (defun flyspell-check-next-highlighted-word ()
   "Custom function to spell check next highlighted word"
   (interactive)
   (flyspell-goto-next-error)
   (ispell-word)
   )
-(global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
+(global-set-key (kbd "<M-f8>") 'flyspell-check-next-highlighted-word)
 
 (use-package async
   :init
@@ -1317,8 +1317,8 @@ current line."
 (use-package avy
   :ensure t
   :init
-  (global-set-key (kbd "C-:") 'avy-goto-char)
-  (global-set-key (kbd "C-;") 'avy-goto-char-2)
+  (global-set-key (kbd "C-;") 'avy-goto-char)
+  (global-set-key (kbd "C-:") 'avy-goto-char-2)
 )
 
 ; Select the current font
@@ -1364,6 +1364,8 @@ mark current word before calling `TeX-font'."
   (require 'calfw)
   (require 'calfw-org)
   (setq cfw:org-overwrite-default-keybinding t)
+)
+
 (use-package calfw-gcal
   :ensure t
   :init
@@ -1375,7 +1377,9 @@ mark current word before calling `TeX-font'."
 (global-set-key (kbd "<f2>") 'org-capture)
 (setq org-capture-templates '(("t" "Todo"
       entry (file+headline "~/.emacs.d/tasks/tareas.org" "Tasks")
-             "* TODO %?\n  %i\n  %a")
+      "* TODO %?\n  %i\n  %a")
+			      ("e" "Evento" entry (file+headline "~/.emacs.d/tasks/citas.org" "Eventos")
+			       "* TODO %?\n  %a")
         ("r" "Review" entry (file+datetree "~/.emacs.d/tasks/review.org")
 	 "* TODO: %?\nEntered on %U\n  %i\n  %a")))
 
@@ -1383,7 +1387,54 @@ mark current word before calling `TeX-font'."
   :init
   (setq org-caldav-url "https://www.google.com/calendar/dav")
   (setq org-caldav-calendars
-  '((:calendar-id "omq4rblg8ulqn725kkbsijka50@group.calendar.google.com" :files ("~/.emacs.d/tasks/prueba.org")
+  '((:calendar-id "omq4rblg8ulqn725kkbsijka50@group.calendar.google.com" :files ("~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/citas.org")
      :inbox "~/.emacs.d/tasks/trabajo.org")))
   (setq org-icalendar-timezone "Europe/Madrid")
+  )
+
+(setq x-select-enable-clipboard t)
+
+; Better org-mode
+(use-package org-bullets
+  :ensure t
+  :init
+  (require 'org-bullets)
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+  )
+
+(use-package color-theme-approximate
+  :ensure t
+  :init 
+  (color-theme-approximate-on)
+  )
+
+;; With search it remark all appears, like in Vim
+(use-package evil-search-highlight-persist
+  :ensure t
+  :init
+  (global-evil-search-highlight-persist t)
 )
+
+; helm-ag
+(use-package helm-ag
+  :ensure t
+)
+
+; engine-mode (to search)
+(use-package engine-mode
+  :ensure t
+  :init
+  (engine-mode t)
+  (engine/set-keymap-prefix (kbd "C-c s"))
+  (setq engine/browser-function 'eww-browse-url)
+  (defengine duckduckgo
+  "https://duckduckgo.com/?q=%s"
+  :keybinding "d")
+  (defengine google
+  "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"
+  :keybinding "g")
+  )
+
+
+(setq browse-url-generic-program (executable-find "conkeror")
+browse-url-browser-function 'browse-url-generic)
