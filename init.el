@@ -1516,73 +1516,10 @@ mark current word before calling `TeX-font'."
 
 ;; general emacs mail settings; used when composing e-mail
 ;; the non-mu4e-* stuff is inherited from emacs/message-mode
-(setq mu4e-reply-to-address "danimolina@gmail.com"
-    user-mail-address "danimolina@gmail.com"
-    user-full-name  "Daniel Molina")
-;; tell message-mode how to send mail
-(setq message-send-mail-function 'smtpmail-send-it)
-;; if our mail server lives at smtp.example.org; if you have a local
-;; mail-server, simply use 'localhost' here.
-(setq smtpmail-smtp-server "smtp.gmail.com")
-(mu4e-drafts-folder "/uca/Drafts")
-(mu4e-sent-folder   . "/uca/Sent")
-(mu4e-trash-folder  ."/uca/Trash"))
-
-
-;; a  list of user's e-mail addresses
-(setq mu4e-user-mail-address-list '("daniel.molina@uca.es" "danimolina@gmail.com" "dmolina@decsai.ugr.es")
-
-;; general emacs mail settings; used when composing e-mail
-;; the non-mu4e-* stuff is inherited from emacs/message-mode
 (setq mu4e-reply-to-address "daniel.molina@uca.es"
-      user-mail-address "daniel.molina@uca.es"
-      user-full-name  "Daniel Molina")
+    user-mail-address "daniel.molina@uca.es"
+    user-full-name  "Daniel Molina")
 
-(setq mu4e-reply-to-address "dmolina@decsai.ugr.es"
-      user-mail-address "dmolina@decsai.ugr.es"
-      user-full-name  "Daniel Molina")
-
-; Context
-(setq mu4e-contexts
-	`(
-       	  (make-mu4e-context :name "uca"
-       			     :enter-func (lambda () (mu4e-message "Switch to the uca context")
-       	(setq mu4e-maildir-shortcuts 
-        '( ("/uca/INBOX"               . ?i)
-           ("/uca/Sent"   . ?s)
-           ("/uca/Trash"       . ?t)
-           ("/uca/Drafts"    . ?d)
-       	  )))
-       	   ;; leave-func not defined
-       	   :match-func (lambda (msg)
-      	   		(when msg 
-       	   		  (mu4e-message-contact-field-matches msg 
-       	   		    :to "daniel.molina@uca.es")))
-       	   :vars '(
-       	   ( user-mail-address	     . "daniel.molina@uca.es"  )
-       	   ( user-full-name	    . "Daniel Molina" )
-           (mu4e-drafts-folder "/uca/Drafts")
-           (mu4e-sent-folder   . "/uca/Sent")
-           (mu4e-trash-folder  ."/uca/Trash"))
-	   ),
-        	  (make-mu4e-context :name "gmail"
-        	  :enter-func (lambda () (mu4e-message "Switch to the Work context"))
-        	(setq mu4e-maildir-shortcuts 
-        '( ("/gmail/Inbox"               . ?i)
-           ("/gmail/sent-mail"   . ?s)
-           ("/gmail/trash"       . ?t)
-           ("/gmail/draft"    . ?d)
-        	 )))
-      ;; ;; leave-fun not defined
-      :match-func (lambda (msg)      (when msg 
-      (mu4e-message-contact-field-matches msg  :to "danimolina@uca.es")))
-      :vars '()
-      ( user-mail-address	     . "daniel.molina@uca.es" )
-      ( user-full-name	    . "Daniel Molina" )
-      (mu4e-drafts-folder "/gmail/drafts")
-      (mu4e-sent-folder   . "/gmail/sent-mail")
-      ))
-(setq mu4e-content-policy :always-ask)
 ;; spell check
 (add-hook 'mu4e-compose-mode-hook
         (defun my-do-compose-stuff ()
@@ -1591,6 +1528,72 @@ mark current word before calling `TeX-font'."
            (flyspell-mode)
 	   (ispell-change-dictionary "castellano8")
 	   ))
+
+;; tell message-mode how to send mail
+(setq message-send-mail-function 'smtpmail-send-it)
+;; if our mail server lives at smtp.example.org; if you have a local
+;; mail-server, simply use 'localhost' here.
+(setq smtpmail-smtp-server "smtp.gmail.com")
+(setq
+mu4e-drafts-folder "/uca/Drafts"
+mu4e-sent-folder   "/uca/Sent"
+mu4e-trash-folder  "/uca/Trash")
+
+
+;; a  list of user's e-mail addresses
+;; (setq mu4e-user-mail-address-list '("daniel.molina@uca.es" "danimolina@gmail.com" "dmolina@decsai.ugr.es"))
+
+;; ;; general emacs mail settings; used when composing e-mail
+;; ;; the non-mu4e-* stuff is inherited from emacs/message-mode
+;; (setq mu4e-reply-to-address "daniel.molina@uca.es"
+;;       user-mail-address "daniel.molina@uca.es"
+;;       user-full-name  "Daniel Molina")
+
+;; (setq mu4e-reply-to-address "dmolina@decsai.ugr.es"
+;;       user-mail-address "dmolina@decsai.ugr.es"
+;;       user-full-name  "Daniel Molina")
+
+;; ; Context
+;; (setq mu4e-contexts
+;; 	`(
+;;        	  (make-mu4e-context :name "uca"
+;;        			     :enter-func (lambda () (mu4e-message "Switch to the uca context")
+;;        	(setq mu4e-maildir-shortcuts 
+;;         '( ("/uca/INBOX"               . ?i)
+;;            ("/uca/Sent"   . ?s)
+;;            ("/uca/Trash"       . ?t)
+;;            ("/uca/Drafts"    . ?d)
+;;        	  )))
+;;        	   ;; leave-func not defined
+;;        	   :match-func (lambda (msg)
+;;       	   		(when msg 
+;;        	   		  (mu4e-message-contact-field-matches msg 
+;;        	   		    :to "daniel.molina@uca.es")))
+;;        	   :vars '(
+;;        	   ( user-mail-address	     . "daniel.molina@uca.es"  )
+;;        	   ( user-full-name	    . "Daniel Molina" )
+;;            (mu4e-drafts-folder "/uca/Drafts")
+;;            (mu4e-sent-folder   . "/uca/Sent")
+;;            (mu4e-trash-folder  ."/uca/Trash"))
+;; 	   ),
+;;         	  (make-mu4e-context :name "gmail"
+;;         	  :enter-func (lambda () (mu4e-message "Switch to the Work context"))
+;;         	(setq mu4e-maildir-shortcuts 
+;;         '( ("/gmail/Inbox"               . ?i)
+;;            ("/gmail/sent-mail"   . ?s)
+;;            ("/gmail/trash"       . ?t)
+;;            ("/gmail/draft"    . ?d)
+;;         	 )))
+;;       ;; ;; leave-fun not defined
+;;       :match-func (lambda (msg)      (when msg 
+;;       (mu4e-message-contact-field-matches msg  :to "danimolina@uca.es")))
+;;       :vars '()
+;;       ( user-mail-address	     . "daniel.molina@uca.es" )
+;;       ( user-full-name	    . "Daniel Molina" )
+;;       (mu4e-drafts-folder "/gmail/drafts")
+;;       (mu4e-sent-folder   . "/gmail/sent-mail")
+;;       ))
+
 )
 
 
