@@ -149,10 +149,11 @@
  '(magit-diff-use-overlays nil)
  '(org-agenda-files
    (quote
-    ("~/.emacs.d/tasks/trabajo.org" "~/.emacs.d/tasks/citas.org" "~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
+    ("~/.emacs.d/tasks/as.org" "~/.emacs.d/tasks/trabajo.org" "~/.emacs.d/tasks/citas.org" "~/.emacs.d/tasks/examenes.org" "~/.emacs.d/tasks/mirar.org" "~/.emacs.d/tasks/tareas.org" "~/.emacs.d/tasks/review.org")))
  '(persp-mode t)
  '(pos-tip-background-color "#A6E22E" t)
  '(pos-tip-foreground-color "#272822" t)
+ '(send-mail-function (quote smtpmail-send-it))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
@@ -1394,12 +1395,35 @@ mark current word before calling `TeX-font'."
 
 (setq x-select-enable-clipboard t)
 
+
+    
 ; Better org-mode
 (use-package org-bullets
   :ensure t
   :init
+  (defun bullet-mode()
+   
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+  ; Put in different sizes instead of different colors
+  (let* ((variable-tuple (cond ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+  ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+  ((x-list-fonts "Verdana")         '(:font "Verdana"))
+  ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
+  (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+  (base-font-color     (face-foreground 'default nil 'default))
+  (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
+
+  ;; (custom-theme-set-faces 'user
+  `(org-level-8 ((t (,@headline ,@variable-tuple))))
+  `(org-level-7 ((t (,@headline ,@variable-tuple))))
+  `(org-level-6 ((t (,@headline ,@variable-tuple))))
+  `(org-level-5 ((t (,@headline ,@variable-tuple))))
+  `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
+  `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
+  `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
+  `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
+  `(org-document-title ((t (,@headline ,@variable-tuple :height 1.5 :underline nil))))))
   )
 
 (use-package color-theme-approximate
@@ -1420,21 +1444,153 @@ mark current word before calling `TeX-font'."
   :ensure t
 )
 
-; engine-mode (to search)
-(use-package engine-mode
+;; ; engine-mode (to search)
+;; (use-package engine-mode
+;;   :ensure t
+;;   :disable t
+;;   :init
+;;   (engine-mode t)
+;;   (setq engine/browser-function 'eww-browse-url)
+;;   (defengine duckduckgo
+;;   "https://duckduckgo.com/?q=%s"
+;;   :keybinding "d")
+;;   (defengine google
+;;   "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"
+;;   :keybinding "g")
+;;   )
+
+; ace-window allow us to navegate quickly between windows
+(use-package ace-window
   :ensure t
   :init
-  (engine-mode t)
-  (engine/set-keymap-prefix (kbd "C-c s"))
-  (setq engine/browser-function 'eww-browse-url)
-  (defengine duckduckgo
-  "https://duckduckgo.com/?q=%s"
-  :keybinding "d")
-  (defengine google
-  "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"
-  :keybinding "g")
-  )
+  (global-set-key (kbd "M-p") 'ace-window)
+)
+
+; Make the current region bigger
+(use-package golden-ratio
+  :ensure t
+  :init
+(golden-ratio-mode 1)
+(add-to-list 'golden-ratio-extra-commands 'ace-window) ;; active golden ratio when using ace-window
+)
 
 
-(setq browse-url-generic-program (executable-find "conkeror")
-browse-url-browser-function 'browse-url-generic)
+(use-package smtpmail
+   :init
+; smtp
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-default-smtp-server "mail.gmail.com"
+      smtpmail-smtp-server "mail.gmail.com"
+      smtpmail-smtp-service 587
+      smtpmail-debug-info t)
+)
+
+; Usage mu4e
+(use-package mu4e
+  :init
+(setq mu4e-maildir (expand-file-name "~/Mail/"))
+(setq message-signature-file "~/.emacs.d/.signature") ; put your signature in this file
+
+; don't save messages to Sent Messages, Gmail/IMAP takes care of this
+(setq mu4e-sent-messages-behavior 'delete)
+; get mail
+(setq ;mu4e-get-mail-command "mbsync -qHL gmail"
+      mu4e-html2text-command "w3m -T text/html"
+      ;mu4e-update-interval 3000
+      mu4e-headers-auto-update t
+      mu4e-compose-signature-auto-include nil)
+
+(setq mu4e-maildir-shortcuts
+      '( ("/uca/Inbox"               . ?i)
+         ("/uca/sent-mail"   . ?s)
+         ("/uca/trash"       . ?t)
+         ("/uca/drafts"    . ?d)))
+
+;; show images
+(setq mu4e-show-images t)
+
+
+;; use imagemagick, if available
+(when (fboundp 'imagemagick-register-types)
+  (imagemagick-register-types))
+
+;; general emacs mail settings; used when composing e-mail
+;; the non-mu4e-* stuff is inherited from emacs/message-mode
+(setq mu4e-reply-to-address "danimolina@gmail.com"
+    user-mail-address "danimolina@gmail.com"
+    user-full-name  "Daniel Molina")
+;; tell message-mode how to send mail
+(setq message-send-mail-function 'smtpmail-send-it)
+;; if our mail server lives at smtp.example.org; if you have a local
+;; mail-server, simply use 'localhost' here.
+(setq smtpmail-smtp-server "smtp.gmail.com")
+(mu4e-drafts-folder "/uca/Drafts")
+(mu4e-sent-folder   . "/uca/Sent")
+(mu4e-trash-folder  ."/uca/Trash"))
+
+
+;; a  list of user's e-mail addresses
+(setq mu4e-user-mail-address-list '("daniel.molina@uca.es" "danimolina@gmail.com" "dmolina@decsai.ugr.es")
+
+;; general emacs mail settings; used when composing e-mail
+;; the non-mu4e-* stuff is inherited from emacs/message-mode
+(setq mu4e-reply-to-address "daniel.molina@uca.es"
+      user-mail-address "daniel.molina@uca.es"
+      user-full-name  "Daniel Molina")
+
+(setq mu4e-reply-to-address "dmolina@decsai.ugr.es"
+      user-mail-address "dmolina@decsai.ugr.es"
+      user-full-name  "Daniel Molina")
+
+; Context
+(setq mu4e-contexts
+	`(
+       	  (make-mu4e-context :name "uca"
+       			     :enter-func (lambda () (mu4e-message "Switch to the uca context")
+       	(setq mu4e-maildir-shortcuts 
+        '( ("/uca/INBOX"               . ?i)
+           ("/uca/Sent"   . ?s)
+           ("/uca/Trash"       . ?t)
+           ("/uca/Drafts"    . ?d)
+       	  )))
+       	   ;; leave-func not defined
+       	   :match-func (lambda (msg)
+      	   		(when msg 
+       	   		  (mu4e-message-contact-field-matches msg 
+       	   		    :to "daniel.molina@uca.es")))
+       	   :vars '(
+       	   ( user-mail-address	     . "daniel.molina@uca.es"  )
+       	   ( user-full-name	    . "Daniel Molina" )
+           (mu4e-drafts-folder "/uca/Drafts")
+           (mu4e-sent-folder   . "/uca/Sent")
+           (mu4e-trash-folder  ."/uca/Trash"))
+	   ),
+        	  (make-mu4e-context :name "gmail"
+        	  :enter-func (lambda () (mu4e-message "Switch to the Work context"))
+        	(setq mu4e-maildir-shortcuts 
+        '( ("/gmail/Inbox"               . ?i)
+           ("/gmail/sent-mail"   . ?s)
+           ("/gmail/trash"       . ?t)
+           ("/gmail/draft"    . ?d)
+        	 )))
+      ;; ;; leave-fun not defined
+      :match-func (lambda (msg)      (when msg 
+      (mu4e-message-contact-field-matches msg  :to "danimolina@uca.es")))
+      :vars '()
+      ( user-mail-address	     . "daniel.molina@uca.es" )
+      ( user-full-name	    . "Daniel Molina" )
+      (mu4e-drafts-folder "/gmail/drafts")
+      (mu4e-sent-folder   . "/gmail/sent-mail")
+      ))
+(setq mu4e-content-policy :always-ask)
+;; spell check
+(add-hook 'mu4e-compose-mode-hook
+        (defun my-do-compose-stuff ()
+           "My settings for message composition."
+           (set-fill-column 72)
+           (flyspell-mode)
+	   (ispell-change-dictionary "castellano8")
+	   ))
+)
+
+
