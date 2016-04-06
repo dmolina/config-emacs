@@ -618,3 +618,441 @@ Falta memoria de Magdalena.
   :ARCHIVE_TODO: DONE
   :END:
 
+
+* DONE [#A] [5/8] Corregir trabajos de DSS
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-18 lun 12:07
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+#+BEGIN: clocktable :maxlevel 2 :scope subtree
+#+CAPTION: Clock summary at [2016-01-18 lun 12:07]
+| Headline                                     | Time   |      |
+|----------------------------------------------+--------+------|
+| *Total time*                                 | *8:42* |      |
+|----------------------------------------------+--------+------|
+| DONE [#A] [5/8] Corregir trabajos de DSS     | 8:42   |      |
+| \_  DONE [17/17] Patrones de Diseño          |        | 3:57 |
+| \_  DONE Hacer la hoja Excel global          |        | 0:30 |
+| \_  DONE Trabajo de refactorización          |        | 1:35 |
+| \_  DONE Revisar trabajo de diseño           |        | 0:13 |
+| \_  TODO Revisión Trabajo compañero          |        | 0:08 |
+| \_  TODO [19/23] Poner las calificaciones... |        | 2:19 |
+#+END:
+
+  CLOSED: [2016-01-18 lun 12:07]
+
+** DONE [17/17] Patrones de Diseño
+   CLOSED: [2016-01-16 sáb 17:05]
+   :LOGBOOK:
+   CLOCK: [2016-01-16 sáb 16:56]--[2016-01-16 sáb 17:05] =>  0:09
+   CLOCK: [2016-01-16 sáb 16:38]--[2016-01-16 sáb 16:55] =>  0:17
+   CLOCK: [2016-01-16 sáb 16:23]--[2016-01-16 sáb 16:36] =>  0:13
+   CLOCK: [2016-01-16 sáb 16:06]--[2016-01-16 sáb 16:19] =>  0:13
+   CLOCK: [2016-01-16 sáb 15:54]--[2016-01-16 sáb 16:06] =>  0:12
+   CLOCK: [2016-01-16 sáb 15:40]--[2016-01-16 sáb 15:54] =>  0:14
+   CLOCK: [2016-01-16 sáb 14:57]--[2016-01-16 sáb 15:40] =>  0:43
+   CLOCK: [2016-01-16 sáb 12:44]--[2016-01-16 sáb 13:19] =>  0:35
+   CLOCK: [2016-01-16 sáb 11:20]--[2016-01-16 sáb 12:41] =>  1:21
+   :END:
+
+
+- [X] Template.
+- [X] Memento.
+- [X] MVC.
+- [X] Estado.
+- [X] Observador.
+- [X] Cadena de Responsabilidad.
+- [X] Command.
+- [X] Flyweight.
+- [X] Composite.
+- [X] Singleton.
+- [X] Builder.
+- [X] Fachada.
+- [X] Adaptador.
+- [X] Factoría.
+- [X] Factoría Abstracta.
+- [X] Decorador.
+- [X] Estrategia.
+
+**** [[file:~/current/docencia/dss/2015/entregas/patrones/calificaciones.org][Calificaciones]]
+
+** DONE Hacer la hoja Excel global
+   CLOSED: [2016-01-16 sáb 18:40]
+   :LOGBOOK:
+   CLOCK: [2016-01-16 sáb 18:07]--[2016-01-16 sáb 18:37] =>  0:30
+   :END:
+
+** DONE Trabajo de refactorización
+   CLOSED: [2016-01-16 sáb 21:16]
+   :LOGBOOK:
+   CLOCK: [2016-01-16 sáb 20:28]--[2016-01-16 sáb 21:16] =>  0:48
+   CLOCK: [2016-01-16 sáb 19:16]--[2016-01-16 sáb 19:35] =>  0:19
+   CLOCK: [2016-01-16 sáb 18:45]--[2016-01-16 sáb 19:13] =>  0:28
+   :END:
+
+** DONE Revisar trabajo de diseño
+   CLOSED: [2016-01-17 dom 12:13]
+   :LOGBOOK:
+   CLOCK: [2016-01-17 dom 12:04]--[2016-01-17 dom 12:13] =>  0:09
+   CLOCK: [2016-01-17 dom 11:57]--[2016-01-17 dom 12:01] =>  0:04
+   :END:
+
+*** [[~/current/docencia/dss/2015/entregas/practica1/][Revisión]]
+*
+** TODO Revisión Trabajo compañero
+    :LOGBOOK:
+    CLOCK: [2016-01-17 dom 12:28]--[2016-01-17 dom 12:28] =>  0:00
+    CLOCK: [2016-01-17 dom 12:20]--[2016-01-17 dom 12:28] =>  0:08
+    :END:
+
+*** [[file:~/current/docencia/dss/2015/entregas/practica2/valoraciones.org][Valoraciones]]
+
+
+** DONE Preparar la nota Excel global
+   CLOSED: [2016-01-17 dom 12:28]
+
+** TODO [19/23] Poner las calificaciones en cada apartado con sus comentarios
+   :LOGBOOK:
+   CLOCK: [2016-01-17 dom 16:15]--[2016-01-17 dom 16:55] =>  0:00
+   CLOCK: [2016-01-17 dom 15:55]--[2016-01-17 dom 16:11] =>  0:16
+   CLOCK: [2016-01-17 dom 13:05]--[2016-01-17 dom 14:28] =>  1:23
+   :END:
+
+- [X] Template.
+- [X] Memento.
+- [X] MVC.
+- [X] Estado.
+- [X] Observador.
+- [X] Cadena de Responsabilidad.
+- [X] Command.
+- [X] Flyweight.
+- [X] Composite.
+- [X] Singleton.
+- [X] Builder.
+- [X] Fachada.
+- [X] Adaptador.
+- [X] Factoría.
+- [X] Factoría Abstracta.
+- [X] Decorador.
+- [X] Estrategia.
+
+- [X] Bridge.
+- [X] Proxy.
+
+- [ ] Diseño (Práctica 1).
+- [ ] Refactorización.
+- [ ] Revisión de la práctica 1. 
+- [ ] Presentaciones.
+
+
+
+* DONE [#A] Artículo de CAEPIA
+  CLOSED: [2016-01-01 vie 18:41]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-19 mar 10:47
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_OLPATH: Investigación
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** DONE Terminando introducción
+   CLOSED: [2015-11-25 mié 11:10]
+  CLOCK: [2015-11-25 mié 09:47]--[2015-11-25 mié 11:10] =>  1:23
+
+** DONE Present tendency
+   CLOSED: [2015-11-26 jue 10:36]
+   CLOCK: [2015-11-25 mié 13:35]--[2015-11-25 mié 14:11] =>  0:36
+   CLOCK: [2015-11-25 mié 13:03]--[2015-11-25 mié 13:34] =>  0:31
+   CLOCK: [2015-11-25 mié 12:36]--[2015-11-25 mié 12:43] =>  0:07
+
+
+** DONE Conclusion
+   CLOSED: [2015-11-26 jue 16:52]
+   CLOCK: [2015-11-26 jue 12:05]--[2015-11-26 jue 14:40] =>  2:35
+   CLOCK: [2015-11-26 jue 11:19]--[2015-11-26 jue 11:55] =>  0:36
+   CLOCK: [2015-11-26 jue 10:20]--[2015-11-26 jue 10:40] =>  0:20
+
+
+** DONE Revisar Artículo de CAEPIA, homogeneizando referencias y repasando texto.
+   CLOSED: [2016-01-01 vie 18:41]
+
+** DONE Aplicar cambios pedidos por Paco
+   CLOSED: [2016-01-01 vie 18:41]
+
+
+* TODO Revisar texto del artículo para impresión
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-01-21 jue 11:18
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_OLPATH: <2016-01-21 jue>
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: TODO
+  :END:
+  :LOGBOOK:
+  CLOCK: [2016-01-21 jue 10:48]--[2016-01-21 jue 11:18] =>  0:30
+  :END:
+
+
+* <2016-01-21 jue>
+  :PROPERTIES:
+  :ID:       64eda4e9-0aef-4242-8361-78b9d2984b0b
+  :ARCHIVE_TIME: 2016-02-03 mié 19:53
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :END:
+
+** DONE Revisar texto del artículo para impresión
+   CLOSED: [2016-01-21 jue 11:19]
+   :PROPERTIES:
+   :ID:       35302f0b-1bc1-43e1-9230-16506a4697c6
+   :END:
+   :LOGBOOK:
+   CLOCK: [2016-01-21 jue 10:48]--[2016-01-21 jue 11:18] =>  0:30
+   :END:
+
+
+* Ir a casa de una maldita vez
+  SCHEDULED: <2016-02-03 mié 20:10>
+  :PROPERTIES:
+  :ID:       48179633-a83f-4a94-9660-46e95b119097
+  :ARCHIVE_TIME: 2016-02-03 mié 19:57
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :END:
+
+* DONE Añadir imágenes del PDC-10
+  CLOSED: [2016-03-31 jue 11:12]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-03-31 jue 11:12
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* Tasks
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :END:
+** TODO Introducir ZFS en Administración de Servidores
+  
+   [[file:~/current/snapshot_optim/snapshot.tex][file:~/current/snapshot_optim/snapshot.tex]]
+
+Algunos enlaces interesantes:
+
+- General :: https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/
+- Tutorial Parte1 :: http://buildwithbsd.org/zfs/zfs_tutorial_part_1.html
+- Tutorial Parte2 :: http://buildwithbsd.org/zfs/zfs_tutorial_part_2.html
+- Sobre snapshot :: http://thegeekdiary.com/zfs-tutorials-creating-zfs-snapshot-and-clones/
+** TODO Mirar charlas de Goto; Conference
+
+https://www.youtube.com/user/GotoConferences
+
+** DONE Revisar trabajos de PFC
+   CLOSED: [2016-03-05 sáb 13:48]
+
+*** DONE Revisar Trabajo de Carnaval
+    CLOSED: [2016-02-23 mar 18:42]
+    :LOGBOOK:
+    CLOCK: [2016-02-23 mar 18:00]--[2016-02-23 mar 18:42] =>  0:00
+    :END:
+
+*** DONE Revisar el otro trabajo de BI para Facturación Telefónica
+    CLOSED: [2016-03-10 jue 18:09]
+** DONE Comprar el portátil que le gusta a Amalia: Toshiba Satéllite P50-C-179 
+   CLOSED: [2016-03-17 jue 17:39] SCHEDULED: <2016-03-12 sáb> DEADLINE: <2016-03-14 lun>
+
+http://www.toshiba.es/laptops/satellite/satellite-p50-c/satellite-p50-c-179/tab/where-to-buy/
+** TODO Comprar portátil de Amalia: Toshiba P50-C-179
+
+http://www.toshiba.es/laptops/satellite/satellite-p50-c/satellite-p50-c-179/tab/where-to-buy/
+** TODO Preparar práctica de Webmin
+  
+*** Descargar el webmin 
+
+- webmin.com -> Downloads, versión de la distribución.
+- Para que lo considere un paquete oficial, de http://doxfer.webmin.com/Webmin/Installation
+
+#+BEGIN_SRC sh
+wget -qO - http://www.webmin.com/jcameron-key.asc | sudo apt-key add -
+#+END_SRC
+
+* DONE Crear material de CAP
+  CLOSED: [2016-01-18 lun 12:39] SCHEDULED: <2016-01-13 mié 12:30>
+  :PROPERTIES:
+  :ID:       01af2619-1d21-490c-8f30-6ad8799a2be3
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+  :LOGBOOK:
+  CLOCK: [2016-01-13 mié 12:46]--[2016-01-16 sáb 12:41] => 71:55
+  :END:
+
+
+* DONE Enviar invitación de LSGO con la nueva fecha
+  CLOSED: [2016-01-16 sáb 11:31]
+  :PROPERTIES:
+  :ID:       d10f34c4-9fc3-4a67-a4e2-9cc2d568126a
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+  :LOGBOOK:
+  CLOCK: [2016-01-16 sáb 11:12]--[2016-01-16 sáb 11:31] =>  0:19
+  :END:
+
+
+* 
+  :PROPERTIES:
+  :ID:       70b39ff2-4358-44df-8676-e6ce2c698f42
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: TODO
+  :END:
+
+* Actual <2016-01-20 mié>
+  :PROPERTIES:
+  :ID:       0ae895b9-c3ed-4763-b95a-c003152e1530
+  :END:
+
+** DONE Colgar información de la web
+   CLOSED: [2016-01-20 mié 13:19]
+   :PROPERTIES:
+   :ID:       6861e19d-cccd-452b-9110-2633c17f8442
+   :END:
+   :LOGBOOK:
+   CLOCK: [2016-01-20 mié 12:35]--[2016-01-20 mié 13:19] =>  0:44
+   :END:
+
+* TODO Buscar Regalo de aniversario y San Valentín
+  :PROPERTIES:
+  :ID:       4dfe1695-5dec-449a-96bb-fd57f0f5936a
+  :END:
+
+** Regalo chorras
+   :PROPERTIES:
+   :ID:       5b664a6c-8e46-4635-a7d9-485755d440dd
+   :END:
+
+- Chuches con forma de Sushi:
+  http://quelovendan.com/todos/sushi-chuches-9-piezas-variadas.html
+
+
+
+* DONE Escribir Relaciones Internacionales para preguntar
+  CLOSED: [2016-02-02 mar 11:32] DEADLINE: <2016-02-12 vie 13:00>
+  :PROPERTIES:
+  :ID:       df0c3926-bd62-4fa0-a6dc-0f29cf57c854
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+- Si es necesario este año el título de B1, o después.
+
+- En Matriculados aparece 0 créditos, si es normal, me han dicho que
+  le aparece a varios.
+
+** Espera de respuesta
+   :PROPERTIES:
+   :ID:       3d0c1fc3-ac49-4f56-9d32-3ce20b8faae5
+   :END:
+- Escribirle respuesta a anarosa.ramireztocino@alum.uca.es.
+
+
+
+* DONE Corregir trabajos de CAP
+  CLOSED: [2016-02-06 sáb 11:12]
+  :PROPERTIES:
+  :ID:       674a1e6b-8a80-4adb-9d6d-43efce3c088e
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+** DONE MPI
+   CLOSED: [2016-02-03 mié 19:50]
+   :PROPERTIES:
+   :ID:       9997abbf-d809-4df6-b0ee-3d5998f32952
+   :END:
+   :LOGBOOK:
+   CLOCK: [2016-02-02 mar 13:14]--[2016-02-02 mar 13:34] =>  0:20
+   CLOCK: [2016-02-02 mar 12:36]--[2016-02-02 mar 13:03] =>  0:27
+   :END:
+
+** DONE Corregir prácticas de BigData para hoy
+   CLOSED: [2016-02-03 mié 20:13] SCHEDULED: <2016-02-02 mar 16:00-18:00>
+   :PROPERTIES:
+   :ID:       4888374a-3b8f-48c7-a6d9-ebe9950bcd64
+   :END:
+
+
+
+* DONE Revisar trabajos de WCCI'2016
+  CLOSED: [2016-03-05 sáb 14:02] SCHEDULED: <2016-02-13 sáb>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** Revisar trabajos
+   :LOGBOOK:
+   CLOCK: [2016-02-10 mié 12:12]--[2016-02-10 mié 13:02] =>  0:50
+   CLOCK: [2016-02-10 mié 11:31]--[2016-02-10 mié 11:32] =>  0:01
+   CLOCK: [2016-02-10 mié 11:00]--[2016-02-10 mié 11:31] =>  0:31
+   CLOCK: [2016-02-10 mié 10:23]--[2016-02-10 mié 10:48] =>  0:25
+   CLOCK: [2016-02-09 mié 11:00]--[2016-02-09 mié 14:10] =>  3:10
+   :END:
+
+* Docencia
+  :PROPERTIES:
+  :ID:       d39028a9-83f2-406f-b23f-27b3bf69009f
+  :ARCHIVE_TIME: 2016-03-31 jue 11:13
+  :ARCHIVE_FILE: ~/.emacs.d/tasks/tareas.org
+  :ARCHIVE_CATEGORY: tareas
+  :END:
+
+** DONE Subir nuevo cronograma
+   CLOSED: [2015-11-19 jue 12:45]
+   :PROPERTIES:
+   :ID:       a241b110-0560-45b9-b88c-b17046d06ad4
+   :END:
+   CLOCK: [2015-11-19 jue 12:35]--[2015-11-19 jue 12:44] =>  0:09
+
+** DONE Anunciar calendario de presentaciones
+   CLOSED: [2015-11-19 jue 13:03]
+   :PROPERTIES:
+   :ID:       73d583d8-7cbe-47c6-b84a-e6757a2c008a
+   :END:
+   CLOCK: [2015-11-19 jue 12:45]--[2015-11-19 jue 13:03] =>  0:18
+
+** DONE [#A] Preparar clase de patrones
+   CLOSED: [2015-11-19 jue 16:15] DEADLINE: <2015-11-20 vie>
+   :PROPERTIES:
+   :ID:       f2eb8563-146b-43d2-8188-08b3fac045ec
+   :END:
+   CLOCK: [2015-11-19 jue 14:29]--[2015-11-19 jue 16:15] =>  1:46
+   CLOCK: [2015-11-19 jue 13:00]--[2015-11-19 jue 14:03] =>  1:03
+
+
+** DONE Preparar clase de Big Data
+   CLOSED: [2015-12-28 lun 11:34]
+   :PROPERTIES:
+   :ID:       663b707f-7aa6-4054-a525-a12d33209e54
+   :END:
+
+
+
+

@@ -509,12 +509,14 @@ Me ha gustado su trabajo, está bien hecho y obtiene resultados interesantes. S�
 ** [[file:~/Descargas/936520.v1.pdf][Acceso]]
 
 * DONE [#A] Revisar IJCIS
-  CLOSED: [2015-08-27 jue 15:19]
+  DEADLINE: <2016-03-06 dom>
 
 ** Título: Optimization of small satellite constellation design for continuous mutual regional coverage with multi-objective genetic algorithm
 
 ** Revista: [[http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/3696?key%3D4x64547T]] 
 ** [[file:~/Dropbox/revisar/2583-6881-1-RV.pdf][Acceso]]
+** [[file:~/Dropbox/revisar/2583-6881-2-RV.pdf][Segunda vuelta]]
+
 
 *** Comentario
 
@@ -1044,11 +1046,32 @@ in the analysis and conclusion, it cannot be published.
 
 * TODO Revisar Trabajos WCCI 2016
 
-* TODO Revisar PRAI-D-15-00051_R1
-  DEADLINE: <2016-03-03 jue>
+* DONE Revisar PRAI-D-15-00051_R1
+  CLOSED: [2016-03-10 jue 18:07] DEADLINE: <2016-03-03 jue>
 
 ** [[http://www.editorialmanager.com/prai/default.aspx][Web]]
 
 ** Acceso: DMolina-748/xxxx
 
 ** [[file:~/Dropbox/revisar/PRAI-D-15-00051_R1.pdf][Acceso al PDF]]
+
+* TODO Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
+  DEADLINE: <2016-02-28 dom>
+
+** TODO Título: Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
+
+** [[http://mts.hindawi.com/reviewer/5392471568489460/][Enlace de la web]]
+
+** [[file:~/Dropbox/revisar/coverletter.6154637.v1.pdf][Artículo]]
+* 2016
+** 2016-02 febrero
+*** 2016-02-26 viernes
+* TODO: Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
+  DEADLINE: <2016-04-22 vie> SCHEDULED: <2016-04-22 vie>
+Entered on [2016-02-26 vie 17:42]
+  
+  [[file:~/.emacs.d/tasks/review.org::*Revisi%C3%B3n:%20Incremental%20Cooperative%20Co-evolution%20for%20Large-Scale%20Global%20Optimization][Revisión: Incremental Cooperative Co-evolution for Large-Scale Global Optimization]]
+
+** Revista: https://mc.manuscriptcentral.com/cyb-ieee
+
+** [[file:~/Dropbox/revisar/s1-ln22612366938319882-1939656818Hwf946485603IdV-173631203922612366PDF_HI0001.pdf][Acceso]]

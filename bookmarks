@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Descargas"
+(("awesome"
+ (filename . "~/.config/awesome/rc.lua")
+ (front-context-string . "\n-- Handle runti")
+ (rear-context-string . "p_errors })\nend\n")
+ (position . 635))
+("Descargas"
  (filename . "~/Descargas/")
  (front-context-string . "'http___soa.ieee")
  (rear-context-string . "287 2015-03-25  ")
@@ -13,10 +18,10 @@
  (rear-context-string . "096 2015-04-22  ")
  (position . 305))
 ("org-capture-last-stored"
- (filename . "~/.emacs.d/tasks/citas.org")
- (front-context-string . "** TODO Reunión ")
- (rear-context-string . "6800f21\n  :END:\n")
- (position . 283))
+ (filename . "~/.emacs.d/tasks/tareas.org")
+ (front-context-string . "** TODO Mirar Or")
+ (rear-context-string . " :END:\n\n* Tasks\n")
+ (position . 15769))
 ("review"
  (filename . "~/.emacs.d/tasks/review.org")
  (front-context-string . "* DONE Revisión:")

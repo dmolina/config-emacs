@@ -1,7 +1,11 @@
 *** Cronograma
+    :PROPERTIES:
+    :ID:       0b4104a9-4dac-4f2b-b169-1a92c11517b1
+    :END:
 **** Tabla
      :PROPERTIES:
      :ORDERED:  t
+     :ID:       7fcffb68-3a15-4e75-9086-5bd3bf0ace05
      :END:
 #+CAPTION: Cronograma de la asignatura
 #+ATTR_HTML: :border 2 :rules all :frame border
@@ -27,49 +31,46 @@
 |--------+----------+--------------------------------------------+--------------------------------|
 
 
-* Docencia
-
-** DONE Subir nuevo cronograma
-   CLOSED: [2015-11-19 jue 12:45]
-   CLOCK: [2015-11-19 jue 12:35]--[2015-11-19 jue 12:44] =>  0:09
-
-** DONE Anunciar calendario de presentaciones
-   CLOSED: [2015-11-19 jue 13:03]
-   CLOCK: [2015-11-19 jue 12:45]--[2015-11-19 jue 13:03] =>  0:18
-
-** DONE [#A] Preparar clase de patrones
-   CLOSED: [2015-11-19 jue 16:15] DEADLINE: <2015-11-20 vie>
-   CLOCK: [2015-11-19 jue 14:29]--[2015-11-19 jue 16:15] =>  1:46
-   CLOCK: [2015-11-19 jue 13:00]--[2015-11-19 jue 14:03] =>  1:03
-
-
-** TODO Corregir prácticas de alumnos de DSS
-
-** DONE Preparar clase de Big Data
-   CLOSED: [2015-12-28 lun 11:34]
-
-
-
-
 * Ideas sobre presentaciones del artedepresentar
+  :PROPERTIES:
+  :ID:       dd21ff9d-c0a9-4fe4-9c88-b645b0d66f87
+  :END:
 
 ** Ensayar siempre, y lo más realista posible.
+   :PROPERTIES:
+   :ID:       88ffe2f2-b0a4-4fee-b008-312282ec324f
+   :END:
 
 ** Aprender el principio y final.
+   :PROPERTIES:
+   :ID:       c709f58a-9757-4634-9656-0df25efede46
+   :END:
 
 ** Dividir en 3 ó 4 apartados
+   :PROPERTIES:
+   :ID:       fc95d239-21d7-425d-b518-b1843cc31d35
+   :END:
 
 - Luego se dividirá a su vez.
 
 ** Imágenes amplias
+   :PROPERTIES:
+   :ID:       02e4874d-4d24-4e9e-aa13-bd7f46088b50
+   :END:
 
 - Sin miedo, que puedan ocupar toda la presentación. 
 
 ** Sin logos
+   :PROPERTIES:
+   :ID:       2cce2a3f-b30c-4d01-a062-d3773acd7e62
+   :END:
 
 - Sólo al principio y al final.
 
 ** Nada de transparencias de Gracias
+   :PROPERTIES:
+   :ID:       b98f83d5-e5f7-4123-a4f6-a8dbf1f93e62
+   :END:
 
 Al final con las preguntas es la que aparece más tiempo, así que es perfecto para usarla:
 
@@ -77,16 +78,28 @@ Al final con las preguntas es la que aparece más tiempo, así que es perfecto p
 - Datos de contacto (twitter, blog, email, ...).
 
 ** Animar a preguntas
+   :PROPERTIES:
+   :ID:       42c9327e-ea36-418b-b638-5177cef1c42f
+   :END:
 
 - Ensayar posibles preguntas.
 - Animar a preguntar.
 
 * Investigación
+  :PROPERTIES:
+  :ID:       34db000c-0bfb-482c-b450-07bfb40adb21
+  :END:
 
 ** DONE Experimentos de Benjamin (Decision on INS-D-15-498R2=
    CLOSED: [2015-12-28 lun 11:35] DEADLINE: <2015-12-26 sáb>
+   :PROPERTIES:
+   :ID:       951fd5a8-6ef0-442f-9a10-21620d811a11
+   :END:
 
 *** Respuesta de revisores
+    :PROPERTIES:
+    :ID:       2e529a81-60e3-4ccc-ab54-2ab36688a442
+    :END:
 
 
 The Editor's and the reviewers' comments are as follows:
@@ -193,8 +206,14 @@ Editor-in-Chief
 Information Sciences
 
 *** Resultados con alta dimensión
+    :PROPERTIES:
+    :ID:       1be8bab8-5293-4f30-a16f-0deba69a05fe
+    :END:
 
 **** Parámetros opcionales
+     :PROPERTIES:
+     :ID:       4e9255e5-ae19-4920-898a-126e6b8a6b89
+     :END:
 
 - F18:
 
@@ -205,6 +224,9 @@ Information Sciences
   + P=200, u=5, U=1.2:  
 
 *** Comentario de Benjamin
+    :PROPERTIES:
+    :ID:       13989dd2-1cbe-45a3-9b99-d98477894326
+    :END:
 
 Coincido con vosotros, el tema solo de lanzar el experimentos sobre
 esas functiones que ya tenemos (7 16 y 18) con un numero de divisiones
@@ -229,6 +251,9 @@ debido a un archivo lleno.
 
 *** DONE Revisión de Paco:
     CLOSED: [2016-01-01 vie 18:41]
+    :PROPERTIES:
+    :ID:       d6515a13-5dfa-4e58-8dd6-c108389c50a4
+    :END:
 
 - [X] Cambiar dirección de Paco.
 - [X] Título 5.3.1.
@@ -268,40 +293,19 @@ Adelante con la submission, y crucemos los dedos para conseguir el accept.
 Un abrazo; Paco
 
 *** Enviar
+    :PROPERTIES:
+    :ID:       ffc277a5-3850-4930-bd66-2b0090f1ea2a
+    :END:
 
 Revision Note 	Response to reviewers 	response_reviewers.pdf 	146 KB 	27 Sep 2015 		Download
 Manuscript (including abstract) 	*Manuscript remarking changes from previous version 	RMAwA_changes_revision2.pdf 	1 MB 	27 Sep 2015 		Download
 LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 Sep 2015 		Download
 
 
-** DONE [#A] Artículo de CAEPIA
-   CLOSED: [2016-01-01 vie 18:41]
-
-*** DONE Terminando introducción
-    CLOSED: [2015-11-25 mié 11:10]
-   CLOCK: [2015-11-25 mié 09:47]--[2015-11-25 mié 11:10] =>  1:23
-
-*** DONE Present tendency
-    CLOSED: [2015-11-26 jue 10:36]
-    CLOCK: [2015-11-25 mié 13:35]--[2015-11-25 mié 14:11] =>  0:36
-    CLOCK: [2015-11-25 mié 13:03]--[2015-11-25 mié 13:34] =>  0:31
-    CLOCK: [2015-11-25 mié 12:36]--[2015-11-25 mié 12:43] =>  0:07
-
-
-*** DONE Conclusion
-    CLOSED: [2015-11-26 jue 16:52]
-    CLOCK: [2015-11-26 jue 12:05]--[2015-11-26 jue 14:40] =>  2:35
-    CLOCK: [2015-11-26 jue 11:19]--[2015-11-26 jue 11:55] =>  0:36
-    CLOCK: [2015-11-26 jue 10:20]--[2015-11-26 jue 10:40] =>  0:20
-
-
-*** DONE Revisar Artículo de CAEPIA, homogeneizando referencias y repasando texto.
-    CLOSED: [2016-01-01 vie 18:41]
-
-*** DONE Aplicar cambios pedidos por Paco
-    CLOSED: [2016-01-01 vie 18:41]
-
 * Prueba
+  :PROPERTIES:
+  :ID:       2c2d8016-296d-47d0-8965-031446d4a634
+  :END:
 
 - Uno.
 - Dos.
@@ -309,61 +313,160 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
 ** Dirección 
    :PROPERTIES:
    :ADDRESS:  Calle Chueca, 9, 18004 Granada, Granada, Spain
+   :ID:       f689b1ee-bd63-402c-8400-cd395ada5b03
    :END:
 
-
-* Colonia de corales
-
-** DONE Adaptar el código de Matlab a Python
-   CLOSED: [2016-01-05 mar 13:28]
-   :LOGBOOK:
-   CLOCK: [2016-01-02 sáb 12:40]--[2016-01-02 sáb 13:27] =>  0:47
-   CLOCK: [2016-01-02 sáb 10:50]--[2016-01-02 sáb 11:30] =>  2:07
-   :END:
-
-** TODO Adaptar a usar número de evaluaciones el CRO
-   :LOGBOOK:
-   CLOCK: [2016-01-11 lun 14:04]--[2016-01-11 lun 14:24] =>  0:20
-   CLOCK: [2016-01-11 lun 12:16]--[2016-01-11 lun 13:40] =>  1:48
-   CLOCK: [2016-01-11 lun 11:23]--[2016-01-11 lun 11:33] =>  0:10
-   CLOCK: [2016-01-11 lun 10:58]--[2016-01-11 lun 11:17] =>  0:19
-   CLOCK: [2016-01-09 sáb 16:57]--[2016-01-09 sáb 17:08] =>  0:11
-   CLOCK: [2016-01-09 sáb 16:54]--[2016-01-09 sáb 16:57] =>  0:03
-   :END:
-
-** Leer los porcentajes de valores
-   :LOGBOOK:
-   CLOCK: [2016-01-11 lun 14:55]
-   :END:
-
-
-
-*** [[file://~/current/cro][Acceso]]
-** TODO Lanzar experimentos
 
 * TODO Pagar el piso
-  SCHEDULED: <2016-02-05 sáb ++1m>
+  SCHEDULED: <2016-04-05 mar ++1m>
   :PROPERTIES:
-  :LAST_REPEAT: [2016-01-11 lun 10:57]
+  :LAST_REPEAT: [2016-03-10 jue 18:06]
+  :ID:       fd4eea85-7a80-4fff-989b-c657bb556edb
   :END:
+  - State "DONE"       from "TODO"       [2016-03-10 jue 18:06]
+  - State "DONE"       from "TODO"       [2016-02-08 lun 18:52]
   - State "DONE"       from "TODO"       [2016-01-11 lun 10:57]
 
-* DONE Ir al Ikea con Amalia
-  CLOSED: [2016-01-10 dom 00:00] SCHEDULED: <2016-01-09 sáb 19:00>
-
-* DONE Besar a Amalia
-  CLOSED: [2016-01-09 sáb 16:04]
-
 * <2016-01-11 lun>
+  :PROPERTIES:
+  :ID:       cd31235c-5dca-470d-9e20-4b020f41e453
+  :END:
 
 ** Docencia
+   :PROPERTIES:
+   :ID:       c31f9474-82c2-4a9e-ac5c-25dff438d93e
+   :END:
 
 *** DONE [#A] Poner la entrega de BigData para CAP
     CLOSED: [2016-01-11 lun 10:56]
+    :PROPERTIES:
+    :ID:       3a27f7c6-0fba-47af-9d97-a31f7d4eb5a2
+    :END:
     :LOGBOOK:
     CLOCK: [2016-01-11 lun 10:26]--[2016-01-11 lun 10:56] =>  0:30
     :END:
 
 ** Investigación
+   :PROPERTIES:
+   :ID:       12cd96c7-bb10-497c-9e3d-ca6c39751c61
+   :END:
 
-*** 
+
+* TODO Aplicar cambios en INS-D-15-498R3
+  DEADLINE: <2016-04-04 lun>
+
+** Comentarios de Revisores:
+
+ #2: I must say that the paper has been improved in terms of
+scientific contribution. This is not the case for the language and
+typesetting: please, deeply review the manuscript (better if it is
+done by a native English speaker). Without a proper, clean,
+easy-to-read manuscript the impression when reading the paper is much
+worse.
+
+Regarding the scientific part, there are a couple of things that
+should be improved to complete the contribution.
+
+1st: In those cases where a fixed number of NDs provides better
+diversity, what are the results (in terms of fitness) compared with
+those of the adaptive strategy? And in an overall comparison?
+
+2nd: The added paragraph in Section 5.5.2 gives some hypothesis of why
+the strategy does not work in functions with a larger number of
+dimensions, and in fact those hypotheses could be easily proved: For
+the "smoothing" of the adjustment in the number of regions, you could
+easily fix a maximum number of regions and observe what happens in
+those cases and functions; for the parameter tuning issue, you could
+repeat the tuning but just with those functions that perform poorly
+with the current configuration. That would complete the study and your
+hypotheses would be supported with experimental results.
+
+** DONE Lanzar experimentos de tuning con f18-f20
+   CLOSED: [2016-04-01 vie 12:07]
+   :LOGBOOK:
+   CLOCK: [2016-03-31 jue 17:45]--[2016-03-31 jue 21:30] =>  3:45
+   :END:
+
+** DONE Lanzar experimentos con distintos NDs
+   CLOSED: [2016-04-01 vie 13:13]
+   :LOGBOOK:
+   CLOCK: [2016-04-01 vie 11:33]--[2016-04-01 vie 13:13] =>  1:40
+   :END:
+
+
+** DONE Lanzar experimentos de tuning, revisando resultados
+
+** DONE Obtener resultados de fitness con distintos NDs
+   CLOSED: [2016-04-01 vie 17:26]
+
+* Anunciar elecciones director de la escuela
+  :LOGBOOK:
+  CLOCK: [2016-03-31 jue 16:23]--[2016-03-31 jue 17:00] =>  0:37
+  :END:
+
+* Tasks
+** TODO Mirar Orgullo y Satisfacción
+** DONE Responder a Sancho sobre cambios
+   CLOSED: [2016-04-06 mié 16:11]
+
+*** Comentarios de revisores
+----------------------------------------------
+REVIEW NO. 1
+
+
+    The parameter settings seems to be a bit confusing: "The experiments have been carried out with the 
+    parameters values indicated in Table I. These parameters values have not been automatically tuned, so it 
+    could be possible that the results could improve with different values."
+    
+    Have you done an analysis beforehand? How have you obtained these parameters in Table I? 
+    This must be clarified in the paper.
+
+----------------------------------------------
+REVIEW NO. 2
+
+Comments to the authors:
+
+The authors have not conducted such comparison. IMHO, the authors should compare their algorithm with, at least, the 
+best algorithm of the original special session where this benchmark was first proposed:
+    
+LaTorre, A., Muelas, S., and Pena, J. M. (2013). Large Scale Global Optimization: Experimental Results with MOS-based Hybrid Algorithms (pp. 1-8). Presented at the 2013 IEEE Congress on Evolutionary 
+Computation, CEC 2013, Cancun, Mexico.
+    
+Apart from that comparison, the authors should evaluate each of the improvements
+individually against the CRO baseline: does including multiple layers improve the results?
+And, after that, including the LS, it also improves the results? Maybe is only the LS
+which is providing the increased performance? With the experimentation carried out, this
+is impossible to tell.
+    
+- Finally, some of the parameters of the proposed algorithm have been given fixed values. I think they could benefit from an automated parameter tuning process to obtain the best performance.
+    
+I think that there is still a lot of work to do to consider CRO (and its variants) a
+competitive alternative in the field of LSGO. The authors should put a lot of effort
+in demonstrating that CRO can be competitive in some contexts and in explaining where
+this competitiveness comes from.
+
+----------------------------------------------
+REVIEW NO. 3
+
+Comments to the authors:
+It is not clear the behavior of the combination of the search strategies/substrates. It would be more clear to 
+include a pseudo code/mathematical defintion besides the coral metaphor-based description.  
+    
+How were the values of the parameters of the CRO-SL algorithm tuned? It is mentioned that
+they were not tuned but not how they were selected.
+    
+The authors have selected the DECC-CG algorithm to compare their results. However, it would be more 
+interesting to analyze their results to some of the best performing algorithms of the benchmark : the MOS-
+CEC2013 which uses a similar hybridization strategy to the proposed algorithm and MA-SW-Chains 
+algorithm, which both obtained significantly better results than the DECC-CG algorithm (source: A 
+comprehensive comparison of large scale global optimizers LaTorre et al 2015). 
+    
+The analysis of the results section is quite short (i.e. a paragraph). I recommend the authors to extend this 
+section to analyze the behavior of the algorithm, the combination of the different substrates/strategies, the 
+influence of the local search, to include a statistical analysis of the comparison with other algorithms,...
+
+
+ 
+
+  
+   [[file:~/current/docencia/as/presentaciones_as/vagrant_environment/webmin.sh][file:~/current/docencia/as/presentaciones_as/vagrant_environment/webmin.sh]]
