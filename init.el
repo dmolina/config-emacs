@@ -1541,7 +1541,7 @@ mu4e-trash-folder  "/uca/Trash")
 
 
 ;; a  list of user's e-mail addresses
-;; (setq mu4e-user-mail-address-list '("daniel.molina@uca.es" "danimolina@gmail.com" "dmolina@decsai.ugr.es"))
+(setq mu4e-user-mail-address-list '("daniel.molina@uca.es" "danimolina@gmail.com" "dmolina@decsai.ugr.es"))
 
 ;; ;; general emacs mail settings; used when composing e-mail
 ;; ;; the non-mu4e-* stuff is inherited from emacs/message-mode
@@ -1553,47 +1553,75 @@ mu4e-trash-folder  "/uca/Trash")
 ;;       user-mail-address "dmolina@decsai.ugr.es"
 ;;       user-full-name  "Daniel Molina")
 
-;; ; Context
-;; (setq mu4e-contexts
-;; 	`(
-;;        	  (make-mu4e-context :name "uca"
-;;        			     :enter-func (lambda () (mu4e-message "Switch to the uca context")
-;;        	(setq mu4e-maildir-shortcuts 
-;;         '( ("/uca/INBOX"               . ?i)
-;;            ("/uca/Sent"   . ?s)
-;;            ("/uca/Trash"       . ?t)
-;;            ("/uca/Drafts"    . ?d)
-;;        	  )))
-;;        	   ;; leave-func not defined
-;;        	   :match-func (lambda (msg)
-;;       	   		(when msg 
-;;        	   		  (mu4e-message-contact-field-matches msg 
-;;        	   		    :to "daniel.molina@uca.es")))
-;;        	   :vars '(
-;;        	   ( user-mail-address	     . "daniel.molina@uca.es"  )
-;;        	   ( user-full-name	    . "Daniel Molina" )
-;;            (mu4e-drafts-folder "/uca/Drafts")
-;;            (mu4e-sent-folder   . "/uca/Sent")
-;;            (mu4e-trash-folder  ."/uca/Trash"))
-;; 	   ),
-;;         	  (make-mu4e-context :name "gmail"
-;;         	  :enter-func (lambda () (mu4e-message "Switch to the Work context"))
-;;         	(setq mu4e-maildir-shortcuts 
-;;         '( ("/gmail/Inbox"               . ?i)
-;;            ("/gmail/sent-mail"   . ?s)
-;;            ("/gmail/trash"       . ?t)
-;;            ("/gmail/draft"    . ?d)
-;;         	 )))
-;;       ;; ;; leave-fun not defined
-;;       :match-func (lambda (msg)      (when msg 
-;;       (mu4e-message-contact-field-matches msg  :to "danimolina@uca.es")))
-;;       :vars '()
-;;       ( user-mail-address	     . "daniel.molina@uca.es" )
-;;       ( user-full-name	    . "Daniel Molina" )
-;;       (mu4e-drafts-folder "/gmail/drafts")
-;;       (mu4e-sent-folder   . "/gmail/sent-mail")
-;;       ))
+; Context
+(setq mu4e-contexts
+	`( ,
+(make-mu4e-context :name "uca"
+:enter-func (lambda () (mu4e-message "Switch to the uca context")
+(setq mu4e-maildir-shortcuts 
+'( ("/uca/INBOX"               . ?i)
+("/uca/Sent"   . ?s)
+("/uca/Trash"       . ?t)
+("/uca/Drafts"    . ?d)
+)))
+;; leave-func not defined
+:match-func (lambda (msg)
+(when msg 
+(mu4e-message-contact-field-matches msg 
+:to "daniel.molina@uca.es")))
+:vars '(
+( user-mail-address	     . "daniel.molina@uca.es"  )
+( user-full-name	    . "Daniel Molina" )
+(mu4e-reply-to-address . "daniel.molina@uca.es")
+(mu4e-drafts-folder . "/uca/Drafts")
+(mu4e-sent-folder   . "/uca/Sent")
+(mu4e-trash-folder  ."/uca/Trash"))
+),(make-mu4e-context :name "gmail"
+:enter-func (lambda () (mu4e-message "Switch to the gmail context")
+(setq mu4e-maildir-shortcuts 
+'( ("/gmail/Inbox"               . ?i)
+("/gmail/sent-sent"   . ?s)
+("/gmail/trash"       . ?t)
+("/gmail/drafts"    . ?d)
+)))
+;; leave-func not defined
+:match-func (lambda (msg)
+(when msg 
+(mu4e-message-contact-field-matches msg 
+:to "danimolina@gmail.com")))
+:vars '(
+( user-mail-address	     . "danimolina@gmail.com"  )
+( user-full-name	    . "Daniel Molina" )
+(mu4e-reply-to-address . "danimolina@gmail.com")
+(mu4e-drafts-folder . "/gmail/drafts")
+(mu4e-sent-folder   . "/gmail/dent")
+(mu4e-trash-folder  ."/gmail/trash"))
+),(make-mu4e-context :name "decsai"
+:enter-func (lambda () (mu4e-message "Switch to the decsai context")
+(setq mu4e-maildir-shortcuts 
+'( ("/decsai/INBOX"               . ?i)
+("/decsai/Sent"   . ?s)
+("/decsai/Trash"       . ?t)
+("/decsai/Drafts"    . ?d)
+)))
+;; leave-func not defined
+:match-func (lambda (msg)
+(when msg 
+(mu4e-message-contact-field-matches msg 
+:to "dmolina@decsai.ugr.es")))
+:vars '(
+( user-mail-address	     . "dmolina@decsai.ugr.es"  )
+( user-full-name	    . "Daniel Molina" )
+(mu4e-reply-to-address . "dmolina@decsai.ugr.es")
+(mu4e-drafts-folder . "/decsai/Drafts")
+(mu4e-sent-folder   . "/decsai/Sent")
+(mu4e-trash-folder  ."/decsai/Trash"))
+)))
+;; start with the first (default) context; 
+;; default is to ask-if-none (ask when there's no context yet, and none match)
+(setq mu4e-context-policy 'pick-first)
 
+;; compose with the current context is no context matches;
+;; default is to ask 
+'(setq mu4e-compose-context-policy nil)
 )
-
-
