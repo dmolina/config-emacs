@@ -1554,6 +1554,7 @@ mu4e-trash-folder  "/uca/Trash")
 ;;       user-full-name  "Daniel Molina")
 
 ; Context
+; En http://pastie.org/10787847
 (setq mu4e-contexts
 	`( ,
 (make-mu4e-context :name "uca"
@@ -1624,4 +1625,13 @@ mu4e-trash-folder  "/uca/Trash")
 ;; compose with the current context is no context matches;
 ;; default is to ask 
 '(setq mu4e-compose-context-policy nil)
+
+; Guarda los adjuntos en Descargas
+(setq mu4e-attachment-dir  "~/Descargas")
+
+;; enable inline images
+(setq mu4e-view-show-images t)
+;; use imagemagick, if available
+(when (fboundp 'imagemagick-register-types)
+  (imagemagick-register-types))
 )
