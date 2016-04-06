@@ -1,7 +1,7 @@
 #+TITLE:     TITULO
-#+AUTHOR:    Grado en Ingeniería Informática
+#+AUTHOR:    ASIGNATURA
 #+EMAIL:     daniel.molina@uca.es
-#+DATE:      Curso \the\year/\NextYear
+#+DATE:      Grado en Ingeniería Informática
 
 #+startup: beamer
 #+LaTeX_CLASS: beamer
