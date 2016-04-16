@@ -1534,6 +1534,7 @@ mark current word before calling `TeX-font'."
 ;; if our mail server lives at smtp.example.org; if you have a local
 ;; mail-server, simply use 'localhost' here.
 (setq smtpmail-smtp-server "smtp.gmail.com")
+
 (setq
 mu4e-drafts-folder "/uca/Drafts"
 mu4e-sent-folder   "/uca/Sent"
@@ -1549,9 +1550,61 @@ mu4e-trash-folder  "/uca/Trash")
 ;;       user-mail-address "daniel.molina@uca.es"
 ;;       user-full-name  "Daniel Molina")
 
-;; (setq mu4e-reply-to-address "dmolina@decsai.ugr.es"
-;;       user-mail-address "dmolina@decsai.ugr.es"
-;;       user-full-name  "Daniel Molina")
+(setq mu4e-reply-to-address "dmolina@decsai.ugr.es"
+user-mail-address "dmolina@decsai.ugr.es"
+user-full-name  "Daniel Molina")
+; Store all documents in Descargas
+(setq mu4e-attachment-dir  "~/Descargas")
+; Interval 
+(setq 
+
+;; allow for updating mail using 'U' in the main view:
+(setq mu4e-get-mail-command "mbsync -qa"
+      mu4e-update-interval 300)
+
+
+;; enable inline images
+(setq mu4e-view-show-images t)
+;; use imagemagick, if available
+(when (fboundp 'imagemagick-register-types)
+  (imagemagick-register-types))
+;; Try to display images in mu4e
+(setq
+ mu4e-view-show-images t
+ mu4e-view-image-max-width 800)
+(setq mu4e-confirm-quit nil
+      mu4e-headers-date-format "%d/%b/%Y %H:%M" ; date format
+      mu4e-html2text-command "html2text -utf8 -width 72"
+      )
+
+
+;; sending mail
+(setq message-send-mail-function 'message-send-mail-with-sendmail
+      sendmail-program "/usr/bin/msmtp"
+      user-full-name "Daniel Molina Cabrera")
+;; Borrowed from http://ionrock.org/emacs-email-and-mu.html
+;; Choose account label to feed msmtp -a option based on From header
+;; in Message buffer; This function must be added to
+;; message-send-mail-hook for on-the-fly change of From address before
+;; sending message since message-send-mail-hook is processed right
+;; before sending message.
+(defun choose-msmtp-account ()
+  (if (message-mail-p)
+      (save-excursion
+        (let*
+            ((from (save-restriction
+                     (message-narrow-to-headers)
+                     (message-fetch-field "from")))
+             (account
+              (cond
+               ((string-match "danimolina@gmail.com" from) "gmail")
+               ((string-match "daniel.molina@uca.es" from) "uca")
+               ((string-match "dmolina@decsai.ugr.es" from) "decsai")
+	       )))
+          (setq message-sendmail-extra-arguments (list '"-a" account))))))
+
+(setq message-sendmail-envelope-from 'header)
+(add-hook 'message-send-mail-hook 'choose-msmtp-account)
 
 ; Context
 ; En http://pastie.org/10787847
@@ -1572,7 +1625,7 @@ mu4e-trash-folder  "/uca/Trash")
 :to "daniel.molina@uca.es")))
 :vars '(
 ( user-mail-address	     . "daniel.molina@uca.es"  )
-( user-full-name	    . "Daniel Molina" )
+( user-full-name	    . "Daniel Molina Cabrera"  )
 (mu4e-reply-to-address . "daniel.molina@uca.es")
 (mu4e-drafts-folder . "/uca/Drafts")
 (mu4e-sent-folder   . "/uca/Sent")
@@ -1595,7 +1648,7 @@ mu4e-trash-folder  "/uca/Trash")
 ( user-full-name	    . "Daniel Molina" )
 (mu4e-reply-to-address . "danimolina@gmail.com")
 (mu4e-drafts-folder . "/gmail/drafts")
-(mu4e-sent-folder   . "/gmail/dent")
+(mu4e-sent-folder   . "/gmail/sent-mail")
 (mu4e-trash-folder  ."/gmail/trash"))
 ),(make-mu4e-context :name "decsai"
 :enter-func (lambda () (mu4e-message "Switch to the decsai context")
@@ -1612,12 +1665,13 @@ mu4e-trash-folder  "/uca/Trash")
 :to "dmolina@decsai.ugr.es")))
 :vars '(
 ( user-mail-address	     . "dmolina@decsai.ugr.es"  )
-( user-full-name	    . "Daniel Molina" )
+( user-full-name	    . "Daniel Molina Cabrera" )
 (mu4e-reply-to-address . "dmolina@decsai.ugr.es")
 (mu4e-drafts-folder . "/decsai/Drafts")
 (mu4e-sent-folder   . "/decsai/Sent")
 (mu4e-trash-folder  ."/decsai/Trash"))
 )))
+
 ;; start with the first (default) context; 
 ;; default is to ask-if-none (ask when there's no context yet, and none match)
 (setq mu4e-context-policy 'pick-first)
@@ -1625,13 +1679,44 @@ mu4e-trash-folder  "/uca/Trash")
 ;; compose with the current context is no context matches;
 ;; default is to ask 
 '(setq mu4e-compose-context-policy nil)
-
-; Guarda los adjuntos en Descargas
-(setq mu4e-attachment-dir  "~/Descargas")
-
-;; enable inline images
-(setq mu4e-view-show-images t)
-;; use imagemagick, if available
-(when (fboundp 'imagemagick-register-types)
-  (imagemagick-register-types))
 )
+
+; Sunrise
+; (add-to-list 'package-archives '("SC" . "http://joseito.republika.pl/sunrise-commander/") t)
+(use-package sunrise-commander
+  :init
+;; disable mouse
+(setq sr-cursor-follows-mouse nil)
+(define-key sr-mode-map [mouse-1] nil)
+(define-key sr-mode-map [mouse-movement] nil)
+
+;;tweak faces for paths
+(set-face-attribute 'sr-active-path-face nil
+                    :background "black")
+(set-face-attribute 'sr-passive-path-face nil
+                    :background "black")
+
+;;advise sunrise to save frame arrangement
+;;requires frame-cmds package
+(defun bjm-sc-save-frame ()
+  "Save frame configuration and then maximise frame for sunrise commander."
+  (save-frame-config)
+  (maximize-frame)
+  )
+(advice-add 'sunrise :before #'bjm-sc-save-frame)
+
+(defun bjm-sc-restore-frame ()
+  "Restore frame configuration saved prior to launching sunrise commander."
+  (interactive)
+  (jump-to-frame-config-register)
+  )
+(advice-add 'sr-quit :after #'bjm-sc-restore-frame)
+)
+
+(use-package zoom-frm
+  :ensure t
+)
+
+; Set conkeror as the default browser
+(setq browse-url-generic-program (executable-find "ck"))
+(setq browse-url-browser-function 'browse-url-generic)
