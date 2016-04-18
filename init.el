@@ -79,6 +79,19 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+(defconst user-init-dir
+  (cond ((boundp 'user-emacs-directory)
+         user-emacs-directory)
+        ((boundp 'user-init-directory)
+         user-init-directory)
+        (t "~/.emacs.d/")))
+
+
+(defun load-user-file (file)
+  (interactive "f")
+  "Load a file in current user's configuration directory"
+  (load-file (expand-file-name file user-init-dir)))
+
 ; Viper hotkeys in Emacs
 (setq viper-mode t)
 (require 'viper)
@@ -90,11 +103,6 @@
 (setq inhibit-startup-message t
      inhibit-startup-echo-area-message t)
 
-;(require 'org-install)
-(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl$" . org-mode))
-(add-to-list 'auto-mode-alist '("\\.bea$" . org-mode))
-(add-to-list 'auto-mode-alist '("\\.ojs$" . org-mode))
 ;(define-key mode-specific-map [?a] 'org-agenda)
 (define-key global-map "\C-cl" 'org-store-link)
 (setq org-log-done t)
@@ -104,12 +112,6 @@
 (setq org-export-latex-listings t)
 ;(add-to-list 'org-export-latex-packages-alist '("" "listings"))
 ;(add-to-list 'org-export-latex-packages-alist '("" "color"))
-
-(require 'remember)
-
-(add-hook 'remember-mode-hook 'org-remember-apply-template)
-
-(define-key global-map [(control meta ?r)] 'remember)
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
@@ -262,15 +264,22 @@
   (appt-activate t))
 
 
-(require 'autoinsert)
+(use-package autoinsert
+  :init
 (auto-insert-mode)  ;;; Adds hook to find-files-hook
 (setq auto-insert-directory "~/.emacs.d/orgtemplates/") ;;; Or use custom, *NOTE* Trailing slash important
 (setq auto-insert-query nil) ;;; If you don't want to be prompted before insertion
 (define-auto-insert "\.tpl" "latex.txt")
 (define-auto-insert "\.bea" "beamer.txt")
 (define-auto-insert "\.ojs" "reveal.txt")
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl$" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.bea$" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.ojs$" . org-mode))
+:config
 (add-hook 'find-file-hooks 'auto-insert)
 (setq org-agenda-skip-scheduled-if-deadline-is-shown 'repeated-after-deadline)
+)
 
 (global-set-key (kbd "C-c b") 'org-beamer-select-environment)
 (put 'downcase-region 'disabled nil)
@@ -1092,6 +1101,7 @@
   (setq appt-time-msg-list nil))
 
 (use-package magit
+  :ensure t
   :bind  ("C-x g" . magit-status))
 
 (eval-after-load "eww"
@@ -1319,10 +1329,8 @@ current line."
 ; Avy-to mode using a char
 (use-package avy
   :ensure t
-  :init
-  (global-set-key (kbd "C-;") 'avy-goto-char)
-  (global-set-key (kbd "C-:") 'avy-goto-char-2)
-)
+  :bind (("C-;" . avy-goto-char)
+	 ("C-:" . avy-goto-char-2)))
 
 ; Select the current font
 (defvar TeX-font-current-word t)
@@ -1381,9 +1389,9 @@ mark current word before calling `TeX-font'."
 (setq org-capture-templates '(("t" "Todo"
       entry (file+headline "~/.emacs.d/tasks/tareas.org" "Tasks")
       "* TODO %?\n  %i\n  %a")
-			      ("e" "Evento" entry (file+headline "~/.emacs.d/tasks/citas.org" "Eventos")
-			       "* TODO %?\n  %a")
-        ("r" "Review" entry (file+datetree "~/.emacs.d/tasks/review.org")
+			      ("e" "Evento" entry (file "~/.emacs.d/tasks/citas.org")
+			       "* TODO %?\n  %a\n%u")
+        ("r" "Review" entry (file "~/.emacs.d/tasks/review.org")
 	 "* TODO: %?\nEntered on %U\n  %i\n  %a")))
 
 (use-package org-caldav
@@ -1559,7 +1567,7 @@ user-full-name  "Daniel Molina")
 (setq mu4e-attachment-dir  "~/Descargas")
 ;; allow for updating mail using 'U' in the main view:
 (setq mu4e-get-mail-command "'mbsync -qa'")
-
+(setq mu4e-compose-signature-auto-include nil)
 ;; enable inline images
 (setq mu4e-view-show-images t)
 ;; use imagemagick, if available
@@ -1624,6 +1632,7 @@ user-full-name  "Daniel Molina")
 ( user-mail-address	     . "daniel.molina@uca.es"  )
 ( user-full-name	    . "Daniel Molina Cabrera"  )
 (mu4e-reply-to-address . "daniel.molina@uca.es")
+(mu4e-compose-signature-auto-include t)
 (mu4e-drafts-folder . "/uca/Drafts")
 (mu4e-sent-folder   . "/uca/Sent")
 (mu4e-trash-folder  ."/uca/Trash"))
@@ -1643,6 +1652,7 @@ user-full-name  "Daniel Molina")
 :vars '(
 ( user-mail-address	     . "danimolina@gmail.com"  )
 ( user-full-name	    . "Daniel Molina" )
+(mu4e-compose-signature-auto-include nil)
 (mu4e-reply-to-address . "danimolina@gmail.com")
 (mu4e-drafts-folder . "/gmail/drafts")
 (mu4e-sent-folder   . "/gmail/sent-mail")
@@ -1664,6 +1674,7 @@ user-full-name  "Daniel Molina")
 ( user-mail-address	     . "dmolina@decsai.ugr.es"  )
 ( user-full-name	    . "Daniel Molina Cabrera" )
 (mu4e-reply-to-address . "dmolina@decsai.ugr.es")
+(mu4e-compose-signature-auto-include nil)
 (mu4e-drafts-folder . "/decsai/Drafts")
 (mu4e-sent-folder   . "/decsai/Sent")
 (mu4e-trash-folder  ."/decsai/Trash"))
@@ -1676,6 +1687,11 @@ user-full-name  "Daniel Molina")
 ;; compose with the current context is no context matches;
 ;; default is to ask 
 '(setq mu4e-compose-context-policy nil)
+;;store org-mode links to messages
+(use-package org-mu4e
+  :init
+;;store link to message if in header view, not to header query
+(setq org-mu4e-link-query-in-headers-mode nil))
 )
 
 ; Sunrise
@@ -1684,15 +1700,14 @@ user-full-name  "Daniel Molina")
   :init
 ;; disable mouse
 (setq sr-cursor-follows-mouse nil)
+:config
 (define-key sr-mode-map [mouse-1] nil)
 (define-key sr-mode-map [mouse-movement] nil)
-
 ;;tweak faces for paths
 (set-face-attribute 'sr-active-path-face nil
                     :background "black")
 (set-face-attribute 'sr-passive-path-face nil
                     :background "black")
-
 ;;advise sunrise to save frame arrangement
 ;;requires frame-cmds package
 (defun bjm-sc-save-frame ()
@@ -1717,3 +1732,4 @@ user-full-name  "Daniel Molina")
 ; Set conkeror as the default browser
 (setq browse-url-generic-program (executable-find "ck"))
 (setq browse-url-browser-function 'browse-url-generic)
+
