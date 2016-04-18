@@ -1091,7 +1091,9 @@
   "Clear the appt-time-msg-list."
   (setq appt-time-msg-list nil))
 
-(global-set-key (kbd "C-x g") 'magit-status)
+(use-package magit
+  :bind  ("C-x g" . magit-status))
+
 (eval-after-load "eww"
   '(progn (define-key eww-mode-map "f" 'eww-lnum-follow)
           (define-key eww-mode-map "F" 'eww-lnum-universal)))
@@ -1476,7 +1478,7 @@ mark current word before calling `TeX-font'."
 
 
 (use-package smtpmail
-   :init
+   :config
 ; smtp
 (setq message-send-mail-function 'smtpmail-send-it
       smtpmail-default-smtp-server "mail.gmail.com"
@@ -1490,13 +1492,13 @@ mark current word before calling `TeX-font'."
   :init
 (setq mu4e-maildir (expand-file-name "~/Mail/"))
 (setq message-signature-file "~/.emacs.d/.signature") ; put your signature in this file
-
+:config
 ; don't save messages to Sent Messages, Gmail/IMAP takes care of this
 (setq mu4e-sent-messages-behavior 'delete)
 ; get mail
 (setq ;mu4e-get-mail-command "mbsync -qHL gmail"
       mu4e-html2text-command "w3m -T text/html"
-      ;mu4e-update-interval 3000
+     mu4e-update-interval 300
       mu4e-headers-auto-update t
       mu4e-compose-signature-auto-include nil)
 
@@ -1555,13 +1557,8 @@ user-mail-address "dmolina@decsai.ugr.es"
 user-full-name  "Daniel Molina")
 ; Store all documents in Descargas
 (setq mu4e-attachment-dir  "~/Descargas")
-; Interval 
-(setq 
-
 ;; allow for updating mail using 'U' in the main view:
-(setq mu4e-get-mail-command "mbsync -qa"
-      mu4e-update-interval 300)
-
+(setq mu4e-get-mail-command "'mbsync -qa'")
 
 ;; enable inline images
 (setq mu4e-view-show-images t)
