@@ -1490,13 +1490,13 @@ mark current word before calling `TeX-font'."
   :init
 (setq mu4e-maildir (expand-file-name "~/Mail/"))
 (setq message-signature-file "~/.emacs.d/.signature") ; put your signature in this file
-
+:config
 ; don't save messages to Sent Messages, Gmail/IMAP takes care of this
 (setq mu4e-sent-messages-behavior 'delete)
 ; get mail
 (setq ;mu4e-get-mail-command "mbsync -qHL gmail"
       mu4e-html2text-command "w3m -T text/html"
-      ;mu4e-update-interval 3000
+     mu4e-update-interval 300
       mu4e-headers-auto-update t
       mu4e-compose-signature-auto-include nil)
 
