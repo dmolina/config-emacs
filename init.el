@@ -1485,17 +1485,7 @@ mark current word before calling `TeX-font'."
 )
 
 
-(use-package smtpmail
-   :config
-; smtp
-(setq message-send-mail-function 'smtpmail-send-it
-      smtpmail-default-smtp-server "mail.gmail.com"
-      smtpmail-smtp-server "mail.gmail.com"
-      smtpmail-smtp-service 587
-      smtpmail-debug-info t)
-)
-
-; Usage mu4e
+; Configure mu4e
 (load-user-file "mail.el")
 
 ; Sunrise

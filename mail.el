@@ -1,3 +1,14 @@
+(use-package smtpmail
+   :config
+; smtp
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-default-smtp-server "mail.gmail.com"
+      smtpmail-smtp-server "mail.gmail.com"
+      smtpmail-smtp-service 587
+      smtpmail-debug-info t)
+)
+
+
 (use-package mu4e
   :init
 (setq mu4e-maildir (expand-file-name "~/Mail/"))
