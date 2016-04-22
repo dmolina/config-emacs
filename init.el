@@ -1527,3 +1527,25 @@ mark current word before calling `TeX-font'."
 (setq browse-url-generic-program (executable-find "ck"))
 (setq browse-url-browser-function 'browse-url-generic)
 
+;;preview files in dired
+(use-package peep-dired
+  :ensure t
+  :defer t ; don't access `dired-mode-map' until `peep-dired' is loaded
+  :bind (:map dired-mode-map
+              ("P" . peep-dired)))
+
+(use-package dired-filter
+  :ensure t)
+  
+;;narrow dired to match filter
+(use-package dired-narrow
+  :ensure t
+  :bind (:map dired-mode-map
+              ("/" . dired-narrow)))
+
+					; Ranger
+(use-package ranger
+  :ensure t
+  )
+
+;(global-set-key (kbd "<f7>") 'org-latex-export-to-latex)
