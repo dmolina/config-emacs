@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("RMAwA_revision3"
+(("media"
+ (filename . "/media/daniel/72C043AF09054666/")
+ (front-context-string . "$RECYCLE.BIN\n  d")
+ (rear-context-string . "096 04-09 13:54 ")
+ (position . 142))
+("series"
+ (filename . "~/Descargas/series/")
+ (front-context-string . "A Decade of the ")
+ (rear-context-string . "096 03-10 20:45 ")
+ (position . 214))
+("RMAwA_revision3"
  (filename . "~/current/RMAwA_todo/RMAwA_revision3/")
  (front-context-string . ".git\n  -rw-rw-r-")
  (rear-context-string . "096 04-11 13:01 ")
