@@ -197,6 +197,14 @@ user-full-name  "Daniel Molina")
 ;; default is to ask-if-none (ask when there's no context yet, and none match)
 (setq mu4e-context-policy 'pick-first)
 
+
+;; use this to sync with mbsync
+(setq mu4e-get-mail-command "mbsync all")
+
+;;rename files when moving
+;;NEEDED FOR MBSYNC
+(setq mu4e-change-filenames-when-moving t)
+
 ;; compose with the current context is no context matches;
 ;; default is to ask 
 '(setq mu4e-compose-context-policy nil)
