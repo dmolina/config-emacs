@@ -1055,18 +1055,21 @@ in the analysis and conclusion, it cannot be published.
 
 ** [[file:~/Dropbox/revisar/PRAI-D-15-00051_R1.pdf][Acceso al PDF]]
 
-* TODO Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
-  DEADLINE: <2016-02-28 dom>
+* DONE Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
+  CLOSED: [2016-04-11 lun 12:00] DEADLINE: <2016-02-28 dom>
 
 ** TODO Título: Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
 
 ** [[http://mts.hindawi.com/reviewer/5392471568489460/][Enlace de la web]]
 
 ** [[file:~/Dropbox/revisar/coverletter.6154637.v1.pdf][Artículo]]
-* 2016
-** 2016-02 febrero
-*** 2016-02-26 viernes
-* TODO: Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
+* TODO Revisar CYB-IEEE Urgente 
+  SCHEDULED: <2016-04-18 lun>
+   Entered on [2016-04-18 lun 16:18]
+  
+[[file:~/Dropbox/revisar/s1-ln22849595-1273520368-1939656818Hwf1300487469IdV-10893315122849595PDF_HI0001.pdf::1][Acceso]]
+
+* TODO Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
   DEADLINE: <2016-04-22 vie> SCHEDULED: <2016-04-22 vie>
 Entered on [2016-02-26 vie 17:42]
   
@@ -1075,3 +1078,25 @@ Entered on [2016-02-26 vie 17:42]
 ** Revista: https://mc.manuscriptcentral.com/cyb-ieee
 
 ** [[file:~/Dropbox/revisar/s1-ln22612366938319882-1939656818Hwf946485603IdV-173631203922612366PDF_HI0001.pdf][Acceso]]
+
+* DONE Trabajo de Hindawi 
+  CLOSED: [2016-04-11 lun 12:00] DEADLINE: <2016-04-08 vie>
+
+** Website: http://mts.hindawi.com/reviewer/5392471568489460/
+
+** [[file:~/Dropbox/revisar/6154637.v1.pdf][Documento PDF]]
+** [[file:~/Dropbox/revisar/6154637.v1.txt][Comentarios]]
+
+** TODO Subir los comentarios
+
+* TODO Convergent Stochastic Differential Evolution Algorithms
+  DEADLINE: <2016-06-01 mié>
+
+** Enlace: http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/4576
+
+** [[file:~/Dropbox/revisar/3795-9129-1-RV.pdf][Documento PDF]]
+* TODO: Revisar urgente
+  SCHEDULED: <2016-04-18 lun>
+Entered on [2016-04-18 lun 16:24]
+  
+[[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf::1][/home/daniel/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf]]

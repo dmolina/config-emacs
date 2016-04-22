@@ -552,8 +552,8 @@
 ; Python-mode
 (setq py-install-directory "~/.emacs.d/python-mode.el-6.2.0")
 (add-to-list 'load-path py-install-directory)
-(require 'python-mode)
 
+(require 'python-mode)
 ; use IPython
 (setq-default py-shell-name "ipython")
 (setq-default py-which-bufname "IPython")
@@ -1503,7 +1503,7 @@ mark current word before calling `TeX-font'."
 (set-face-attribute 'sr-passive-path-face nil
                     :background "black")
 ;;advise sunrise to save frame arrangement
-;;requires frame-cmds package
+;requires frame-cmds package
 (defun bjm-sc-save-frame ()
   "Save frame configuration and then maximise frame for sunrise commander."
   (save-frame-config)
@@ -1531,6 +1531,16 @@ mark current word before calling `TeX-font'."
 (use-package peep-dired
   :ensure t
   :defer t ; don't access `dired-mode-map' until `peep-dired' is loaded
+  :config
+  ; Disable buffers when preview is closed
+  (setq peep-dired-cleanup-on-disable t)
+  ; Disable when mode from directory
+  ; (setq peep-dired-cleanup-eagerly t)
+  (setq peep-dired-cleanup-on-disable t)
+
+  ; disable extensions in preview
+  ; (setq peep-dired-ignored-extensions '("mkv" "iso" "mp4"))
+  
   :bind (:map dired-mode-map
               ("P" . peep-dired)))
 
@@ -1541,7 +1551,7 @@ mark current word before calling `TeX-font'."
 (use-package dired-narrow
   :ensure t
   :bind (:map dired-mode-map
-              ("/" . dired-narrow)))
+              ("F" . dired-narrow)))
 
 					; Ranger
 (use-package ranger

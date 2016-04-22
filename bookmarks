@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("awesome"
+(("RMAwA_revision3"
+ (filename . "~/current/RMAwA_todo/RMAwA_revision3/")
+ (front-context-string . ".git\n  -rw-rw-r-")
+ (rear-context-string . "096 04-11 13:01 ")
+ (position . 258))
+("awesome"
  (filename . "~/.config/awesome/rc.lua")
  (front-context-string . "\n-- Handle runti")
  (rear-context-string . "p_errors })\nend\n")
@@ -19,9 +24,9 @@
  (position . 305))
 ("org-capture-last-stored"
  (filename . "~/.emacs.d/tasks/tareas.org")
- (front-context-string . "** TODO Mirar Or")
- (rear-context-string . " :END:\n\n* Tasks\n")
- (position . 15769))
+ (front-context-string . "** TODO Revisar ")
+ (rear-context-string . "acs.d/init.el]]\n")
+ (position . 22008))
 ("review"
  (filename . "~/.emacs.d/tasks/review.org")
  (front-context-string . "* DONE Revisión:")

@@ -318,11 +318,12 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
 
 
 * TODO Pagar el piso
-  SCHEDULED: <2016-04-05 mar ++1m>
+  SCHEDULED: <2016-05-05 jue ++1m>
   :PROPERTIES:
-  :LAST_REPEAT: [2016-03-10 jue 18:06]
+  :LAST_REPEAT: [2016-04-07 jue 13:09]
   :ID:       fd4eea85-7a80-4fff-989b-c657bb556edb
   :END:
+  - State "DONE"       from "TODO"       [2016-04-07 jue 13:09]
   - State "DONE"       from "TODO"       [2016-03-10 jue 18:06]
   - State "DONE"       from "TODO"       [2016-02-08 lun 18:52]
   - State "DONE"       from "TODO"       [2016-01-11 lun 10:57]
@@ -352,8 +353,8 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
    :END:
 
 
-* TODO Aplicar cambios en INS-D-15-498R3
-  DEADLINE: <2016-04-04 lun>
+* DONE Aplicar cambios en INS-D-15-498R3
+  CLOSED: [2016-04-17 dom 15:06] DEADLINE: <2016-04-04 lun>
 
 ** Comentarios de Revisores:
 
@@ -398,6 +399,13 @@ hypotheses would be supported with experimental results.
 
 ** DONE Obtener resultados de fitness con distintos NDs
    CLOSED: [2016-04-01 vie 17:26]
+
+
+** DONE [#A] Aplicar cambios en INS-D-15-498R3 al recibir respuesta de Rebecca
+   CLOSED: [2016-04-14 jue 12:17] SCHEDULED: <2016-04-11 lun>
+   :LOGBOOK:
+   CLOCK: [2016-04-13 mié 17:46]
+   :END:
 
 * Anunciar elecciones director de la escuela
   :LOGBOOK:
@@ -470,3 +478,115 @@ influence of the local search, to include a statistical analysis of the comparis
 
   
    [[file:~/current/docencia/as/presentaciones_as/vagrant_environment/webmin.sh][file:~/current/docencia/as/presentaciones_as/vagrant_environment/webmin.sh]]
+** DONE Colgar calificaciones de la primera práctica de los alumnos
+   CLOSED: [2016-04-17 dom 15:06] SCHEDULED: <2016-04-08 vie>
+ 
+[[file:~/current/docencia/as/2016/practica1/][~/current/docencia/as/2016/practica1/]]
+
+** DONE [#A] Corregir práctica 2
+   CLOSED: [2016-04-20 mié 14:46]
+   :LOGBOOK:
+   CLOCK: [2016-04-07 jue 13:10]--[2016-04-07 jue 15:47] =>  2:37
+   :END:
+
+[[file:~/current/docencia/as/2016/practica2/][~/current/docencia/as/2016/practica2/]]
+** DONE Preparar material del Máster de CA
+   CLOSED: [2016-04-20 mié 14:47]
+
+*** Material para la presentación
+
+http://www.alanzucconi.com/2016/04/06/evolutionary-coputation-1/
+** TODO Preparar CAEPIA, MAEB
+   DEADLINE: <2016-04-25 lun>
+** TODO [#A] Preparar/Repasar clase de AS
+   DEADLINE: <2016-04-13 mié> SCHEDULED: <2016-05-17 mar ++1w>
+   :PROPERTIES:
+   :ORDERED:  t
+   :LAST_REPEAT: [2016-04-17 dom 15:05]
+   :END:
+   - State "DONE"       from "TODO"       [2016-04-17 dom 15:05]
+   - State "DONE"       from "TODO"       [2016-04-14 jue 12:17]
+   - State "DONE"       from "TODO"       [2016-04-14 jue 12:17]
+   - State "DONE"       from "TODO"       [2016-04-13 mié 17:05]
+   :LOGBOOK:
+   CLOCK: [2016-04-12 mar 18:29]--[2016-04-13 mié 00:13] =>  5:44
+   CLOCK: [2016-04-12 mar 17:36]--[2016-04-12 mar 17:39] =>  0:03
+   CLOCK: [2016-04-12 mar 16:30]--[2016-04-12 mar 17:35] =>  1:05
+   :END:
+** TODO Incorporar un simple analizador de logs de Apache y Nginx.
+
+http://www.tecmint.com/goaccess-a-real-time-apache-and-nginx-web-server-log-analyzer/
+** TODO Registrar el portátil de Amalia en el registro
+
+https://www.toshiba.es/registration/registration-form/
+** TODO Mirar Machine Learning visual
+
+http://haifengl.github.io/smile/index.html#classification
+ 
+** TODO Considerar para combinatorios de AS
+
+https://punkrockor.com/2014/04/04/the-traveling-salesman-problem-challenge-for-cheeseheads/
+** TODO Material para CA
+
+http://www.turingfinance.com/fitness-landscape-analysis-for-computational-finance/
+** DONE Enviar curriculum para Ivan, proyecto BBVA.
+   CLOSED: [2016-04-17 dom 15:35]
+   :LOGBOOK:
+   CLOCK: [2016-04-17 dom 15:09]--[2016-04-17 dom 15:34] =>  0:25
+   CLOCK: [2016-04-17 dom 12:49]--[2016-04-17 dom 15:09] =>  2:20
+   :END:
+** TODO 
+  
+   [[mu4e:msgid:93CD41460474C64BAF84BEE8618C32113F170656@MBXEUR02.usersad.everis.int][RE: Agenda propuesta para evento con everis]]
+** DONE Votar en las eleciones
+   CLOSED: [2016-04-20 mié 14:45] SCHEDULED: <2016-04-18 lun 11:00>
+  
+   [[mu4e:msgid:1916248435.1460975436548.JavaMail.tavira@morrigan][{TAVIRA-ESI-CA} Elecciones a Director/a de la ESI]]
+** TODO Integrar un anuncio parecido en el portal de DSS
+  
+   [[mu4e:msgid:CAHNEebDMUDfjfQD4Vzzg67mjMDtqzaApBP51MB03MuHRk46t+Q@mail.gmail.com][Fwd: 21714061_15_16_01: Jornada Everis en ESI]]
+
+** TODO Implementar en C++ usando el Armadillo los ejercicios del Máster. 
+
+** TODO Ofrecer también en Python.
+
+** TODO Buscar librería en Java para similar.
+* Machine Learning 
+
+** Curso de Google sobre ML
+
+https://www.youtube.com/watch?v=cKxRvEZd3Mw
+
+** Tensor Tutorial
+
+https://github.com/aymericdamien/TensorFlow-Examples
+
+** Mirar Machine Learning visual
+
+http://haifengl.github.io/smile/index.html#classification
+ 
+** Revisar Dive into Maquine Learning
+
+https://github.com/hangtwenty/dive-into-machine-learning
+
+** Data Set públicos
+
+*** Reddit Data Sets
+
+https://www.reddit.com/r/datasets
+
+*** Muy bien organizados
+https://github.com/caesar0301/awesome-public-datasets
+
+*** Otros datasets (no grandes)
+https://github.com/datasets/
+
+*** UCI para Machine Learning
+http://archive.ics.uci.edu/ml/
+
+*** Competiciones de Machine Learning
+https://www.kaggle.com/
+
+
+* DONE [#A] Preparar CV simplificado del ministerio para el proyecto
+  CLOSED: [2016-04-18 lun 16:30] SCHEDULED: <2016-04-17 dom>
