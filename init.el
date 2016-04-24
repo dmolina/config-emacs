@@ -1564,6 +1564,6 @@ mark current word before calling `TeX-font'."
 					;(global-set-key (kbd "<f7>") 'org-latex-export-to-latex)
 
 ; C-x C-j move to current directory
-(use-package dired-x
-  :ensure t)
+;(use-package dired-x
+;  :ensure t)
   
