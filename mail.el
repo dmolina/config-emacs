@@ -8,14 +8,18 @@
       smtpmail-debug-info t)
 )
 
+(setq mu4e-sent-messages-behavior (lambda ()
+                                    (if (string= (message-sendmail-envelope-from) "danimolina@gmail.com")
+                                        'delete
+                                      'sent)))
+
 
 (use-package mu4e
   :init
 (setq mu4e-maildir (expand-file-name "~/Mail/"))
 (setq message-signature-file "~/.emacs.d/.signature") ; put your signature in this file
 :config
-; don't save messages to Sent Messages, Gmail/IMAP takes care of this
-(setq mu4e-sent-messages-behavior 'delete)
+
 ; get mail
 (setq ;mu4e-get-mail-command "mbsync -qHL gmail"
       mu4e-html2text-command "w3m -T text/html"
@@ -153,7 +157,7 @@ user-full-name  "Daniel Molina")
 :enter-func (lambda () (mu4e-message "Switch to the gmail context")
 (setq mu4e-maildir-shortcuts 
 '( ("/gmail/Inbox"               . ?i)
-("/gmail/sent-sent"   . ?s)
+("/gmail/sent-mail"   . ?s)
 ("/gmail/trash"       . ?t)
 ("/gmail/drafts"    . ?d)
 )))
@@ -168,8 +172,11 @@ user-full-name  "Daniel Molina")
 (mu4e-compose-signature-auto-include nil)
 (mu4e-reply-to-address . "danimolina@gmail.com")
 (mu4e-drafts-folder . "/gmail/drafts")
-(mu4e-sent-folder   . "/gmail/sent-mail")
-(mu4e-trash-folder  ."/gmail/trash"))
+; don't save messages to Sent Messages, Gmail/IMAP takes care of this
+;(mu4e-sent-messages-behavior . 'delete)
+(mu4e-trash-folder  ."/gmail/trash")
+)
+
 ),(make-mu4e-context :name "decsai"
 :enter-func (lambda () (mu4e-message "Switch to the decsai context")
 (setq mu4e-maildir-shortcuts 
