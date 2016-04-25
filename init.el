@@ -103,6 +103,9 @@
 (setq inhibit-startup-message t
      inhibit-startup-echo-area-message t)
 
+; Disable tool-bar					;
+(tool-bar-mode -1)
+
 ;(define-key mode-specific-map [?a] 'org-agenda)
 (define-key global-map "\C-cl" 'org-store-link)
 (setq org-log-done t)
