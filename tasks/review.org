@@ -1063,17 +1063,17 @@ in the analysis and conclusion, it cannot be published.
 ** [[http://mts.hindawi.com/reviewer/5392471568489460/][Enlace de la web]]
 
 ** [[file:~/Dropbox/revisar/coverletter.6154637.v1.pdf][Artículo]]
-* TODO Revisar CYB-IEEE Urgente 
+* TODO [#A] Revisar CYB-IEEE Urgente 
   SCHEDULED: <2016-04-18 lun>
    Entered on [2016-04-18 lun 16:18]
   
 [[file:~/Dropbox/revisar/s1-ln22849595-1273520368-1939656818Hwf1300487469IdV-10893315122849595PDF_HI0001.pdf::1][Acceso]]
 
 * TODO Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
-  DEADLINE: <2016-04-22 vie> SCHEDULED: <2016-04-22 vie>
+  DEADLINE: <2016-04-22 vie>
 Entered on [2016-02-26 vie 17:42]
   
-  [[file:~/.emacs.d/tasks/review.org::*Revisi%C3%B3n:%20Incremental%20Cooperative%20Co-evolution%20for%20Large-Scale%20Global%20Optimization][Revisión: Incremental Cooperative Co-evolution for Large-Scale Global Optimization]]
+[[file:~/Dropbox/revisar/CYB-E-2016-02-0253.pdf]]
 
 ** Revista: https://mc.manuscriptcentral.com/cyb-ieee
 
@@ -1095,8 +1095,11 @@ Entered on [2016-02-26 vie 17:42]
 ** Enlace: http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/4576
 
 ** [[file:~/Dropbox/revisar/3795-9129-1-RV.pdf][Documento PDF]]
-* TODO: Revisar urgente
-  SCHEDULED: <2016-04-18 lun>
+* DONE Revisar urgente
+  CLOSED: [2016-04-25 lun 14:50] SCHEDULED: <2016-04-18 lun>
 Entered on [2016-04-18 lun 16:24]
   
 [[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf::1][/home/daniel/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf]]
+
+[[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).txt][Comentarios]]
+
