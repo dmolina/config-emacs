@@ -1203,6 +1203,8 @@ current line."
 	;"https://www.linux.com/news/rss-feeds"
 	"https://www.linux.com/news/software/developer?format=feed&type=rss"
         "https://www.reddit.com/r/programming/.rss"
+        "https://www.reddit.com/r/emacs/.rss"
+        "https://www.reddit.com/r/python/.rss"
 	)))
 
 (use-package w3m
