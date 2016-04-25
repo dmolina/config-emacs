@@ -1566,9 +1566,35 @@ mark current word before calling `TeX-font'."
 ; Set the human format
 (setq dired-listing-switches "-alh")
 
+(use-package writegood-mode
+  :ensure t
+  :defer t
+  )
+
+;(use-package writeroom-mode
+;  :ensure t
+;  :defer t)
+
+
+; Set the material theme
+(use-package material-theme
+  :ensure t
+  :init
+  (progn
+    (load-theme 'material))
+  )
+
+
 					;(global-set-key (kbd "<f7>") 'org-latex-export-to-latex)
 
 ; C-x C-j move to current directory
 ;(use-package dired-x
 ;  :ensure t)
-  
+
+
+(concat
+  (propertize (format-time-string "%A, ") 'face 'font-lock-keyword-face)
+  (propertize (format-time-string "%B %d, %Y") 'face 'font-lock-function-name-face)
+  (propertize (format-time-string " -- %1I:%M %p") 'face 'font-lock-keyword-face))
+
+
