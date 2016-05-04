@@ -18,14 +18,17 @@
   :init
 (setq mu4e-maildir (expand-file-name "~/Mail/"))
 (setq message-signature-file "~/.emacs.d/.signature") ; put your signature in this file
+;  :defer t
 :config
 
 ; get mail
 (setq ;mu4e-get-mail-command "mbsync -qHL gmail"
-      mu4e-html2text-command "w3m -T text/html"
+;      mu4e-html2text-command "w3m -T text/html"
      mu4e-update-interval 300
       mu4e-headers-auto-update t
       mu4e-compose-signature-auto-include nil)
+(require 'mu4e-contrib)
+(setq mu4e-html2text-command 'mu4e-shr2text)
 
 (setq mu4e-maildir-shortcuts
       '( ("/uca/Inbox"               . ?i)
@@ -219,5 +222,32 @@ user-full-name  "Daniel Molina")
 (use-package org-mu4e
   :init
 ;;store link to message if in header view, not to header query
-(setq org-mu4e-link-query-in-headers-mode nil))
+  (setq org-mu4e-link-query-in-headers-mode nil))
+
+; Access to marked files in dired mode to attach
+(require 'gnus-dired)
+;; make the `gnus-dired-mail-buffers' function also work on
+;; message-mode derived modes, such as mu4e-compose-mode
+(defun gnus-dired-mail-buffers ()
+  "Return a list of active message buffers."
+  (let (buffers)
+    (save-current-buffer
+      (dolist (buffer (buffer-list t))
+        (set-buffer buffer)
+        (when (and (derived-mode-p 'message-mode)
+                (null message-sent-message-via))
+          (push (buffer-name buffer) buffers))))
+    (nreverse buffers)))
+
+(setq gnus-dired-mail-mode 'mu4e-user-agent)
+(add-hook 'dired-mode-hook 'turn-on-gnus-dired-mode)
+
+; Put mu4 as the default mail program
+(setq mail-user-agent 'mu4e-user-agent)
+					; Reply only personal email
+
+(setq mu4e-compose-complete-only-personal t)
+
 )
+
+
