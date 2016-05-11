@@ -27,8 +27,6 @@
      mu4e-update-interval 300
       mu4e-headers-auto-update t
       mu4e-compose-signature-auto-include nil)
-(require 'mu4e-contrib)
-(setq mu4e-html2text-command 'mu4e-shr2text)
 
 (setq mu4e-maildir-shortcuts
       '( ("/uca/Inbox"               . ?i)
@@ -101,6 +99,15 @@ user-full-name  "Daniel Molina")
       mu4e-headers-date-format "%d/%b/%Y %H:%M" ; date format
       mu4e-html2text-command "html2text -utf8 -width 72"
       )
+; Show better the html links
+(require 'mu4e-contrib)
+(setq mu4e-html2text-command 'mu4e-shr2text)
+(add-hook 'mu4e-view-mode-hook
+  (lambda()
+    ;; try to emulate some of the eww key-bindings
+    (local-set-key (kbd "<tab>") 'shr-next-link)
+    (local-set-key (kbd "<backtab>") 'shr-previous-link)))
+(setq shr-color-visible-luminance-min 80)
 
 
 ;; sending mail
