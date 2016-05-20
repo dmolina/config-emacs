@@ -318,11 +318,12 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
 
 
 * TODO Pagar el piso
-  SCHEDULED: <2016-05-05 jue ++1m>
+  SCHEDULED: <2016-06-05 dom ++1m>
   :PROPERTIES:
-  :LAST_REPEAT: [2016-04-07 jue 13:09]
+  :LAST_REPEAT: [2016-05-12 jue 09:56]
   :ID:       fd4eea85-7a80-4fff-989b-c657bb556edb
   :END:
+  - State "DONE"       from "TODO"       [2016-05-12 jue 09:56]
   - State "DONE"       from "TODO"       [2016-04-07 jue 13:09]
   - State "DONE"       from "TODO"       [2016-03-10 jue 18:06]
   - State "DONE"       from "TODO"       [2016-02-08 lun 18:52]
@@ -403,9 +404,6 @@ hypotheses would be supported with experimental results.
 
 ** DONE [#A] Aplicar cambios en INS-D-15-498R3 al recibir respuesta de Rebecca
    CLOSED: [2016-04-14 jue 12:17] SCHEDULED: <2016-04-11 lun>
-   :LOGBOOK:
-   CLOCK: [2016-04-13 mié 17:46]
-   :END:
 
 * Anunciar elecciones director de la escuela
   :LOGBOOK:
@@ -413,7 +411,8 @@ hypotheses would be supported with experimental results.
   :END:
 
 * Tasks
-** TODO Mirar Orgullo y Satisfacción
+** DONE Mirar Orgullo y Satisfacción
+   CLOSED: [2016-04-30 sáb 10:41]
 ** DONE Responder a Sancho sobre cambios
    CLOSED: [2016-04-06 mié 16:11]
 
@@ -496,14 +495,16 @@ influence of the local search, to include a statistical analysis of the comparis
 *** Material para la presentación
 
 http://www.alanzucconi.com/2016/04/06/evolutionary-coputation-1/
-** TODO Preparar CAEPIA, MAEB
-   DEADLINE: <2016-04-25 lun>
+** TODO [#A] Preparar CAEPIA, MAEB
+   DEADLINE: <2016-05-20 mar>
 ** TODO [#A] Preparar/Repasar clase de AS
-   DEADLINE: <2016-04-13 mié> SCHEDULED: <2016-05-17 mar ++1w>
+   DEADLINE: <2016-06-03 vie ++1w> SCHEDULED: <2016-06-02 jue ++1w>
    :PROPERTIES:
    :ORDERED:  t
-   :LAST_REPEAT: [2016-04-17 dom 15:05]
+   :LAST_REPEAT: [2016-04-25 lun 18:42]
    :END:
+   - State "DONE"       from "TODO"       [2016-04-25 lun 18:42]
+   - State "DONE"       from "TODO"       [2016-04-25 lun 15:10]
    - State "DONE"       from "TODO"       [2016-04-17 dom 15:05]
    - State "DONE"       from "TODO"       [2016-04-14 jue 12:17]
    - State "DONE"       from "TODO"       [2016-04-14 jue 12:17]
@@ -516,7 +517,8 @@ http://www.alanzucconi.com/2016/04/06/evolutionary-coputation-1/
 ** TODO Incorporar un simple analizador de logs de Apache y Nginx.
 
 http://www.tecmint.com/goaccess-a-real-time-apache-and-nginx-web-server-log-analyzer/
-** TODO Registrar el portátil de Amalia en el registro
+** DONE Registrar el portátil de Amalia en el registro
+   CLOSED: [2016-04-30 sáb 10:40]
 
 https://www.toshiba.es/registration/registration-form/
 ** TODO Mirar Machine Learning visual
@@ -535,7 +537,8 @@ http://www.turingfinance.com/fitness-landscape-analysis-for-computational-financ
    CLOCK: [2016-04-17 dom 15:09]--[2016-04-17 dom 15:34] =>  0:25
    CLOCK: [2016-04-17 dom 12:49]--[2016-04-17 dom 15:09] =>  2:20
    :END:
-** TODO 
+** DONE 
+   CLOSED: [2016-04-30 sáb 10:40]
   
    [[mu4e:msgid:93CD41460474C64BAF84BEE8618C32113F170656@MBXEUR02.usersad.everis.int][RE: Agenda propuesta para evento con everis]]
 ** DONE Votar en las eleciones
@@ -546,11 +549,81 @@ http://www.turingfinance.com/fitness-landscape-analysis-for-computational-financ
   
    [[mu4e:msgid:CAHNEebDMUDfjfQD4Vzzg67mjMDtqzaApBP51MB03MuHRk46t+Q@mail.gmail.com][Fwd: 21714061_15_16_01: Jornada Everis en ESI]]
 
-** TODO Implementar en C++ usando el Armadillo los ejercicios del Máster. 
+** DONE Implementar en C++ usando el Armadillo los ejercicios del Máster. 
+   CLOSED: [2016-04-30 sáb 10:40]
 
-** TODO Ofrecer también en Python.
+** DONE Ofrecer también en Python.
+   CLOSED: [2016-04-30 sáb 10:40]
 
 ** TODO Buscar librería en Java para similar.
+** TODO Mirar eventos
+
+*** Paralelo
+   http://activisiongamescience.github.io/2016/04/19/IPython-Parallel-Introduction/
+  
+   [[mu4e:msgid:e2e180baf855ac797ef407fc7935465b27d.20160421150320@mail51.atl91.mcsv.net][Python Weekly - Issue  240]]
+** TODO Coger datos del L-SHADE
+  
+https://sites.google.com/site/tanaberyoji/home
+** TODO Documento
+  
+   [[mu4e:msgid:5dda28ec3d8047a98cebf71b60ed47e7@ex0.auburn.edu][Important - request and format for IEEE EC TF annual report - due May 13]]
+** TODO Ver página pbpython.com
+
+http://pbpython.com/
+** TODO Añadir a mi lista de enlaces interesantes
+  
+https://www.semanticscholar.org/
+** TODO [#A] Publicar en la web
+  
+   [[mu4e:msgid:006501d1ac21$e4bc77f0$ae3567d0$@esi][asignaciones PFC]]
+** TODO [#A] Terminar sección 2.2.2 (más largo)
+  
+   [[mu4e:msgid:D520B8F5-EA88-476E-99C2-AE0F6878B41A@uca.es][Re: Completar la sección 2.2.]]
+** TODO Incluir certificado en página web Apache
+  
+https://certbot.eff.org/#ubuntutrusty-apache
+* TODO Configurar postfix para Emacs
+
+** Para enviar usando postfix desde emacs
+http://pragmaticemacs.com/emacs/using-postfix-instead-of-smtpmail-to-send-email-in-mu4e/
+
+** Para que postfix use los servidores SMTP en vez de directamente
+
+https://www.linode.com/docs/email/postfix/postfix-smtp-debian7
+
+** Usando varios en postfix en base al dominio
+
+https://www.howtoforge.com/community/threads/postfix-multiple-relayhosts.46282/
+
+* TODO Actualizar la web con los nuevos exámenes para Junio y Septiembre, y cambios en calendario
+  
+  [[mu4e:msgid:1519899152.1646.1461754762180.JavaMail.tomcat@draco][Para actualizar la Web de la ESI.]]
+* TODO Configurar dropbox como un repositorio Git
+
+https://github.com/anishathalye/git-remote-dropbox
+* TODO Descargar datos del seminario (cuenta Dropbox)
+  
+  [[mu4e:msgid:571E0BBC.1030400@decsai.ugr.es][Re: {Sci2s} Seminario en Ciencia de Datos (viernes 22 abril)]]
+* DONE Revisar las activades registradas
+  CLOSED: [2016-04-30 sáb 10:41]
+  
+  [[mu4e:msgid:571E0C07.5010405@uca.es][Fwd: CONSULTA DEL REGISTRO DE ACTIVIDADES PROFESORADO (PDA) Y COMIENZO DEL PLAZO DE ALEGACIONES PARA EL PROFESORADO]]
+* Pelican 
+
+** TODO Mirar cómo publicar usando org para pelican
+
+https://kerunix.com/Blog%20with%20Emacs%20and%20Pelican%20-%20even%20better%20!.html
+
+** TODO Enlace usando org-mode
+
+https://danlamanna.com/blogging-with-org-mode-pelican-fabric-and-emacs-lisp.html
+
+** TODO Colgar tareas en HTML con plantillas de forma automática
+
+https://github.com/fniessen/org-html-themes
+
+
 * Machine Learning 
 
 ** Curso de Google sobre ML
@@ -588,5 +661,20 @@ http://archive.ics.uci.edu/ml/
 https://www.kaggle.com/
 
 
+** Para hacer con el Go
+
+https://github.com/maxpumperla/betago
+
 * DONE [#A] Preparar CV simplificado del ministerio para el proyecto
   CLOSED: [2016-04-18 lun 16:30] SCHEDULED: <2016-04-17 dom>
+
+* DONE Enviar a Amalia
+  CLOSED: [2016-05-16 lun 18:23]
+
+http://www.elobservador.com.uy/como-se-ve-hoy-el-nino-del-meme-mas-famoso-del-mundo-n905920
+
+* Escribir a Suganthan y Antonio La Torre
+  :LOGBOOK:
+  CLOCK: [2016-05-16 lun 18:31]--[2016-05-16 lun 18:57] =>  0:26
+  CLOCK: [2016-05-16 lun 18:30]--[2016-05-16 lun 18:31] =>  0:01
+  :END:
