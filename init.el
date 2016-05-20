@@ -1205,6 +1205,7 @@ current line."
         "https://www.reddit.com/r/programming/.rss"
         "https://www.reddit.com/r/emacs/.rss"
         "https://www.reddit.com/r/python/.rss"
+	"https://www.reddit.com/.rss?feed=20f43b0442039aa21bf7a479f0e4af2619d236d9&user=danimolina"
 	)))
 
 (use-package w3m
