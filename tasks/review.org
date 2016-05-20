@@ -1084,10 +1084,12 @@ Entered on [2016-02-26 vie 17:42]
 
 ** Website: http://mts.hindawi.com/reviewer/5392471568489460/
 
+
 ** [[file:~/Dropbox/revisar/6154637.v1.pdf][Documento PDF]]
 ** [[file:~/Dropbox/revisar/6154637.v1.txt][Comentarios]]
 
-** TODO Subir los comentarios
+** DONE Subir los comentarios
+   CLOSED: [2016-05-16 lun 18:23]
 
 * TODO Convergent Stochastic Differential Evolution Algorithms
   DEADLINE: <2016-06-01 mié>
@@ -1102,4 +1104,10 @@ Entered on [2016-04-18 lun 16:24]
 [[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf::1][/home/daniel/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf]]
 
 [[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).txt][Comentarios]]
+* TODO: Revisar artículo
+  DEADLINE: <2016-06-19 dom>
+Entered on [2016-05-19 jue 12:12]
 
+http://ees.elsevier.com/asoc/default.asp
+  
+[[file:~/Descargas/revisar/ASOC-D-16-01103.pdf][file:~/Descargas/revisar/ASOC-D-16-01103.pdf]]
