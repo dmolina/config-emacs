@@ -1616,3 +1616,9 @@ mark current word before calling `TeX-font'."
 
 (use-package bookmark+
   :ensure t)
+
+(use-package clean-aindent-mode
+  :ensure t
+  :config
+  (set 'clean-aindent-is-simple-indent t)
+)
