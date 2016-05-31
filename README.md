@@ -43,10 +43,13 @@ All these templates are in ~/.emacs.d/orgtemplates.
 
 ## Several custom hotkeys ##
 
+- **F2** Org-capture.
 - **F3** Next window.
 - **F4** Go to list of buffer.
-- **F6** Org-capture.
+- **F6** Select region.
+- **F7** Compile org-mode to beamer.
 - **F8** Apply flyspell with dictionary.
+- **F9** Compile org-mode to latex.
 - **M-f8** Go to next wrong word detected by flyspell.
 - **F10** Go to current org-clock active task.
 - **F11** fullscreen.
