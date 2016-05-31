@@ -254,7 +254,7 @@ user-full-name  "Daniel Molina")
 					; Reply only personal email
 
 (setq mu4e-compose-complete-only-personal t)
-
+(setq mu4e-headers-sort-direction 'ascending)
 )
 
 
