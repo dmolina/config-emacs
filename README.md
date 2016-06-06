@@ -41,6 +41,16 @@ To create a file .bea or .tpl init the files for org-export with all the default
 
 All these templates are in ~/.emacs.d/orgtemplates.
 
+## Python import hotkeys ##
+
+Because I work a lot in Python, these are the important configurations:
+
+- Python-mode, with autocomplete with elpy. 
+
+- ein, to open notebook in emacs.
+
+- Sphinx-doc, that enable with "C-c M-d" to autocomplete the autodoc.
+
 ## Several custom hotkeys ##
 
 - **F2** Org-capture.
@@ -54,6 +64,9 @@ All these templates are in ~/.emacs.d/orgtemplates.
 - **F10** Go to current org-clock active task.
 - **F11** fullscreen.
 - **F12** compile. 
+- **C-q** Close current window (without question is not modified.
 - **C-x u** see the undos.
 - **C-:** to go a specific char.
 - **C-;** to go a specific pair of chairs.
+
+- **C-M-+/-** to zoom in and zoom out (globally with zoom-frm).

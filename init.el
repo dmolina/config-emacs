@@ -1529,7 +1529,12 @@ mark current word before calling `TeX-font'."
 
 (use-package zoom-frm
   :ensure t
+  :bind (("C-M-+" . zoom-in)
+	 ("C-M--" . zoom-out))
+  :config
+  (setq frame-zoom-font-difference 4)
 )
+
 
 ; Set conkeror as the default browser
 (setq browse-url-generic-program (executable-find "ck"))
@@ -1621,4 +1626,20 @@ mark current word before calling `TeX-font'."
   :ensure t
   :config
   (set 'clean-aindent-is-simple-indent t)
+  )
+
+(defun volatile-kill-buffer ()
+   "Kill current buffer unconditionally."
+   (interactive)
+   (let ((buffer-modified-p nil))
+     (kill-buffer (current-buffer))))
+
+(global-set-key (kbd "C-q") 'volatile-kill-buffer)     ;; Unconditionally kill unmodified buffers.
+
+(use-package sphinx-doc
+  :ensure t
+  :config
+  (add-hook 'python-mode-hook (lambda ()
+                                  (require 'sphinx-doc)
+                                  (sphinx-doc-mode t)))
 )
