@@ -1642,4 +1642,10 @@ mark current word before calling `TeX-font'."
   (add-hook 'python-mode-hook (lambda ()
                                   (require 'sphinx-doc)
                                   (sphinx-doc-mode t)))
+  )
+
+(use-package moe-theme
+  :ensure t
+  :config
+  (moe-dark)
 )
