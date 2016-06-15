@@ -1648,4 +1648,12 @@ mark current word before calling `TeX-font'."
   :ensure t
   :config
   (moe-dark)
+  )
+
+
+; Configure the default external file with "!"
+; runner allow set external file with M-x runner-add-extension
+; It is stored in .emacs.d/runner-conf.el
+(use-package runner
+ :ensure t
 )
