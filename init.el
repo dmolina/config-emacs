@@ -1573,6 +1573,9 @@ mark current word before calling `TeX-font'."
 
 ; Set the human format
 (setq dired-listing-switches "-lhG")
+;; allow dired to delete or copy dir
+(setq dired-recursive-copies (quote always)) ; “always” means no asking
+(setq dired-recursive-deletes (quote top)) ; “top” means ask once
 
 (use-package writegood-mode
   :ensure t
