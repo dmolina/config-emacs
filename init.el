@@ -1655,5 +1655,8 @@ mark current word before calling `TeX-font'."
 ; runner allow set external file with M-x runner-add-extension
 ; It is stored in .emacs.d/runner-conf.el
 (use-package runner
- :ensure t
-)
+  :ensure t
+  :config
+  (runner-run-in-background)
+  )
+
