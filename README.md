@@ -68,5 +68,6 @@ Because I work a lot in Python, these are the important configurations:
 - **C-x u** see the undos.
 - **C-:** to go a specific char.
 - **C-;** to go a specific pair of chairs.
+- **C--** Change to previous buffer.
 
 - **C-M-+/-** to zoom in and zoom out (globally with zoom-frm).
