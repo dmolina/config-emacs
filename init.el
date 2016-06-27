@@ -1394,10 +1394,14 @@ mark current word before calling `TeX-font'."
 
 ; Set in org-mode the capture mode
 (global-set-key (kbd "<f2>") 'org-capture)
-(setq org-capture-templates '(("t" "Todo"
+(setq org-capture-templates '(
+      ("t" "Todo"
       entry (file+headline "~/.emacs.d/tasks/tareas.org" "Tasks")
       "* TODO %?\n  %i\n  %a")
-			      ("e" "Evento" entry (file "~/.emacs.d/tasks/citas.org")
+       ("b" "Bookmark"
+      entry (file "~/.emacs.d/tasks/interesante.org")
+      "* %?\n  %i\n  %a")
+      ("e" "Evento" entry (file "~/.emacs.d/tasks/citas.org")
 			       "* TODO %?\n  %a\n%u")
         ("r" "Review" entry (file "~/.emacs.d/tasks/review.org")
 	 "* TODO: %?\nEntered on %U\n  %i\n  %a")))
@@ -1481,8 +1485,12 @@ mark current word before calling `TeX-font'."
 (use-package ace-window
   :ensure t
   :init
-  (global-set-key (kbd "M-p") 'ace-window)
-)
+  (progn
+    (global-set-key [remap other-window] 'ace-window)
+    (custom-set-faces
+     '(aw-leading-char-face
+       ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
+    ))
 
 ; Make the current region bigger
 (use-package golden-ratio
@@ -1674,3 +1682,44 @@ mark current word before calling `TeX-font'."
 
 ;; set key binding
 (global-set-key (kbd "C--") 'switch-to-previous-buffer)
+
+; RSS Reader
+(use-package elfeed
+  :ensure t
+  :init
+      (setq elfeed-feeds
+      '("http://nullprogram.com/feed/"
+        "http://www.terminally-incoherent.com/blog/feed/"
+	"http://meneame.feedsportal.com/rss"
+	"meneame.net/rss2.php"
+	;"https://www.linux.com/news/rss-feeds"
+	"https://www.linux.com/news/software/developer?format=feed&type=rss"
+        "https://www.reddit.com/r/programming/.rss"
+        "https://www.reddit.com/r/emacs/.rss"
+        "https://www.reddit.com/r/python/.rss"
+	"http://feeds.feedburner.com/HanselminutesCompleteMP3"
+	"https://www.reddit.com/.rss?feed=20f43b0442039aa21bf7a479f0e4af2619d236d9&user=danimolina"
+	)))
+
+(use-package emms
+  :ensure t
+:config
+(emms-all)
+(emms-default-players)
+(setq emms-source-file-default-directory "~/music/")
+(add-to-list 'emms-player-list 'emms-player-mikmod)
+(load-user-file "emms-get-lyrics.el")
+(require 'emms-player-mpd)
+(setq emms-player-mpd-server-name "localhost")
+(setq emms-player-mpd-server-port "6600")
+(setq emms-player-mpd-server-password "pwd@read,add,control,admin")
+(add-to-list 'emms-info-functions 'emms-info-mpd)
+(add-to-list 'emms-player-list 'emms-player-mpd)
+)
+
+; With f, F, t, T ti go to next appearance of a char
+(use-package evil-quickscope  
+  :ensure t
+:config
+;(global-evil-quickscope-mode 1)
+)
