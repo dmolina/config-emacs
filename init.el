@@ -1724,16 +1724,27 @@ mark current word before calling `TeX-font'."
 ;(global-evil-quickscope-mode 1)
 )
 
-(use-package counsel
-  :ensure t
+;; (use-package counsel
+;;   :ensure t
+;; )
+;; ;; it looks like counsel is a requirement for swiper
+;; ;; Another alternative
+;; (use-package swiper
+;;   :ensure t
+;;   :config
+;;   (progn
+;;     (ivy-mode 1)
+;;     (setq ivy-use-virtual-buffers t)
+;;     (global-set-key "\C-s" 'swiper)
+;; ))  
+
+(use-package helm-swoop
+:ensure t
+:config
+(global-set-key "\C-s" 'helm-swoop)
+
+;; If this value is t, split window inside the current window
+(setq helm-swoop-split-with-multiple-windows nil)
+;; Split direcion. 'split-window-vertically or 'split-window-horizontally
+(setq helm-swoop-split-direction 'split-window-horizontally)
 )
-  
-;; it looks like counsel is a requirement for swiper
-(use-package swiper
-  :ensure t
-  :config
-  (progn
-    (ivy-mode 1)
-    (setq ivy-use-virtual-buffers t)
-    (global-set-key "\C-s" 'swiper)
-))  
