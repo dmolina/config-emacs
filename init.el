@@ -1723,3 +1723,17 @@ mark current word before calling `TeX-font'."
 :config
 ;(global-evil-quickscope-mode 1)
 )
+
+(use-package counsel
+  :ensure t
+)
+  
+;; it looks like counsel is a requirement for swiper
+(use-package swiper
+  :ensure t
+  :config
+  (progn
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (global-set-key "\C-s" 'swiper)
+))  
