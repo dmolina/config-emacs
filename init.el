@@ -1770,23 +1770,13 @@ mark current word before calling `TeX-font'."
 (add-hook 'org-mode-hook 'poly-org-mode)
 )
 
+; Add modes for HTML editing
+(load-user-file "config_web.el")
 
-(use-package web-mode
-  :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
-  )
-
-(use-package emmet-mode
-  :ensure t
-)
 
 (use-package deft
   :ensure t
   :config
   (setq deft-directory "~/.emacs.d/tasks")
   (global-set-key (kbd "C-x C-g") 'deft-find-file)
-  (global-set-key [f3] 'deft)
 )
