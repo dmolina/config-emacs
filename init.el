@@ -1725,27 +1725,68 @@ mark current word before calling `TeX-font'."
 ;(global-evil-quickscope-mode 1)
 )
 
-;; (use-package counsel
-;;   :ensure t
-;; )
-;; ;; it looks like counsel is a requirement for swiper
-;; ;; Another alternative
-;; (use-package swiper
-;;   :ensure t
-;;   :config
-;;   (progn
-;;     (ivy-mode 1)
-;;     (setq ivy-use-virtual-buffers t)
-;;     (global-set-key "\C-s" 'swiper)
-;; ))  
+(use-package counsel
+  :ensure t
+)
+;; it looks like counsel is a requirement for swiper
+;; Another alternative
+(use-package swiper
+  :ensure t
+  :config
+  (progn
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (global-set-key "\C-s" 'swiper)
+))  
 
 (use-package helm-swoop
 :ensure t
 :config
-(global-set-key "\C-s" 'helm-swoop)
+(global-set-key "\M-s" 'helm-swoop)
 
 ;; If this value is t, split window inside the current window
 (setq helm-swoop-split-with-multiple-windows nil)
 ;; Split direcion. 'split-window-vertically or 'split-window-horizontally
 (setq helm-swoop-split-direction 'split-window-horizontally)
+)
+
+(use-package counsel
+  :ensure t
+  )
+;; it looks like counsel is a requirement for swiper
+;; Another alternative
+(use-package swiper
+  :ensure t
+  :config
+  (progn
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (global-set-key "\C-s" 'swiper)
+    ))  
+
+(use-package polymode
+  :ensure t
+  :config
+(add-hook 'org-mode-hook 'poly-org-mode)
+)
+
+
+(use-package web-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+  )
+
+(use-package emmet-mode
+  :ensure t
+)
+
+(use-package deft
+  :ensure t
+  :config
+  (setq deft-directory "~/.emacs.d/tasks")
+  (global-set-key (kbd "C-x C-g") 'deft-find-file)
+  (global-set-key [f3] 'deft)
 )
