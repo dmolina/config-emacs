@@ -261,3 +261,5 @@ user-full-name  "Daniel Molina")
 )
 
 
+
+(use-package notmuch)
