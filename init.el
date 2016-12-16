@@ -1773,10 +1773,27 @@ mark current word before calling `TeX-font'."
 ; Add modes for HTML editing
 (load-user-file "config_web.el")
 
+(use-package google-translate
+  :ensure t
+  :init
+  (require 'google-translate-smooth-ui)
+  (setq google-translate-translation-directions-alist
+      '(("es" . "en") ("en" . "es"))) 
+  :bind ("C-c t" . google-translate-smooth-translate)
+  )
 
-(use-package deft
+(use-package paradox
   :ensure t
   :config
-  (setq deft-directory "~/.emacs.d/tasks")
-  (global-set-key (kbd "C-x C-g") 'deft-find-file)
+  (setq paradox-execute-asynchronously t)
 )
+
+(use-package eyebrowse
+  :ensure t
+  :config
+  (eyebrowse-mode t)
+  (desktop-save-mode 1)
+  (eyebrowse-setup-opinionated-keys)
+  :bind ("<f4>" . eyebrowse-last-window-config)
+)  
+

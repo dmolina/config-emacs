@@ -30,6 +30,14 @@ My personal emacs configuration (avoiding melpa/elpa packages).
 	- Configurated org-caldav to interaction with google calendar, it syncronize with my trabajo (work)
 	  calendar (it can but personalised).
 	  
+     - Install paradox to allow async upgrade of packages.
+	 
+     - Eyebrowse to change between virtual windows (with *C-w :* or *Alt-Number*).
+	 
+     - Use C-c t to translate from English<->English.
+	 
+	 - Use sx for query to stackoverflow.
+	  
 	
 ## Templates for org-mode ##
 
@@ -55,7 +63,7 @@ Because I work a lot in Python, these are the important configurations:
 
 - **F2** Org-capture.
 - **F3** Next window.
-- **F4** Go to list of buffer.
+- **F4** Return to last window (eyebrowser).
 - **F6** Select region.
 - **F7** Compile org-mode to beamer.
 - **F8** Apply flyspell with dictionary.
@@ -69,5 +77,6 @@ Because I work a lot in Python, these are the important configurations:
 - **C-:** to go a specific char.
 - **C-;** to go a specific pair of chairs.
 - **C--** Change to previous buffer.
+- **C-c t* to translate a work from Spanish<->English (with *C-n* and *C-p* change direction).
 
 - **C-M-+/-** to zoom in and zoom out (globally with zoom-frm).
