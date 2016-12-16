@@ -230,6 +230,9 @@ user-full-name  "Daniel Molina")
   :init
 ;;store link to message if in header view, not to header query
   (setq org-mu4e-link-query-in-headers-mode nil))
+  ;; use org structures and tables in message mode
+  (add-hook 'message-mode-hook 'turn-on-orgtbl)
+  (add-hook 'message-mode-hook 'turn-on-orgstruct++)
 
 ; Access to marked files in dired mode to attach
 (require 'gnus-dired)
