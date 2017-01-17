@@ -1797,3 +1797,15 @@ mark current word before calling `TeX-font'."
   :bind ("<f4>" . eyebrowse-last-window-config)
 )  
 
+(use-package zotelo
+  :ensure t
+  :init
+(add-hook 'TeX-mode-hook 'zotelo-minor-mode)
+)
+
+(use-package helm-bibtex
+  :ensure t
+  :init
+(setq bibtex-completion-bibliography
+      '("~/current/bibtex/nosotros.bib"))
+)
