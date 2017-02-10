@@ -203,7 +203,6 @@
 (setq google-calendar-url           "http://www.google.com/calendar/ical/h7rkmngcs7qtk4anl2v0lc8318%40group.calendar.google.com/private-65f81a34d4a1cdfaba2728d2b7ba04ff/basic.ics")  ;;; URL TO YOUR GOOGLE CALENDAR
 (setq google-calendar-auto-update    t )                    ;;; DEFINE IF THE CALENDAR IS DOWNLOADED AFTER EVERY MODIFICATION
 
- (european-calendar)
     (setq calendar-week-start-day 1
           calendar-day-name-array
           ["Domingo" "Lunes" "Martes" 
