@@ -1809,3 +1809,7 @@ mark current word before calling `TeX-font'."
 (setq bibtex-completion-bibliography
       '("~/current/bibtex/nosotros.bib"))
 )
+
+(use-package realgud
+  :ensure t
+  )
