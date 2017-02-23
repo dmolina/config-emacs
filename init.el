@@ -1813,3 +1813,7 @@ mark current word before calling `TeX-font'."
 (use-package realgud
   :ensure t
   )
+(use-package async
+  :ensure t
+  :config
+  (async-bytecomp-package-mode 1))
