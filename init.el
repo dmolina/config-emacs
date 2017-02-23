@@ -1772,9 +1772,10 @@ mark current word before calling `TeX-font'."
 
 (use-package eyebrowse
   :ensure t
-  :config
+  :init
   (eyebrowse-mode t)
-  (desktop-save-mode 1)
+;  (desktop-save-mode 1)
+  (push '(persp . :never) frameset-filter-alist) 
   (eyebrowse-setup-opinionated-keys)
   :bind ("<f4>" . eyebrowse-last-window-config)
 )  
