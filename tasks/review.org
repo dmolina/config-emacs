@@ -1044,7 +1044,8 @@ in the analysis and conclusion, it cannot be published.
 
 ** [[~/Dropbox/revisar/ZUSC-D-15-00287_R1.pdf][Revisión nueva]]
 
-* TODO Revisar Trabajos WCCI 2016
+* DONE Revisar Trabajos WCCI 2016
+  CLOSED: [2016-09-09 vie 12:18]
 
 * DONE Revisar PRAI-D-15-00051_R1
   CLOSED: [2016-03-10 jue 18:07] DEADLINE: <2016-03-03 jue>
@@ -1063,14 +1064,14 @@ in the analysis and conclusion, it cannot be published.
 ** [[http://mts.hindawi.com/reviewer/5392471568489460/][Enlace de la web]]
 
 ** [[file:~/Dropbox/revisar/coverletter.6154637.v1.pdf][Artículo]]
-* TODO [#A] Revisar CYB-IEEE Urgente 
-  SCHEDULED: <2016-04-18 lun>
+* DONE [#A] Revisar CYB-IEEE Urgente 
+  CLOSED: [2016-09-09 vie 12:16] SCHEDULED: <2016-04-18 lun>
    Entered on [2016-04-18 lun 16:18]
   
 [[file:~/Dropbox/revisar/s1-ln22849595-1273520368-1939656818Hwf1300487469IdV-10893315122849595PDF_HI0001.pdf::1][Acceso]]
 
-* TODO Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
-  DEADLINE: <2016-04-22 vie>
+* DONE Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
+  CLOSED: [2016-09-09 vie 12:17] DEADLINE: <2016-04-22 vie>
 Entered on [2016-02-26 vie 17:42]
   
 [[file:~/Dropbox/revisar/CYB-E-2016-02-0253.pdf]]
@@ -1091,8 +1092,8 @@ Entered on [2016-02-26 vie 17:42]
 ** DONE Subir los comentarios
    CLOSED: [2016-05-16 lun 18:23]
 
-* TODO Convergent Stochastic Differential Evolution Algorithms
-  DEADLINE: <2016-06-01 mié>
+* DONE Convergent Stochastic Differential Evolution Algorithms
+  CLOSED: [2016-10-19 mié 10:37] DEADLINE: <2016-06-01 mié>
 
 ** Enlace: http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/4576
 
@@ -1104,10 +1105,19 @@ Entered on [2016-04-18 lun 16:24]
 [[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf::1][/home/daniel/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf]]
 
 [[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).txt][Comentarios]]
-* TODO: Revisar artículo
-  DEADLINE: <2016-06-19 dom>
+* DONE TODO: Revisar artículo
+  CLOSED: [2016-10-19 mié 10:37] DEADLINE: <2016-06-19 dom>
 Entered on [2016-05-19 jue 12:12]
 
 http://ees.elsevier.com/asoc/default.asp
   
 [[file:~/Descargas/revisar/ASOC-D-16-01103.pdf][file:~/Descargas/revisar/ASOC-D-16-01103.pdf]]
+
+
+* Swarm and Evolutionary Computation
+  DEADLINE: <2017-01-04 mié>
+
+** Title: Voxelisation in the 3-D Fly Algorithm for PET
+
+** Paper: [[~/Descargas/revisar/SWEVO_2016_38_Revision%201_V0.pdf][Paper]]
+

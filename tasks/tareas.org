@@ -317,23 +317,6 @@ LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 S
    :END:
 
 
-* TODO Pagar el piso
-  SCHEDULED: <2016-06-05 dom ++1m>
-  :PROPERTIES:
-  :LAST_REPEAT: [2016-05-12 jue 09:56]
-  :ID:       fd4eea85-7a80-4fff-989b-c657bb556edb
-  :END:
-  - State "DONE"       from "TODO"       [2016-05-12 jue 09:56]
-  - State "DONE"       from "TODO"       [2016-04-07 jue 13:09]
-  - State "DONE"       from "TODO"       [2016-03-10 jue 18:06]
-  - State "DONE"       from "TODO"       [2016-02-08 lun 18:52]
-  - State "DONE"       from "TODO"       [2016-01-11 lun 10:57]
-
-* <2016-01-11 lun>
-  :PROPERTIES:
-  :ID:       cd31235c-5dca-470d-9e20-4b020f41e453
-  :END:
-
 ** Docencia
    :PROPERTIES:
    :ID:       c31f9474-82c2-4a9e-ac5c-25dff438d93e
@@ -495,14 +478,15 @@ influence of the local search, to include a statistical analysis of the comparis
 *** Material para la presentación
 
 http://www.alanzucconi.com/2016/04/06/evolutionary-coputation-1/
-** TODO [#A] Preparar CAEPIA, MAEB
-   DEADLINE: <2016-05-20 mar>
-** TODO [#A] Preparar/Repasar clase de AS
-   DEADLINE: <2016-06-03 vie ++1w> SCHEDULED: <2016-06-02 jue ++1w>
+** DONE [#A] Preparar CAEPIA, MAEB
+   CLOSED: [2016-09-09 vie 12:16] DEADLINE: <2016-05-20 mar>
+** DONE [#A] Preparar/Repasar clase de AS
+   CLOSED: [2016-10-19 mié 10:36] DEADLINE: <2016-08-05 vie> SCHEDULED: <2016-06-02 jue>
    :PROPERTIES:
    :ORDERED:  t
-   :LAST_REPEAT: [2016-04-25 lun 18:42]
+   :LAST_REPEAT: [2016-09-09 vie 12:16]
    :END:
+   - State "DONE"       from "TODO"       [2016-09-09 vie 12:16]
    - State "DONE"       from "TODO"       [2016-04-25 lun 18:42]
    - State "DONE"       from "TODO"       [2016-04-25 lun 15:10]
    - State "DONE"       from "TODO"       [2016-04-17 dom 15:05]
@@ -562,10 +546,12 @@ http://www.turingfinance.com/fitness-landscape-analysis-for-computational-financ
    http://activisiongamescience.github.io/2016/04/19/IPython-Parallel-Introduction/
   
    [[mu4e:msgid:e2e180baf855ac797ef407fc7935465b27d.20160421150320@mail51.atl91.mcsv.net][Python Weekly - Issue  240]]
-** TODO Coger datos del L-SHADE
+** DONE Coger datos del L-SHADE
+   CLOSED: [2016-10-19 mié 10:35]
   
 https://sites.google.com/site/tanaberyoji/home
-** TODO Documento
+** DONE Documento
+   CLOSED: [2016-10-19 mié 10:35]
   
    [[mu4e:msgid:5dda28ec3d8047a98cebf71b60ed47e7@ex0.auburn.edu][Important - request and format for IEEE EC TF annual report - due May 13]]
 ** TODO Ver página pbpython.com
@@ -574,15 +560,53 @@ http://pbpython.com/
 ** TODO Añadir a mi lista de enlaces interesantes
   
 https://www.semanticscholar.org/
-** TODO [#A] Publicar en la web
+** DONE [#A] Publicar en la web
+   CLOSED: [2016-10-19 mié 10:35]
   
    [[mu4e:msgid:006501d1ac21$e4bc77f0$ae3567d0$@esi][asignaciones PFC]]
-** TODO [#A] Terminar sección 2.2.2 (más largo)
+** DONE [#A] Terminar sección 2.2.2 (más largo)
+   CLOSED: [2016-10-19 mié 10:35]
   
    [[mu4e:msgid:D520B8F5-EA88-476E-99C2-AE0F6878B41A@uca.es][Re: Completar la sección 2.2.]]
 ** TODO Incluir certificado en página web Apache
   
 https://certbot.eff.org/#ubuntutrusty-apache
+** DONE Escribir al doctorando cubano para ver cómo va todo
+   CLOSED: [2017-02-01 mié 08:46] DEADLINE: <2016-10-23 dom>
+  
+   [[file:~/current/paper_cognitive_computation/survey_real_opt.tex::In%202015,%20several%20competitions%20very%20proposed.%20First]]
+
+** DONE Buscar mensajes de modelos de lobos y demás enviados por Paco
+   CLOSED: [2017-02-22 mié 14:05] DEADLINE: <2016-10-23 dom>
+** TODO Comparar para DSS dos herramientas UML: QEditor y Modelio
+
+*** Modelio
+
+- Portal: https://www.modelio.org/about-modelio/screenshots.html
+- Pantallazos: https://www.modelio.org/about-modelio/screenshots.html
+- Videos: https://www.youtube.com/watch?v=GQKqQaL_m5g
+
+
+- Ventajas :: Parece completo, y OpenSource.
+- Desventajas :: Por ver.
+
+*** yuml:
+
+http://yuml.me/
+
+- Ventajas :: Muy conciso, para borrador.
+- Desventajas :: Para borrador.
+
+*** QEditor 
+
+Editor usando las Qt y PlantUML, que uso en Emacs
+
+https://github.com/jalbersol/plantumlqeditor
+** DONE Repasar la ropuesta de política de seguridad
+   CLOSED: [2017-02-01 mié 08:46] DEADLINE: <2016-10-25 mar>
+  
+   [[mu4e:msgid:1090727768.1476948500176.JavaMail.tavira@morrigan][INFORMACIÓN UCA Trámite de alegaciones de la propuesta de modificación del Documento de Política de Seguridad]]
+
 * TODO Configurar postfix para Emacs
 
 ** Para enviar usando postfix desde emacs
@@ -596,10 +620,11 @@ https://www.linode.com/docs/email/postfix/postfix-smtp-debian7
 
 https://www.howtoforge.com/community/threads/postfix-multiple-relayhosts.46282/
 
-* TODO Actualizar la web con los nuevos exámenes para Junio y Septiembre, y cambios en calendario
+* DONE Actualizar la web con los nuevos exámenes para Junio y Septiembre, y cambios en calendario
+  CLOSED: [2016-10-19 mié 10:35]
   
   [[mu4e:msgid:1519899152.1646.1461754762180.JavaMail.tomcat@draco][Para actualizar la Web de la ESI.]]
-* TODO Configurar dropbox como un repositorio Git
+* Configurar dropbox como un repositorio Git
 
 https://github.com/anishathalye/git-remote-dropbox
 * TODO Descargar datos del seminario (cuenta Dropbox)
@@ -678,3 +703,8 @@ http://www.elobservador.com.uy/como-se-ve-hoy-el-nino-del-meme-mas-famoso-del-mu
   CLOCK: [2016-05-16 lun 18:31]--[2016-05-16 lun 18:57] =>  0:26
   CLOCK: [2016-05-16 lun 18:30]--[2016-05-16 lun 18:31] =>  0:01
   :END:
+
+* DONE Revisar Trabajo de IEEE-CYB
+  CLOSED: [2017-02-22 mié 13:50] DEADLINE: <2016-11-17 jue>
+
+https://mc.manuscriptcentral.com/cyb-ieee
