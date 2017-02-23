@@ -1,0 +1,1113 @@
+* DONE Revisión: Incremental Cooperative Co-evolution for Large-Scale Global Optimization 
+  CLOSED: [2015-06-18 jue 20:18] SCHEDULED: <2015-06-14 dom>
+
+** Revista: https://mc.manuscriptcentral.com/tevc-ieee
+
+** Acceso:
+[[file:~/Descargas/s1-ln20305902268885909-1939656818Hwf-2026396727IdV-79249018820305902PDF_HI0001.pdf]]
+
+** Comentarios
+
+Dear authors, 
+
+I consider your proposal of "Incremental Cooperative Co-evolution" very interesting. The paper
+is well-written and the experimental section is interesting and rather complete. 
+
+I have several suggestions before it could be prepared for published:
+
+- In the abstract:
+
+  - The sentence 'the search space of the optimizer is grown incrementally toward the original
+    problem search space' is not clear, it is better a simpler 'increases during the run'. 
+
+- In the introduction, second column:
+
+  - 'untouched' => 'fixed'
+
+  - 'dynamically either before or during the optimization.' => 'dynamically during the
+    optimization.'
+
+  - The paragraph 'In this paper...' should be a bit more detailed in the proposal.
+
+- In Section III:
+
+  - it is mentioned ideal decomposition method in line 58, but it should be indicated that is the
+    ideal, not applicable in practique (and it cannot be used for all the considered benchmarks).
+
+  - Algorithm 1 is a bit confusing by the different strategies. I suggest to put that part more
+    high-level and then explaining them in adittional seudocode (at least RSAICC).
+
+  - I have a doubt, why is used 4 as minimum group in line 20? A small explanation could be nice.
+
+  - In page 4 of paper, the term "phase" is confusing, because usually "phase" is the different part
+    of the algorithm. In your case, you should replace "phase" with "iteration" (refereeing the
+    different groups), or explain previously what do you mean with the term "phase" (at the
+    beginning I get a little confused).
+
+- Section V
+
+  - You should give reasons of the modified normal CEC-2010 version. I find it reasonable but you
+    should justify it.
+
+  - In page 7, it is said 'Symbols ’‡’, ’†’, and ’≈’ denote the compared algorithms are worse than,
+    better than, or similar to RSAICC' but only in page 9 it is said that 'A two-sided Wilcoxon test
+    with a confidence interval of 95% is used for comparing RSAICC'. That explanation should be
+    indicated before in page 7.
+
+  - In Table I and followings, we can observe than RICC obtains better results than SAICC. You
+    should analyse it, because it is interesting that deterministic version is worse than purely
+    random version.
+
+  - In Section "E. More discussions" is interesting. However, because Tables X, XI, ... compare only
+    RSAICC, RICC, DECC-I, SAICC, CCBC1, CCBC2, in my opinion, it could be better to put it before
+    current Section V.D. 
+
+- The bibliography section has errors. In several references the Title is lost. It could be an error
+  with bibtex (in that case you can fix it with brackets or ""). Please, check it before it could be
+  accepted. 
+
+To summarize, the paper is very good and it could be published after the few changes asked.
+
+*** Fichero adjunto
+
+[[file:~/Descargas/IEEE-TEC-ICC.pdf]]
+
+
+* DONE [#A] Revisión:  TEVC-00185-2015 
+  CLOSED: [2015-06-17 mié 18:33]
+  CLOCK: [2015-06-17 mié 13:05]--[2015-06-17 mié 13:24] =>  0:19
+  CLOCK: [2015-06-17 mié 12:50]--[2015-06-17 mié 13:02] =>  0:12
+  CLOCK: [2015-06-17 mié 12:23]--[2015-06-17 mié 12:36] =>  0:13
+
+** Título: ASOC: An Adaptive Parameter-free Stochastic Optimization Technique for Continuous Variables
+
+** Revista: https://mc.manuscriptcentral.com/tevc-ieee
+
+** Acceso: 
+
+[[file:~/Descargas/ASOC.pdf][~/Descargas/ASOC.pdf]]
+
+*** Comentarios
+
+Dear authors, 
+
+Your proposal is rather interesting. Unfortunately, there is many
+issues to chage before it could be considered acceptable for
+publishing. In the following, I'm going to describe you the main
+reasons:
+
+- In the abstract: 
+
+  - you should be more generic about stochastic optimization: ', and
+    tabu search or many others are available'.
+
+  - 'cannot adapt' => 'cannot be adapted'.
+
+  - It should say at the end that the proposal is compared with other
+    algorithms.
+
+- In the introduction:
+
+  - The references are old. When you are mentioning classic
+    algorithms, you should mention books about the topic, and
+    introductory papers that review a specific part of the literature.
+    The current journals cited are not adequate enough: there are
+    classic but very old. Also, I disagree with the Wikipedia
+    citations considering that there are a lot more specific
+    papers. It give the impression that authors has not enough
+    experience in the topic.
+
+  - It says that 'Evolutionary algorithms depend on the crossover and
+    mutation probabilities that are defined by the user'. It is not
+    true, it is a wrong generalisation from Genetic Algorithms. The
+    majority of Evolutionary Algorithms do not use a crossover or
+    mutation probabilities.
+
+  - There is no bibliography about adaptive and self-adaptive
+    parameters in Evolutionary Algorithms.
+
+  - In the introduction it mention adaptive parameter, but it give the
+    impression than self-adaptive parameter are not used in EAs, when
+    it is wrong. Many modern algorithms use self-adaptive parameters. 
+
+- Problem Formulation is not right. In that Section the proposal is
+  explained. The current title is very confusing.
+
+- The proposal is not well explained. The text in second column in
+  Page 3 is not detailed enough. You must always define the algorithm
+  in a way that allow other researchers to implement your algorithm,
+  and it is not your case. Eq. 7 and 8 are useless. 
+
+- There are several errata: 'simlated' in line 60, page 4. You should
+  always recheck the text. 
+
+- The experimental section is not good enough: As I have previous
+  said, important classic algorithms as DE and PSO should be
+  included. 
+
+- The algorithms used in the comparisons are not well-detailed: Which
+  are their parameters? (also in your proposal). Also, Genetic
+  Algorithm is real-coded or binary-coded? For the problems, it should
+  be used real-coded implementation, and a crossover for real coding.
+
+- There is no statistical test comparisons. Nowadays a simple
+  comparisons in average is not enough. 
+
+- There are some standard benchmarks like CEC'2015, you should use one
+  of them.
+
+In summarize, your work has not enough quality for be published for
+this journal. 
+
+* DONE Revisión: Brain
+  CLOSED: [2015-07-14 mar 16:19]
+
+  DEADLINE: <2015-06-15 lun>
+
+** Revista: http://mts.hindawi.com/reviewer/6938016631687520/
+** Acceso
+[[file:923698.v1.pdf]]
+
+** Revisado
+[[file:~/Descargas/923698.v1%20-%20annotated%20-%20flattened.pdf][~/Descargas/923698.v1 - annotated - flattened.pdf]]
+
+** Comentarios
+
+Dear authors, your proposal is innovative and interesting. However, the paper
+has not enough quality to be published in a journal. 
+
+In the following, I put the most important issues to change before it could be 
+acceptable for being published:
+
+*** Abstract
+
+Check the text:
+
+- 'the creating will be so inefficient that' => 'the process will be so
+  inefficient that'.
+
+- 'to train artificial neural network' => 'to train an artificial neural
+  network'.
+
+*** Introduction
+
+- I do not like first paragraph in Introduction. There are many citations to
+  works in literature without relationships with your work, you should or citate
+  books or paper that review the topic, or very classic, and cites only paper
+  that have a certain influence over your proposal. You put more than dix
+  citations of algorithms (without a real relationship with your
+  proposal). There is no reason for doing that. Next paragraph is right, because
+  there are algorithms relative with your work. 
+
+*** Related Work
+
+The description of BSO could be improved a lot. You should revise it very
+carefully because is not clear enough. Also, you should include a new Section
+with the general Scheme. 
+
+"in general, k-means is used in clustering operation", you should have said that
+you are going to use it that algorithm as its clustering method. 
+
+In Eq. (1) you must indicate what Xi1,j and Xi2,j mean.
+
+*** Differential Evolution Operator
+
+That section is more clear than previous one. However, you should be always
+specific, 'we will let the idea to learn from the differential value of two
+random selected ideas and the cluster center.' is clear but expression like 
+'we will let the idea to learn' is not concrete enough. 
+I suggest you to taking in account the Eq. (1) in previously section to create a
+similar Equation with your proposal. 
+
+A more detailed explanaition of the differences should be added. 
+
+*** Benchmark Functions
+
+In experimental section, you uses 14 functions of CEC'2015 test suite. Why only
+these 14 functions and not all? 
+
+- In 4.2 you don't say value of k parameter in BSO-DE. 
+
+- In 4.3 you say 'Considering the conciseness
+of the paper, we only compare the 3 benchmark functions (F1, F7 and F14) with 25
+independent runs,' I disagree with using only 3 functions. You must include all
+functions in that particular comparison, to show the differences between the 
+different new components. Also, in that section, statistical tests should be
+also used. 
+
+- In table 4 there is no a good analysis, why is so good in function 4? Any
+  hypothesis? These functions have particular features, can be observed any
+  conclusion taking its features into consideration?
+
+- In Section 4.4.3 you uses t-test test. However, for that particular benchmark 
+  parametric test like t-test should not be used. You must use a non-parametric
+  comparison like Wilcoxon's test. See [1]. 
+
+[1] Salvador García, Daniel Molina, Manuel Lozano, Francisco Herrera: A study on
+the use of non-parametric tests for analyzing the evolutionary algorithms'
+behaviour: a case study on the CEC'2005 Special Session on Real Parameter
+Optimization. J. Heuristics 15(6): 617-644 (2009).
+
+*** Application of ANN using BSODE
+
+- Check formula, there are problems in several of them: 12-2, 12-3, 13.
+
+- There is no statistical test. 
+
+- Why in Table 7 BSODE is worse without noise but it is the best with noise?
+  Could you give a possible reason?
+
+*** Bibliography
+
+The Bibliography should be checked, in particular the authors names, there are
+problems with spaces and with accents. This is a serial error in a journal work.
+
+* DONE Revisión: Adaptive Genetic Algorithm to Study the Layout of Drilling 
+  CLOSED: [2015-08-03 lun 16:41] DEADLINE: <2015-06-26 vie>
+
+** Revista: http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/3488?key=T3bnQjR3
+   [[file:2614-6539-1-RV.pdf]] 
+
+** Comentarios:
+
+**** Fichero con comentarios
+
+Dear authors,
+
+I consider your proposal very interesting, however I have several suggestions before it could be considered accepted (in no particular order):
+
+- In the abstract: 
+
+  - It is said 'the highest fitness of 2/N3 parent individuals is genetically ...' when N is not explained. It could be better to say that 'the worse 1/3 parent individuals are removed from the
+    population before crossing'. It is more clear, not only they are not crossed, but also they are not in the new generation.
+
+  - Also, improve the text, there is no connectors, and the abstract is not clear enough about the searching aim.
+
+  - 'maximum fitness' => 'best fitness'.
+
+  - 'destroyed' => 'replaced'. 
+
+- In the Introduction: 
+
+  - Improve the text, and describe briefly the proposal.
+
+  - The paragraph starting with 'In standard GA...' is not well-related with your work. It is clear than these algorithms are used in Section 2.1 to compare (Table 1) but there is no clue in the text
+    about the reasons of mentioning them.
+
+  - You must related previous work with your proposal, there are in the literature similar algorithms to your proposal? You should mention them in the Introduction. For instance, Shi[17] is mentioned
+    directly in Section 3 when it must be refereed in the Introduction.
+
+  - In general, rewrite the Introduction, it should indicate in a new paragraph the main contributions of your proposal, the 2/3 N criterion and the adaptation of Pc and Pc. In its current state, it
+    says almost nothing about the rest of the paper.
+
+- Section 2: 
+
+  - First paragraph should be changed. Actually it is clear in the text between Eq. 5 and 6, when it should be explain here.
+
+  - 'constituted' => 'constitute'
+
+  - Which crossover and mutation operations where used for Table 1? It is not said. Lack of information.
+
+- Section 3:
+
+  - Be careful, both in Section 2 and Section 3 (Figures and equations like Eq. 15) the font size is too small. I recommend you to print the paper, and check if it is readable.
+
+- Section 4:
+
+  - That section is nice, but in the Conclusions it is said that 'Combined with numerical examples, the results show considerable improvement compared with references'. However, there is no the
+    results of other algorithms to compare with.  You must to include the results of other algorithms, I suggest to use the same algorithms used in Table 1: POGA, EGA, TGA. Also, you should include
+    the results with and without the mutation rate, to see how much that change improve the results.
+
+To summarise, the paper is not bad, but several changes (in text and comparisons) must be applied before it could be acceptable.
+
+*** PDF with annotations 
+
+[[file:2614-6539-1-RV%20-%20annotated%20-%20flattened.pdf][file:2614-6539-1-RV - annotated - flattened.pdf]]
+
+* DONE [#A] Revisión
+  CLOSED: [2015-06-10 mié 15:03]
+
+** Competitive Divide-and-Conquer Algorithm for Unconstrained Large Scale Black-Box Optimization
+** Revista: https://mc.manuscriptcentral.com/toms
+** Acceso: daniel.molina@uca.es/bec...
+
+[[file:s1-ln19350265280618733-1939656818Hwf359456132IdV-29414223019350265PDF_HI0001.pdf]]
+* DONE [#B] Revisión
+  CLOSED: [2015-06-15 lun 14:59] DEADLINE: <2015-05-06 mié>
+
+** Evaluation of Genotypic Diversity Measurements Exploited in Real-Coded Representation
+
+[[file:ESWA-D-15-01345.pdf]]
+
+** Revista: http://ees.elsevier.com/eswa/default.asp
+
+** Acceso: DMolina-883/molina22377
+
+[[file:ESWA-D-15-01345.pdf][ESWA-D-15-01345.pdf ]]
+
+* DONE Revisión: 
+  CLOSED: [2015-05-12 mar 13:16]
+
+** A Tournament-Based Competitive-Cooperative Multiagent Architecture for Real Parameter Optimization
+
+** Revista: http://www.editorialmanager.com/soco/default.aspx
+
+** Acceso: dmolina-886/molina666
+
+[[file:SOCO-D-14-01151.pdf%20][file:SOCO-D-14-01151.pdf ]]
+
+* DONE Revisión: Cuckoo Search Algorithm with Chaotic Maps
+  CLOSED: [2015-07-06 lun 16:06]
+
+** [#A] Revista: http://mts.hindawi.com/reviewer/1273442979221270/
+
+** Acceso
+[[file:~/Descargas/715635.v1.pdf]]
+
+* DONE Revisión: Cuckoo
+  CLOSED: [2015-06-17 mié 12:20]
+
+** Título: Cuckoo Search Algorithm with Chaotic Maps
+** Revista: http://mts.hindawi.com/reviewer/1273442979221270/
+
+** Acceso:
+
+[[file:~/Descargas/715635.v1.pdf]]
+
+*** Comentario
+
+Dear authors, 
+
+I have found very interesting your proposal, and the results show that 
+incorporating chaotic maps to Cuckoo Search improve greatly the results
+without increasing the complexity. 
+
+However, I have several suggestions that, in my opinion, could improve
+the paper and they should improve the work before it could be
+published. 
+
+- The introduction is very good, but the sentence 
+  "however, there is seldom work on the definition of the scaling
+  factor and the fraction probability which are always used in the
+  constant value way" it is not clear enough. I suggest you to change
+  it. 
+
+- In Eq. 8 define j, I think it is the variable index, but it is not
+  said.
+
+- Eq. 8 and Eq. 10, it lacks a space between if and the following character.
+
+- Table 1 is not mentioned into the text. When you introduce a Table
+  or Figure into the paper, they should be introduced into the text.
+
+- Also, in Table 1 several chaotic map are indicated, but it is very
+  lately indicated in the Experimental Section. However, it is not
+  problematic because below I suggest a new order.
+
+- The experimental section is very good. However, I have two important
+  suggestions: 
+
+  1. Reorder the Subsections in Section 4. I suggest you the following
+     order: First current Section 4.4, then current Section 4.5, then
+     current Section then 4.2 and 4.1, Section 4.3, Finally Section
+     4.5.
+
+  2. There is clear separation in Section 4.1 and Section 4.2. I
+     suggest to join both sections. Also, to put the results in
+     dimensions 10, 30 and 50 together.
+
+  3. In Section 4.2 you use a population size equals to D. Several
+     options where tested? In that case, you should indicate it.
+
+  4. The experimental section is very good. However, you should study
+     the influence of each chaotic version: Lévy-flight random walk in
+     Section 3.2, and chaotic version of probability pa in Section
+     3.3. Thus, you should incorporate a new subsection comparing the
+     current CCS with two other versions: CCS1 (using LFRW from
+     Section 3.2 and original BSRW, Section 2.2), and CCS2 (using
+     original LRRW, Section 2.1 with chaotic BSRM from 3.3). I
+     consider that new subsection a very interesting study to analyse
+     the contribution of each modified component to final results.
+  
+In summarize, the paper is interesting and has a well-format, but
+there are several changes (specially in experimental sections) to make
+before it could be accepted.
+
+
+* DONE Revisión: Cuckoo based on quantum mechanism for Real Coding
+  CLOSED: [2015-07-30 jue 10:46] DEADLINE: <2015-08-07 mar -12d> SCHEDULED: <2015-08-07 mar>
+
+** Título: A Non-homogeneous Cuckoo Search Algorithm based-on Quantum Mechanism for Real-Parameter Optimization
+
+** Revista: https://mc.manuscriptcentral.com/cyb-ieee
+
+** Acceso:
+
+[[file:s1-ln19803926-1463300845-1939656818Hwf-1200391460IdV-200030878919803926PDF_HI0001.pdf]]
+
+* DONE Revisión: Adaptive differential evolution with ranking CR for continuous optimization problems
+  CLOSED: [2015-08-26 mié 10:56] DEADLINE: <2015-08-09 dom>
+
+** Título: Adaptive differential evolution with ranking CR for continuous optimization problem
+   
+** Revista: https://mc.manuscriptcentral.com/cyb-ieee
+
+** Acceso:
+
+[[file:s1-ln20676573-1434671476-1939656818Hwf-1623943209IdV-99312685320676573PDF_HI0001.pdf]]
+
+** Comentario
+
+
+* DONE Revisar CAEPIA: 
+  CLOSED: [2015-08-26 mié 09:45]
+
+** Título: Análisis del consumo energético en redes de sensores usando metaheurísticas
+
+** Revista: https://easychair.org/conferences/review_all.cgi?my=yes;a=8971885 
+
+** [[file:~/Descargas/CAEPIA-2015_submission_146.pdf][Acceso]]
+
+*** Comentarios
+
+Estimados autores, 
+
+Me ha gustado su trabajo, está bien hecho y obtiene resultados interesantes. Sólo unas cuantas correcciones:
+
+- En la introducción, creo que es mejor poner la primera frase del segundo párrafo al
+  principio, para tener definido lo que es una WNS. 
+
+- Cuidado con los espacios "En[5]" en página 3 falta.
+
+- Algunas correcciones sobre metaheurísticas (es mi especialidad) en página 5:
+
+  + 'permitiendo la recombinación entre padres y hijos' => 'si mejora al peor individuo'
+    (realmente no existe recombinación directa entre padres y hijos).
+
+  + 'no utiliza mutación, si una recombinación especial' => 'utiliza una recombinación especial'
+    (realmente en DE se habla de mutación, por eso no es conveniente decirlo).
+
+  + Entiendo que hay problemas de espacio, pero las gráficas no se pueden ver por un texto
+    demasiado pequeño. En Figuras 2 y 3 se puede incrementar el texto de los ejes sin
+    tener que tener que aumentar el tamaño de la figura. En la Figura 1, sí sería
+    necesario incrementarlo un poco.
+
+  + El término 'hallazgo' no me gusta, me parece un poco exagerado, yo diría simplemente
+    'descubrimiento'.
+
+*** Anotado
+
+[[file:~/Descargas/CAEPIA-2015_submission_146-annotated.pdf][PDF con anotaciones]]
+
+* DONE Revisar PSO-DLR
+  CLOSED: [2015-09-21 lun 12:00]
+
+** Título: Particle Swarm Optimization with Double Learning Patterns
+
+** Revista: http://mts.hindawi.com/reviewer/4283931278972960/
+
+** [[file:~/Descargas/936520.v1.pdf][Acceso]]
+
+* DONE [#A] Revisar IJCIS
+  DEADLINE: <2016-03-06 dom>
+
+** Título: Optimization of small satellite constellation design for continuous mutual regional coverage with multi-objective genetic algorithm
+
+** Revista: [[http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/3696?key%3D4x64547T]] 
+** [[file:~/Dropbox/revisar/2583-6881-1-RV.pdf][Acceso]]
+** [[file:~/Dropbox/revisar/2583-6881-2-RV.pdf][Segunda vuelta]]
+
+
+*** Comentario
+
+Dear colleagues, I have found your use of a multi-objective genetic algorithm for optimise the design of a satellite constellation very interesting. However, there are some issues to change before it could be considered acceptable for the journal. First, I have to recognise not being an expert in
+satellite, actually I am an expert in evolutionary algorithm techniques like the MOGA algorithm, thus I can not give many suggestions/corrections in the most technical part.
+
+- In the Introduction:
+
+  a) Check the text, I have found the errata 'costlelations' in first column in page 2. 
+
+  b) There is no previous literature in using evolutionary algorithms like genetic algorithms in the introduction. It should be nice to introduce a few citations about your proposal.
+
+  c) Sentence 'However, small satellites such as CubeStats' is a bit confusing. You should indicate explicitly as your aim to design for small satellites using CubeStats as a reference of that type of satellites. Also, the connector 'However' is not right, because it is not saying something
+  contradictory with previous sentence.
+
+- In Section 2.1, I suggest to change Figure 2 a little to make more clear the extension of distance R (i.e. adding limit arrows), it could be confused graphically R with R+h.
+
+- In Section 3, I have several suggestions:
+
+  a) 'reproduces individuals with have the best change of reproduction' => 'reproduces individuals with good changes of reproduction'.
+
+  b) 'The process is repeated several times until the best solution is reached after a certain number of generations.' => 'The process is repeated several times until it run a certain number of generations is or a solution considered optimum is achieved.'  In your sentence the term 'best' could
+  conduce to error.
+
+  c) Please, never uses conditional like 'If we consider a traditional weighted multi objective function' because it introduces doubts about if you have applied it or not. You must say directly 'We apply a traditional weighted multi objective function'.
+
+- In Section 4:
+
+  a) In page 6, your text excess the limit of left column, check it.
+
+  b) How are selected the GA values? Pc is unexpectedly low (0.5), was it the best value for previous comparisons with upper values? It that is the case, you should indicated (or better, to compare Pc=0.9 with Pc=0.5).
+
+  c) There are some excessive line spacing in Page 6, column right.
+
+- In Section 5:
+
+  a) The term 'local search optimisation' is strange, a better name should be 'optimisation'.
+
+  b) The following sentence could be readen as a bad generalisation: 'The search of a local optimum is based on the fact that we know in advance the expected solution. This solution is used as a stop condition of the GA'. It could be better to say 'In our case, because we know in advance the
+  expected solution, is used as a stop condition of the GA.'
+
+In conclusion, the paper is interesting and has a well-format. The evolutionary component could be improve a lot. However, for the novelty of the application I consider that it could be accepted with the suggested modifications.
+
+Also, as an expert I suggest you for future work, concentrate your effort in NSGA-II (or other multi-objective algorithm). First, your GA election is not good (a real-coding state-state GA could be a lot better) but in any case, your problem is actually a multi-objective problem and using NSGA-II
+you avoid the problem tuning the different weights. Other studies (with GA parameters, ...) are not interesting, because they didn't have enough originality for a work in journal. However, I think that a new work with a multi-objective algorithm could be also interesting (if the algorithm election
+is right, and the results improve clearly the obtained by the MOGA).
+
+* DONE Revisar CYB
+  CLOSED: [2015-10-14 mié 10:45] DEADLINE: <2015-10-08 jue>
+
+** Título:  Principal Component Analysis Based Optimisation Algorithm for Engine Calibration
+
+** Revista: https://mc.manuscriptcentral.com/cyb-ieee
+
+** [[file:~/Dropbox/revisar/s1-ln21137133-1377390171-1939656818Hwf-1362743438IdV-6690922221137133PDF_HI0001.pdf][Acceso]]
+
+
+** Comentario
+
+Dear authors,
+
+I consider your proposal, incorporing PCA to Evolutionary Algorithms for the difficult
+problem of Engine Calibration very interesting. It has novelty enough and the analyses
+obtain interesting conclusions.  However, I have several suggestions that could improve
+the paper, before it could be considered for publishing:
+
+First, the work is very good, and the studies carried out is innovative. However, the text
+introducing is, sometimes, not well-structured, putting important information later than
+it should be, and sometimes is a little repetitive:
+
+a) Introduction is divided in several parts: Problem Definition, Related Work, and
+Methodology. It has sense but it should be adviced in the first paragraph. Also, the
+introduction of the work is not clear enough in the introduction. The final text of
+Section 1.B, 'We perform an analysis on the fitness...' is not related work, thus it
+should be in the following subsection. The Section 1.C Methodology, I would change the
+title to 'Proposal and Methodology'. In this way, the proposal of the paper, the
+application of the PCA and the analysis, has a specific section in which it is introduced,
+instead of being spread over all the introduction.
+
+- In page 3, the text after Eq. 6 is related to the text of the same
+  Section in page 2, so they should be together. The description of multi-objective
+  optimisation and the following Equations should be explained latter.
+
+- In my opinion The text in Section II 'We study the engine model, with is a
+  faster alternative to the real engine, This enables us to study...  So an algorithm
+  designed based on this knownledge can be successful on the real engine as well' should
+  be in section 1.C, because it is an aspect of the methodology that also has a influence
+  in following Section III.
+
+
+- For me, Figure 1 does not show what it is indicated in the text
+  'Figure 1 shows the position of the best 40 local optima of each load category. More
+  precisely, we show projections of the local optima onto a plane defined by a pair of
+  features.'  The reason is that Figure 1 only show the projection for the group and the
+  measure that authors consider interesting, because some combinations of category and
+  mesure as missing (InjTiming for 5.5 <= Load). If there is a combination of category and
+  measure that has no sense, it should be indicated in the text. Also, while the majority
+  of properties obtained from Figure 1 and right and very interesting, in 4) there is no a
+  real conclusion, so it could be shorter.
+  
+- In Section II.B, the third paragraph in second column 'Note that
+  the pattern... goes by' should be, in my opinion, after paragraph 'Figure 2...based
+  algorithm'.
+
+- The description of the steps in Section III are very
+  clear. However, I have found step one a bit repetitive, because the idea of evaluating a
+  solution and assigning its category it is described both in first and in second
+  paragrah, second column in page 5.
+
+- In Step 4, you should indicated that you are going to use different
+  algorithms in the comparisons. In its current state, it is a bit confusing.
+
+- In Page 6, when you mention that the results obtained with simple
+  island genetic algorithm, you should indicate a possible reason of the bad results. In
+  my opinion, the similarity avoid a good synergy between the global algorithm and the
+  evolutionary algorithm used in Step 4.
+
+- The sentence in page 7, 'Note also that we are not designing a new
+  EA', in my opinion, should be moved from Section III to Section I.C.
+
+- The text 'Meaning oher PCA operators can also be designed that may
+  offer better performance. Exporing this remains for future works' should be in
+  conclusions and not where it is.
+
+- In page 8, first column, it is said at the end 'The increase in the
+  performance of PSO'. However, Figure should the hypervolume and the relationship between
+  performance and hypervolume is not explained.
+
+- Errata in page 9, second column: 'Anther' => 'Another'
+
+- In page 10, sentence in second column 'Figure 4 shows the
+  performance ...' is too similar to previous sentence 'Figure 4 shows the results for
+  different algorithms'. It should be removed.
+
+- The experimental section is nice, but I am a bit disappointed in
+  the comparisons between PCA-GA results and exhaustive search. The affirmation that
+  results are good enough (considering the huge difference in time) is said supported
+  mainly, in a visual way, in Figure 6. I think that a Table with the ratio of different
+  in hypervolume and time should improve that section.
+
+To summarise, the paper is rather good and following my suggestions it should be right to
+be published.
+
+* DONE Revisar MA with Constrained LS for LSGO
+  CLOSED: [2015-10-27 mar 10:48] DEADLINE: <2015-10-08 jue>
+
+** Título: Memetic Algorithm with Constrained Local search for Large Scale Global Optimization
+
+** Revista: https://mc.manuscriptcentral.com/jisys
+
+** [[/home/daniel/Dropbox/revisar/s1-ln214857392063083632-1939656818Hwf-2058305386IdV17015517821485739PDF_HI0001.pdf%0A][Acceso]] 
+
+
+** Leer el artículo
+** DONE Comentarios del MACLS
+   CLOSED: [2015-10-27 mar 10:47]
+
+Dear authors, 
+
+I have found interesting your work. However, there are many issues to
+be changed before it could be considered acceptable:
+
+- The main problem is the lack of information about your proposal. Not
+  only Section 2 is too generic and vague about important elements, but it
+  also there is no information about the parameters of the algorithm. Which
+  is the crossover operator? Parameter a in Figure 2? Population size? 
+
+- Results are very good, but without a clear description of the
+  algorithm and the values of its parameters, they cannot be accepted.
+
+- In general, there is no quality in many Figures and Tables. Figures
+  1, 2, and 3 has no enough quality, neither Equations in
+  Table 1. Please, in doubt case, print the paper and check if the
+  work has enough quality for been printed.
+
+- In Figure 4, it is not really explained the differences between MA and MACLS. 
+
+- There is information at all about the parameters of the proposal. 
+
+- The bibliography section has errors. [15] is one example, there is
+  no a journal title and some references have different format. 
+
+To summarize, the paper has important faults and it can not be accepted.
+
+* DONE [#A] Revisar trabajo urgente
+  CLOSED: [2015-09-09 mié 09:29]
+  CLOCK: [2015-09-09 mié 08:45]--[2015-09-09 mié 09:29] =>  0:44
+  CLOCK: [2015-09-08 mié 17:40]--[2015-09-08 mié 18:20] =>  0:40
+
+** Título: A clustering-based differential evolution with random-based sampling and Gaussian sampling
+   
+** Revista: http://mts.hindawi.com/reviewer/8985455998193090/
+
+** [[file:~/Dropbox/revisar/145940.v1.pdf][Acceso]]
+
+** Comentario
+
+Dear authors,
+
+I consider your proposal of incorporating a k-means algorithms to identify different promising area of
+exploitation. However, there are several issues to chage before it could be accepted.
+
+- In the introduction: 'But many of them introduce additional complex
+  mutation operators and self-adaptive mechanisms which usually are not easy to implement. To a certain extent,
+  implementation of these algorithms increases the difficulty of use.'. However, your proposal also implies to increase
+  the complexity of the original DE, and there are also very competitive algorithms not more complicated than your
+  proposal. In my opinion that is not the way to sell your proposal, but with good results with a reduce complexity
+  increasing.
+
+- In Section 2, it is said 'The differential evolution algorithm is
+  written as Algorithm 2.' It is False, because it is written as Algorithm 1 (Algorithm 2 is the k-mean algorithms).
+
+- In Section 2, I would add the 'SHADE' algorithm as an improving over
+  the JADE algorithm, to be a bit more complete.
+
+- In Section 3, 'The k-means clustering can be described as Algorithm
+  3 [20]'. First, Algorithm 3 doesn't exist, you maybe wanted to say 'Algorithm 2'. Second, reference [20] should be
+  introduced, like ' you can see [20] for more information about hybridation between DE and k-means clustering' (buy
+  maybe a real k-means reference could be better).
+
+- Second paragraph give no information. The first sentence should be
+  in previous paragraph. Also, which distance measure are your going to use?
+
+- Figure 1 and specially Figure 2 must be a higher quality. The text
+  is very blurred.
+
+- In page 8, update the text 'Therefore, on average, in 50% of the time, c is
+  always closer to s, than x is to s. when x and s are in the same sub-interval, then x and c are competing together for
+  closeness to s. Like the former case, on average, in 50% of the time, c is always closer to s, than x is to
+  s. Therefore, center-based sampling will help increasing the chances of c being closer to s, in overall.'  The idea is
+  simple, but the redaction is very confusing.
+
+- In page 4.2 do you proposes a random-based sampling that extends the
+  search space. However, I don't see the reason of that. You have a limited search space [ai, bi] so it has no sense to
+  consider space outside these regions. Also, it is said in page 9 that when the solution is outside the bounds, it is
+  replaced by a random value in the original search space. I think that maybe the text 'Given the interval of search
+  space as [a,b]' has confused me. In that case, you should have said 'Given two points, "a" and "b"' or 'Given the
+  range defined by [a, b]'.
+
+- In Algorithm 3, step 7 is mainly an English text. You should divide
+  it in several steps to give a more concise format (more adequated for pseudocode).
+
+- You say that 'According to the literature [20], the multi-step
+  k-means clustering needs more computational time and it does not bring any important advantage', but I have read that
+  paper, and I am not sure about that sentence.
+
+- I do not see how the random-based sampling is integrated into the
+  Algorithm (Algorithm 3).
+
+- In page 12, it is said 'Compared with [20, ?], the clustering period
+  is not fixed number in this study.'. There is a lost cite.
+
+- In my opinion, Section 6.4 should be before Section 6.3. In that
+  way, the value of parameter 'm' in following comparisons is justify.
+
+- Information about k-means (euclidean distance, k in [2, sqrt(NP)]
+  should be repeated in Section 6.2 (it is not good to have that information spreaded across all the text).
+
+- 'two algorithms[46, 47]' => 'the two algorithms [46, 47]'. 
+
+- Figure 5 is too small. You must increase the font size of the legend
+  (you can put it only once).
+
+- In a journal work, it should be proven than all components are
+  useful for the final results. Thus, I suggest you to put a new subsection comparing:
+
+  a) Your algorithm without the clustering (using only mutation method from Eq. 7). (Because including the requirement
+  than Xr1 is not worse than Xi makes it a new mutation method).
+
+  b) Your algorithm using only the random-based mutation after the clustering.
+
+  c) Your algorithm using only the gaussian sampling mutation after the clustering.
+  
+  d) Your proposal (with both mutations after the clustering).
+
+To summarise, your proposal is very interesting and the experimental section is very good. However, there are some
+important (but simple) issues to change before it could be accepted.
+
+
+
+
+* DONE [#B] Revisar ZUSC1
+  CLOSED: [2015-12-27 dom 12:22] DEADLINE: <2015-11-04 mié>
+
+** Título: An Improved Alopex-based Evolutionary Algorithm by Binary Gaussian Copula EDA
+
+** Acceso: http://www.editorialmanager.com/zusc/default.aspx
+- Login: DMolina-623
+- Password: molina733528
+
+** [[file:~/Dropbox/revisar/ZUSC-D-15-00304.pdf][Acceso]]
+
+** [[file:~/Dropbox/revisar/ZUSC-D-15-00304.txt][Comentarios]]
+
+
+
+* DONE [#B] Revisar ZUSC2
+  CLOSED: [2015-12-27 dom 17:20] DEADLINE: <2015-11-04 mié>
+
+** Título: Dolphin swarm algorithm
+
+** Acceso: http://www.editorialmanager.com/zusc/default.aspx
+- Login: DMolina-623
+- Password: molina733528
+
+** [[file:~/Dropbox/revisar/ZUSC-D-15-00287.pdf][Acceso]]
+
+* DONE Revisar PRAI
+  CLOSED: [2015-10-27 mar 10:33]
+
+** Título: Crossover-First Differential Evolution for Improved Global Optimization in Non-Uniform Search Landscapes
+
+** [[file:~/Descargas/PRAI-D-15-00028.pdf][Acceso]]
+
+** Revista: http://www.editorialmanager.com/prai/Default.aspx?pg=login.asp%253FloginError%253D1%2526username%253DDMolinaCabrera-752
+
+** Comentario
+
+Dear authors, 
+
+I consider your work very interesting, mainly because it is a very
+simple change, and results have improved, specially in difficult
+functions. However, I have several suggestions that you should take
+in account before it could be really for publishing:
+
+- In Equation 6, it is used Rj=1, when Rj is a random boolean
+  value. It was considered a probabilistic value? In its current
+  formulation, the probability values should be 0.5. It should test
+  a probability value with different values (less than 0.5, 0.5, and
+  greater than 0.5). It is a new parameter that should algorithm
+  introduces and it could be nice to see that the default parameter
+  you are using is a good value. 
+
+- In your description, you say that the good results are due to the
+  new order of the operations. I believe that the main change is that
+  in original DE, Eq. 2 is only applies to Xr1 values, while in XDE
+  Eq. 6 can be applied to values from Xr1 and Xi, and it is remarked
+  when you describe the algorithm.  You say that at the end of
+  Section 4 (The effect of conducting crossover first ....). You must
+  move that text from Experimental Section (Section 4) to XDE Section
+  (Section 3).
+
+- In Section 4, you could also have compare directly XDE with DE,
+  because the first one is a variation of the second one. Thus, a
+  direct comparison between them (with Wilcoxon test) at the
+  beginning of Section 4 has a lot of sense. However, you can
+  maintain as it is if you prefer.
+
+In summary, your work is nice, interesting, and have quality to be
+published, after the few corrections suggested.
+
+
+
+* DONE [#A] Revisar "Novel Approach For Multimodal Optimization Problems"
+  CLOSED: [2015-11-04 mié 16:20] DEADLINE: <2015-11-03 mar>
+
+** Revista: https://mc.manuscriptcentral.com/cyb-ieee
+
+** [[file:~/Dropbox/revisar/s1-ln21283870-1377389242-1939656818Hwf1791516678IdV89938059421283870PDF_HI0001.pdf][Acceso]]
+
+** Coments
+
+Dear authors,
+
+I have found interesting your proposal of a new algorithm based on the Mead
+and Neal algorithm very interesting. Unfortunately, there are important
+issues that should be changed before it could be considered acceptable to be
+published in the journal. 
+
+In the following, I am going to describe the most important problems in your
+paper, in not particular order:
+
+- In the introduction, be careful with the format of the references: some
+  times you use "[7][8][9]" and later "[13],[14]". 
+
+- In the introduction, a lot of space is invested writing about different
+  evolutionary algorithms and your proposal has only four lines. The
+  introduction should invite to reader to want a more in-depth knowledge
+  about your proposal. 
+
+- About the format, in the abstract there is not briefly describen the
+  proposal, more details after "yet it has better mathematical basis"
+  should be indicated. 
+
+- The algorithm is not clear enough. The changes indicated in page 3 are
+  clear, but it left me a doubt, do you need to be able to get the
+  derivative of the function? If it is not the case, could you approximate
+  it?
+
+- Also, in Figure 2, several steps are not detailed enough: "Take one
+  Solution from Stack and make a triangle by placing centroid on it" (which
+  other points are selected for the triangle?) or "Reduce size of
+  Triangle". 
+
+- In your experimental section, you use several different functions
+  and you study the results obtained with your algorithm. That is is very
+  good, but you must also compare with the original Nelder-Mead, and also
+  with the evolutionary algorithms presented into the introduction: classic
+  GA, PSO,are. In the paper, the proposed algorithm seems good, but it
+  should be compared with other options in the same conditions. 
+
+To summarise, the lack of a more detailed explanation in your proposal with
+missing comparisons make the paper still not ready for publishing.
+
+*
+
+* DONE [#A] Revisar "Piezoelectric LuGre model identification using particles warm optimization and real-coded genetic algorithm"
+  CLOSED: [2015-12-02 mié 09:53]
+
+** Revista: https://mc.manuscriptcentral.com/tevc-ieee
+
+** [[~/Dropbox/revisar/s1-ln21500072547447021-1939656818Hwf1857687441IdV23562086421500072PDF_HI0001.pdf][Acceso]]
+
+** Comentarios
+
+Dear authors, 
+
+I have read your interesanting proposal. Unfortunately, there are too many important issues to change before
+it could be considered acceptable. In the following, I am going to describe what I consider more
+importants, in no particular order:
+
+- The hysteresis is not explained briefly in the Introduction. Because it is a journal about
+  Evolutionary Computation, it should be nice to indicate it, because reader is going to read that
+  term many times, it is going to be curious about that. 
+
+- In the abstract, it is said "The experimental results showed that the experimental data were
+  modeled with less than 1.7% absolute error with PSO, whereas RGA achieved 96% for 5 Hz sinusoidal
+  input voltage". It have no sense. In page 5, it is said "Ninety-seven percent of the experimental
+  data were modeled with less than 1.7% absolute error with PSO, whereas RGA achieve 96%..". It is
+  clear than PSO achieve 97% (although it should be indicated in number) while RGA achieve 96%, so
+  there is only a 1% of difference between them. In the abstract the sentence is not right at all,
+  it give the impression of a difference between 1.7% and 96%, something completely wrong.
+
+- In page 2, first column, third paragraph, you make a good review of other papers using
+  evolutionary algorithms and PSOiin the same type of functions. However, it is not clear if the
+  other papers use also the LuGre model or other one. Also, you don't compare with them.
+  
+- Last paragraph, and last sentence in Section II (page 3) is incomplete. 
+
+- The Figures and Table should be together with the text. I know that depends a lot in function of
+  the paper, but in this journal we prefer in that way.
+
+- An very important is the lack of novelty. In your paper, several other papers using PSO for the
+  same problem are indicated. However, the paper does not compare results with them, and neither the
+  comparisons between PSO and RCGA is very remarkable (there is only a 1% of difference). 
+
+- Conclusions says that PSO is superior to RGA, but it is not proven that only a 1% is actually
+  relevant (it could be, I am not expert in the problem).
+
+- In last sentence of Section  IV, it is said that 'Moreover, as shown in Table I, PSO identified
+  the LuGre model parameters in less computation time.' However, it is not true, because results in
+  Table I say exactly the contrary: 38.04s by PSO vs. 17.13s by RCGA. 
+
+Thus, considering that the paper has many and important great problems: In novelty, writing and even
+in the analysis and conclusion, it cannot be published. 
+
+* DONE Revisar IEEECyb
+  CLOSED: [2016-01-01 vie 12:25] DEADLINE: <2015-12-30 mié>
+
+** Título: An Adaptive Success-based Multi-population Differential Evolution with Dynamic Population Reduction
+
+** Web: https://mc.manuscriptcentral.com/cyb-ieee
+
+** [[file:~/Dropbox/revisar/s1-ln21703275-718916013-1939656818Hwf444406726IdV135281872021703275PDF_HI0001.pdf][Acceso]]
+
+* DONE Entender artículo de Corales
+  CLOSED: [2016-01-06 mié 13:35]
+
+** [[~/Dropbox/revisar/CRO_Model_Type_Selection_IJBC_revised.pdf][Acceso]]
+
+** DONE Reescribir en python
+   CLOSED: [2016-01-18 lun 12:15]
+
+
+* DONE Revisar PRAI
+  CLOSED: [2016-01-09 sáb 13:29] DEADLINE: <2016-01-07 jue>
+  :LOGBOOK:
+  CLOCK: [2016-01-09 sáb 12:17]--[2016-01-09 sáb 13:17] =>  1:00
+  :END:
+
+** Título: An Improved Structure of Genetic Algorithms for Global Optimisation
+
+** [[file:~/Dropbox/revisar/PRAI-D-15-00051.pdf][Acceso]]
+
+** Acceso:  http://PRAI.edmgr.com/
+*** Usuario/login: DMolina-748/  http://PRAI.edmgr.com/Default.aspx?pg=accountFinder.aspx&firstname=Daniel&lastname=Molina&email_address=daniel.molina@uca.es
+
+* DONE Revisar ECJ
+  CLOSED: [2016-01-06 mié 01:20]
+
+** Título: Generating new space-filling test instances for continuous black-box optimization 
+
+** [[file:~/Dropbox/revisar/paper1308%20-%20annotated.pdf][Acceso]]
+
+
+* DONE Revisar PRAI
+  CLOSED: [2016-02-11 jue 16:30] DEADLINE: <2016-02-11 jue>
+
+** Título: A Multimodal Firefly Optimization Algorithm Based on Coulomb's Law
+** web: http://www.editorialmanager.com/prai/default.aspx
+** [[file:~/Dropbox/revisar/PRAI-D-16-00006.pdf][Acceso]]
+
+* DONE Revisar prueba de PRAI
+  CLOSED: [2016-01-21 jue 11:19]
+  :LOGBOOK:
+  CLOCK: [2016-01-21 jue 10:48]--[2016-01-21 jue 11:19] =>  0:31
+  :END:
+
+** [[https://www.e-proof.sps.co.in/springer/ja.asp?rfp=authtsbfceryvan][Acceso para editar]]
+
+** [[~/Dropbox/revisar/13748_2016_82_Author.pdf][Versión para revisar (corrections)]]
+
+
+
+* DONE Revisar ZUSC-D-15-00287R1, Dolphin
+  CLOSED: [2016-02-09 mar 12:41] DEADLINE: <2016-02-21 dom>
+  :LOGBOOK:
+  CLOCK: [2016-02-09 mar 11:31]--[2016-02-09 mar 12:41] =>  1:00
+  :END:
+   Entered on [2016-02-06 sáb 10:52]
+  
+** [[http://www.editorialmanager.com/zusc/Default.aspx][Enlace en la web]]
+
+** [[http://www.editorialmanager.com/zusc/viewPrevVerPDFs.asp?sub_num=5429&ms_num=ZUSC-D-15-00287&rev=1][Enlace en la web de los trabajos]]
+
+** [[~/Dropbox/revisar/ZUSC-D-15-00287_R1.pdf][Revisión nueva]]
+
+* TODO Revisar Trabajos WCCI 2016
+
+* DONE Revisar PRAI-D-15-00051_R1
+  CLOSED: [2016-03-10 jue 18:07] DEADLINE: <2016-03-03 jue>
+
+** [[http://www.editorialmanager.com/prai/default.aspx][Web]]
+
+** Acceso: DMolina-748/xxxx
+
+** [[file:~/Dropbox/revisar/PRAI-D-15-00051_R1.pdf][Acceso al PDF]]
+
+* DONE Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
+  CLOSED: [2016-04-11 lun 12:00] DEADLINE: <2016-02-28 dom>
+
+** TODO Título: Modified Real-coded Multi-Population Genetic Algorithm and improved Crossovers for Global Optimization of Multimodal Continuous Functions
+
+** [[http://mts.hindawi.com/reviewer/5392471568489460/][Enlace de la web]]
+
+** [[file:~/Dropbox/revisar/coverletter.6154637.v1.pdf][Artículo]]
+* TODO [#A] Revisar CYB-IEEE Urgente 
+  SCHEDULED: <2016-04-18 lun>
+   Entered on [2016-04-18 lun 16:18]
+  
+[[file:~/Dropbox/revisar/s1-ln22849595-1273520368-1939656818Hwf1300487469IdV-10893315122849595PDF_HI0001.pdf::1][Acceso]]
+
+* TODO Revisar Adaptive differential evolution with sorting CR for continuous optimization problems
+  DEADLINE: <2016-04-22 vie>
+Entered on [2016-02-26 vie 17:42]
+  
+[[file:~/Dropbox/revisar/CYB-E-2016-02-0253.pdf]]
+
+** Revista: https://mc.manuscriptcentral.com/cyb-ieee
+
+** [[file:~/Dropbox/revisar/s1-ln22612366938319882-1939656818Hwf946485603IdV-173631203922612366PDF_HI0001.pdf][Acceso]]
+
+* DONE Trabajo de Hindawi 
+  CLOSED: [2016-04-11 lun 12:00] DEADLINE: <2016-04-08 vie>
+
+** Website: http://mts.hindawi.com/reviewer/5392471568489460/
+
+
+** [[file:~/Dropbox/revisar/6154637.v1.pdf][Documento PDF]]
+** [[file:~/Dropbox/revisar/6154637.v1.txt][Comentarios]]
+
+** DONE Subir los comentarios
+   CLOSED: [2016-05-16 lun 18:23]
+
+* TODO Convergent Stochastic Differential Evolution Algorithms
+  DEADLINE: <2016-06-01 mié>
+
+** Enlace: http://journals.sfu.ca/atlantis/index.php/IJCIS/reviewer/submission/4576
+
+** [[file:~/Dropbox/revisar/3795-9129-1-RV.pdf][Documento PDF]]
+* DONE Revisar urgente
+  CLOSED: [2016-04-25 lun 14:50] SCHEDULED: <2016-04-18 lun>
+Entered on [2016-04-18 lun 16:24]
+  
+[[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf::1][/home/daniel/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).pdf]]
+
+[[file:~/Descargas/s1-ln22493235909688934-1939656818Hwf-1411571360IdV-210832632122493235PDF_HI0001(1).txt][Comentarios]]
+* TODO: Revisar artículo
+  DEADLINE: <2016-06-19 dom>
+Entered on [2016-05-19 jue 12:12]
+
+http://ees.elsevier.com/asoc/default.asp
+  
+[[file:~/Descargas/revisar/ASOC-D-16-01103.pdf][file:~/Descargas/revisar/ASOC-D-16-01103.pdf]]

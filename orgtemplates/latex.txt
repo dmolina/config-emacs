@@ -1,0 +1,12 @@
+#+TITLE: TITULO
+#+AUTHOR: Ingeniería Informática
+#+DATE: Curso: 2015/2016
+#+LATEX_HEADER: \usepackage{geometry}\geometry{hmargin=2cm,vmargin=3cm}
+#+LATEX_HEADER: \usepackage{fancyhdr}\pagestyle{fancy}\lhead{TITULO}\rhead{Curso 2014/2016}
+#+LATEX_HEADER: \usepackage{hyperref}\hypersetup{pdfborder={0 0 0},colorlinks,linkcolor=blue,urlcolor=blue}
+#+LATEX_HEADER: \usepackage{listings}\lstset{language=sh,extendedchars=false,literate=*{-}{-}1,columns=fullflexible}
+#+OPTIONS: toc:t ^:{} H:2 todo:t tags:nil f:nil
+#+EXPORT_EXCLUDE_TAGS: @priv noexport
+#+LateX: \newpage
+#+LateX: \setlength{\parindent}{0pt}
+#+LateX: \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}

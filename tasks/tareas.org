@@ -1,0 +1,680 @@
+*** Cronograma
+    :PROPERTIES:
+    :ID:       0b4104a9-4dac-4f2b-b169-1a92c11517b1
+    :END:
+**** Tabla
+     :PROPERTIES:
+     :ORDERED:  t
+     :ID:       7fcffb68-3a15-4e75-9086-5bd3bf0ace05
+     :END:
+#+CAPTION: Cronograma de la asignatura
+#+ATTR_HTML: :border 2 :rules all :frame border
+|--------+----------+--------------------------------------------+--------------------------------|
+| Semana | Fecha    | Teoría                                     | Práctica                       |
+|--------+----------+--------------------------------------------+--------------------------------|
+|      1 | 02/10/15 | Introducción                               | -                              |
+|      2 | 09/10/15 | Diseño OO                                  | -                              |
+|      3 | 16/10/15 | Principios OO                              | Práctica Diseño I              |
+|      4 | 23/10/15 | Principios OO (Fin) y Ejercicio conjunto   | Práctica Diseño II             |
+|      5 | 30/10/15 | Dependencias y Tests                       | Entrega Práctica Diseño        |
+|      6 | 06/11/15 | Refactorización I                          | Evaluar principios             |
+|      7 | 17/11/15 | Refactorización II                         | Práctica Refactor              |
+|      8 | 20/11/15 | Introducción Patrones y patrones iniciales | Práctica Refactor/Patrones (I) |
+|--------+----------+--------------------------------------------+--------------------------------|
+|      9 | 27/11/15 | Patrones Creación (CRE1, CRE2)             | Ejercicios Patrones (II)       |
+|     10 | 04/12/15 | Patrones Estructurales I (EST3, EST4)      | Ejercicios Patrones (III)      |
+|     11 | 11/12/15 | Patrones Estructurales y Comp (EST5, CO06) | Ejercicios Patrones (IV)       |
+|     12 | 18/12/15 | Patrones Comportamiento (CO07, CO08)       | Ejercicios Patrones (V)        |
+|     13 | 08/01/15 | Aplicando Patrones                         | Conjuntos                      |
+|     14 | 15/01/05 | Repaso                                     | Repaso                         |
+|     15 | 26/01/05 | Repaso                                     | Repaso                         |
+|--------+----------+--------------------------------------------+--------------------------------|
+
+
+* Ideas sobre presentaciones del artedepresentar
+  :PROPERTIES:
+  :ID:       dd21ff9d-c0a9-4fe4-9c88-b645b0d66f87
+  :END:
+
+** Ensayar siempre, y lo más realista posible.
+   :PROPERTIES:
+   :ID:       88ffe2f2-b0a4-4fee-b008-312282ec324f
+   :END:
+
+** Aprender el principio y final.
+   :PROPERTIES:
+   :ID:       c709f58a-9757-4634-9656-0df25efede46
+   :END:
+
+** Dividir en 3 ó 4 apartados
+   :PROPERTIES:
+   :ID:       fc95d239-21d7-425d-b518-b1843cc31d35
+   :END:
+
+- Luego se dividirá a su vez.
+
+** Imágenes amplias
+   :PROPERTIES:
+   :ID:       02e4874d-4d24-4e9e-aa13-bd7f46088b50
+   :END:
+
+- Sin miedo, que puedan ocupar toda la presentación. 
+
+** Sin logos
+   :PROPERTIES:
+   :ID:       2cce2a3f-b30c-4d01-a062-d3773acd7e62
+   :END:
+
+- Sólo al principio y al final.
+
+** Nada de transparencias de Gracias
+   :PROPERTIES:
+   :ID:       b98f83d5-e5f7-4123-a4f6-a8dbf1f93e62
+   :END:
+
+Al final con las preguntas es la que aparece más tiempo, así que es perfecto para usarla:
+
+- Resumiendo la presentación.
+- Datos de contacto (twitter, blog, email, ...).
+
+** Animar a preguntas
+   :PROPERTIES:
+   :ID:       42c9327e-ea36-418b-b638-5177cef1c42f
+   :END:
+
+- Ensayar posibles preguntas.
+- Animar a preguntar.
+
+* Investigación
+  :PROPERTIES:
+  :ID:       34db000c-0bfb-482c-b450-07bfb40adb21
+  :END:
+
+** DONE Experimentos de Benjamin (Decision on INS-D-15-498R2=
+   CLOSED: [2015-12-28 lun 11:35] DEADLINE: <2015-12-26 sáb>
+   :PROPERTIES:
+   :ID:       951fd5a8-6ef0-442f-9a10-21620d811a11
+   :END:
+
+*** Respuesta de revisores
+    :PROPERTIES:
+    :ID:       2e529a81-60e3-4ccc-ab54-2ab36688a442
+    :END:
+
+
+The Editor's and the reviewers' comments are as follows:
+************************************************************
+Reviewer #2: In this new revision the authors have addressed most of
+my previous comments. However, one of the most important requests
+(increasing the scientific contribution of the paper) has not been
+properly fulfilled. It is true that the authors have decided to
+include an analysis of the diversity introduced by the algorithm in
+the population. But is also true that the provided analysis, which is
+not actually an analysis but a report of the results observed, is
+still poor. The new Section 5.3 just summarizes and plots the
+diversity of the population for three selected functions and describe
+what can be seen on the plots. Little discussion is provided on the
+reasons of the behaviour observed, which is very different for the
+three functions: there are a series of hypothesis for each of the
+functions but no way to assess if these are true.
+
+The authors should elaborate more this section conducting a
+comparison, for example, with a version of the algorithm without
+adjustment in the number of regions (keeping them static). This would
+confirm if the hypothesis about increasing the number of regions and
+thus the diversity holds for function F7. Another thing that could be
+done is plotting the density of explored solutions at different stages
+of the search, with different numbers of regions (plots similar to
+Figures 4-6 but at each of the different steps depicted in Figure 3).
+
+A discussion on why the region number adjustment strategy does not
+work for larger number of dimensions should also be included, as it
+seems that the algorithm only works for low numbers of dimensions.
+
+
+Finally, a found, again, a number of typos in the new sections.
+Please, play attention to the manuscript quality, as it does not help
+in giving a good appearance to your paper.
+
+I am sorry to say that, but I honestly think that the manuscript still
+lacks of enough scientific contribution to be accepted in its current
+form.
+
+
+
+
+Reviewer #3: The authors have successfully responded to all the
+comments. In my opinion, it is acceptable now.
+
+
+
+************************************************************
+<br><br><b><font color="red">Note</b>: Please double check the author
+names provided in the manuscript source file so that authorship
+related changes are made in the revision stage. If your manuscript is
+accepted, any authorship change will involve approval from co-authors
+and respective editor handling the submission and this may cause a
+significant delay in publishing your manuscript.</font><br/><br/>
+
+In view of these comments the Editor-in-Chief, Professor Witold
+Pedrycz, has decided that the paper can be reconsidered for
+publication after the points raised by the referees have been addressed.
+
+When you log-in to your Main Menu, you will see a menu item called
+'Submission Needing Revision'. You will find your submission record
+there. Also, the reviewer(s) may have uploaded a file with detailed
+comments on your manuscript. Click on "View Reviewer Attachments" to
+access any detailed comments from the reviewer(s) that may have been
+included.
+
+When submitting your revised manuscript, please make sure that you
+upload the source files (e.g. Word or .TeX and other files in a .zip
+file which the system will automatically unzip). Uploading a PDF file
+at this stage will create delays should your manuscript be finally
+accepted for publication. If your revised submission does not include
+the source files, we will contact you to request them.
+
+If the revised version is submitted within three months of receipt of
+this e-mail, the manuscript will retain the original submission date
+and reference number. After three months, your paper might be treated
+as a new submission and may be sent to new reviewers.
+
+We look forward to receiving the revised version of your paper
+together with a reply to the reports and a summary of the revisions made.
+
+Please note that this journal offers a new, free service called
+AudioSlides: brief, webcast-style presentations that are shown next to
+published articles on ScienceDirect (see also
+http://www.elsevier.com/audioslides). If your paper is accepted for
+publication, you will automatically receive an invitation to create an
+AudioSlides presentation.
+
+The revised version of your submission is due by 26 Dec 2015.
+
+Information Sciences features the Interactive Plot Viewer, see:
+http://www.elsevier.com/interactiveplots. Interactive Plots provide
+easy access to the data behind plots. To include one with your
+article, please prepare a .csv file with your plot data and test it
+online at
+http://authortools.elsevier.com/interactiveplots/verification before
+submission as supplementary material.
+
+Kind regards,
+
+Witold Pedrycz
+Editor-in-Chief
+Information Sciences
+
+*** Resultados con alta dimensión
+    :PROPERTIES:
+    :ID:       1be8bab8-5293-4f30-a16f-0deba69a05fe
+    :END:
+
+**** Parámetros opcionales
+     :PROPERTIES:
+     :ID:       4e9255e5-ae19-4920-898a-126e6b8a6b89
+     :END:
+
+- F18:
+
+  + P=70: 0.33 (PR1-PR5).
+
+  + P=200: 0.50.
+
+  + P=200, u=5, U=1.2:  
+
+*** Comentario de Benjamin
+    :PROPERTIES:
+    :ID:       13989dd2-1cbe-45a3-9b99-d98477894326
+    :END:
+
+Coincido con vosotros, el tema solo de lanzar el experimentos sobre
+esas functiones que ya tenemos (7 16 y 18) con un numero de divisiones
+fijo (2 4 7 12 21) y medir la diversidad y juntar la al las graficas
+que ya tenemos.  de hecho, ejecutar lo con un numero de division fijo
+sera problematico para un numeros de division y dimensiones bajos
+porque el archivo se va a llenar muy pronto. una ves que todas las
+regiones estan representadas en el archivo el numero de divisiones se
+update automaticamente. Eso no se puede quitar sino se para la
+busqueda.
+
+Dani, en el standard output si haces un grep update salen dos cosas:
+        - classical update con el nuevo numero de divisiones que se
+          hace ca x numeros de evaluacion
+        - archive full update que occure cuando el archivo esta
+          “lleno"
+
+para hacer los experimentos sin los update hay que poner la opcion -u
+0 (es decir 0 update) como lo notaras seguiran los update automatico
+debido a un archivo lleno.
+
+
+*** DONE Revisión de Paco:
+    CLOSED: [2016-01-01 vie 18:41]
+    :PROPERTIES:
+    :ID:       d6515a13-5dfa-4e58-8dd6-c108389c50a4
+    :END:
+
+- [X] Cambiar dirección de Paco.
+- [X] Título 5.3.1.
+- [X] bad behaviour => low behaviour]
+- [X] División, usar dos.
+- [X] Eliminar el P08.
+
+Acabo de leerlo, disculpa el retraso en terminarlo. He vuelto sobre las 17:00 de la comida.
+
+Con los cambios actuales está muy bien justificado todo, no creo que los referees planteen más cuestiones, espero.
+
+Solo unos pequeños cometnarios incluidos en el pdf adjunto:
+
+a) Mi dirección, quita CITIC-UGR de la dirección de la UGR (vamos a crear un instituto de investigación al margen del CITIC, ya te contaré).
+Incluye la segunda dirección de KAU, como en el paper adjunto, pero sin NOrth Jeddah.  Solo como indico a continuación:
+
+Faculty of Computing and Information Technology, King Abdulaziz University, 21589, Jeddah, Saudi Arabia.
+
+b) Seccion 5.3.1.  ´Como quedaría el titulo siguiente:??   Population diversity: Inflluece of the Number of Divisions
+ (realmente este es el análisis que se hace).
+
+Sobre la formula de la división, hay que dividir por 2 el total, o lo que es lo mismo multiplicar por 2 el numerador porque está cogiendo solo (i,j) cuando i es mejor que j, y tambien habria que coger la pareja (j,i) para dividir por n(n-1).
+Se pueden dejar las mismas figuras, porque solo cambiaría una constante.
+
+c) En lugar de bad bheaviour,  ¿¿que tal sería low behaviour?? La palabra bad es dura, aunque es la realidad.
+
+d) Pag. 36-37.   This work opens varios future potencial studies:
+
+Ahora yo incluiría los 3 itemices asociados con los potenciales setudios.
+
+e) El proyecto P08 ya terminó y se cerró su informe,  ahora solo queda abiertos desde el P10 en adelante.
+
+Como ves son mínimos detalles.
+
+Adelante con la submission, y crucemos los dedos para conseguir el accept.
+
+Un abrazo; Paco
+
+*** Enviar
+    :PROPERTIES:
+    :ID:       ffc277a5-3850-4930-bd66-2b0090f1ea2a
+    :END:
+
+Revision Note 	Response to reviewers 	response_reviewers.pdf 	146 KB 	27 Sep 2015 		Download
+Manuscript (including abstract) 	*Manuscript remarking changes from previous version 	RMAwA_changes_revision2.pdf 	1 MB 	27 Sep 2015 		Download
+LaTeX Source Files 	LaTeX Source Files 	RMAwA_source_revision2.zip 	1.8 MB 	27 Sep 2015 		Download
+
+
+* Prueba
+  :PROPERTIES:
+  :ID:       2c2d8016-296d-47d0-8965-031446d4a634
+  :END:
+
+- Uno.
+- Dos.
+
+** Dirección 
+   :PROPERTIES:
+   :ADDRESS:  Calle Chueca, 9, 18004 Granada, Granada, Spain
+   :ID:       f689b1ee-bd63-402c-8400-cd395ada5b03
+   :END:
+
+
+* TODO Pagar el piso
+  SCHEDULED: <2016-06-05 dom ++1m>
+  :PROPERTIES:
+  :LAST_REPEAT: [2016-05-12 jue 09:56]
+  :ID:       fd4eea85-7a80-4fff-989b-c657bb556edb
+  :END:
+  - State "DONE"       from "TODO"       [2016-05-12 jue 09:56]
+  - State "DONE"       from "TODO"       [2016-04-07 jue 13:09]
+  - State "DONE"       from "TODO"       [2016-03-10 jue 18:06]
+  - State "DONE"       from "TODO"       [2016-02-08 lun 18:52]
+  - State "DONE"       from "TODO"       [2016-01-11 lun 10:57]
+
+* <2016-01-11 lun>
+  :PROPERTIES:
+  :ID:       cd31235c-5dca-470d-9e20-4b020f41e453
+  :END:
+
+** Docencia
+   :PROPERTIES:
+   :ID:       c31f9474-82c2-4a9e-ac5c-25dff438d93e
+   :END:
+
+*** DONE [#A] Poner la entrega de BigData para CAP
+    CLOSED: [2016-01-11 lun 10:56]
+    :PROPERTIES:
+    :ID:       3a27f7c6-0fba-47af-9d97-a31f7d4eb5a2
+    :END:
+    :LOGBOOK:
+    CLOCK: [2016-01-11 lun 10:26]--[2016-01-11 lun 10:56] =>  0:30
+    :END:
+
+** Investigación
+   :PROPERTIES:
+   :ID:       12cd96c7-bb10-497c-9e3d-ca6c39751c61
+   :END:
+
+
+* DONE Aplicar cambios en INS-D-15-498R3
+  CLOSED: [2016-04-17 dom 15:06] DEADLINE: <2016-04-04 lun>
+
+** Comentarios de Revisores:
+
+ #2: I must say that the paper has been improved in terms of
+scientific contribution. This is not the case for the language and
+typesetting: please, deeply review the manuscript (better if it is
+done by a native English speaker). Without a proper, clean,
+easy-to-read manuscript the impression when reading the paper is much
+worse.
+
+Regarding the scientific part, there are a couple of things that
+should be improved to complete the contribution.
+
+1st: In those cases where a fixed number of NDs provides better
+diversity, what are the results (in terms of fitness) compared with
+those of the adaptive strategy? And in an overall comparison?
+
+2nd: The added paragraph in Section 5.5.2 gives some hypothesis of why
+the strategy does not work in functions with a larger number of
+dimensions, and in fact those hypotheses could be easily proved: For
+the "smoothing" of the adjustment in the number of regions, you could
+easily fix a maximum number of regions and observe what happens in
+those cases and functions; for the parameter tuning issue, you could
+repeat the tuning but just with those functions that perform poorly
+with the current configuration. That would complete the study and your
+hypotheses would be supported with experimental results.
+
+** DONE Lanzar experimentos de tuning con f18-f20
+   CLOSED: [2016-04-01 vie 12:07]
+   :LOGBOOK:
+   CLOCK: [2016-03-31 jue 17:45]--[2016-03-31 jue 21:30] =>  3:45
+   :END:
+
+** DONE Lanzar experimentos con distintos NDs
+   CLOSED: [2016-04-01 vie 13:13]
+   :LOGBOOK:
+   CLOCK: [2016-04-01 vie 11:33]--[2016-04-01 vie 13:13] =>  1:40
+   :END:
+
+
+** DONE Lanzar experimentos de tuning, revisando resultados
+
+** DONE Obtener resultados de fitness con distintos NDs
+   CLOSED: [2016-04-01 vie 17:26]
+
+
+** DONE [#A] Aplicar cambios en INS-D-15-498R3 al recibir respuesta de Rebecca
+   CLOSED: [2016-04-14 jue 12:17] SCHEDULED: <2016-04-11 lun>
+
+* Anunciar elecciones director de la escuela
+  :LOGBOOK:
+  CLOCK: [2016-03-31 jue 16:23]--[2016-03-31 jue 17:00] =>  0:37
+  :END:
+
+* Tasks
+** DONE Mirar Orgullo y Satisfacción
+   CLOSED: [2016-04-30 sáb 10:41]
+** DONE Responder a Sancho sobre cambios
+   CLOSED: [2016-04-06 mié 16:11]
+
+*** Comentarios de revisores
+----------------------------------------------
+REVIEW NO. 1
+
+
+    The parameter settings seems to be a bit confusing: "The experiments have been carried out with the 
+    parameters values indicated in Table I. These parameters values have not been automatically tuned, so it 
+    could be possible that the results could improve with different values."
+    
+    Have you done an analysis beforehand? How have you obtained these parameters in Table I? 
+    This must be clarified in the paper.
+
+----------------------------------------------
+REVIEW NO. 2
+
+Comments to the authors:
+
+The authors have not conducted such comparison. IMHO, the authors should compare their algorithm with, at least, the 
+best algorithm of the original special session where this benchmark was first proposed:
+    
+LaTorre, A., Muelas, S., and Pena, J. M. (2013). Large Scale Global Optimization: Experimental Results with MOS-based Hybrid Algorithms (pp. 1-8). Presented at the 2013 IEEE Congress on Evolutionary 
+Computation, CEC 2013, Cancun, Mexico.
+    
+Apart from that comparison, the authors should evaluate each of the improvements
+individually against the CRO baseline: does including multiple layers improve the results?
+And, after that, including the LS, it also improves the results? Maybe is only the LS
+which is providing the increased performance? With the experimentation carried out, this
+is impossible to tell.
+    
+- Finally, some of the parameters of the proposed algorithm have been given fixed values. I think they could benefit from an automated parameter tuning process to obtain the best performance.
+    
+I think that there is still a lot of work to do to consider CRO (and its variants) a
+competitive alternative in the field of LSGO. The authors should put a lot of effort
+in demonstrating that CRO can be competitive in some contexts and in explaining where
+this competitiveness comes from.
+
+----------------------------------------------
+REVIEW NO. 3
+
+Comments to the authors:
+It is not clear the behavior of the combination of the search strategies/substrates. It would be more clear to 
+include a pseudo code/mathematical defintion besides the coral metaphor-based description.  
+    
+How were the values of the parameters of the CRO-SL algorithm tuned? It is mentioned that
+they were not tuned but not how they were selected.
+    
+The authors have selected the DECC-CG algorithm to compare their results. However, it would be more 
+interesting to analyze their results to some of the best performing algorithms of the benchmark : the MOS-
+CEC2013 which uses a similar hybridization strategy to the proposed algorithm and MA-SW-Chains 
+algorithm, which both obtained significantly better results than the DECC-CG algorithm (source: A 
+comprehensive comparison of large scale global optimizers LaTorre et al 2015). 
+    
+The analysis of the results section is quite short (i.e. a paragraph). I recommend the authors to extend this 
+section to analyze the behavior of the algorithm, the combination of the different substrates/strategies, the 
+influence of the local search, to include a statistical analysis of the comparison with other algorithms,...
+
+
+ 
+
+  
+   [[file:~/current/docencia/as/presentaciones_as/vagrant_environment/webmin.sh][file:~/current/docencia/as/presentaciones_as/vagrant_environment/webmin.sh]]
+** DONE Colgar calificaciones de la primera práctica de los alumnos
+   CLOSED: [2016-04-17 dom 15:06] SCHEDULED: <2016-04-08 vie>
+ 
+[[file:~/current/docencia/as/2016/practica1/][~/current/docencia/as/2016/practica1/]]
+
+** DONE [#A] Corregir práctica 2
+   CLOSED: [2016-04-20 mié 14:46]
+   :LOGBOOK:
+   CLOCK: [2016-04-07 jue 13:10]--[2016-04-07 jue 15:47] =>  2:37
+   :END:
+
+[[file:~/current/docencia/as/2016/practica2/][~/current/docencia/as/2016/practica2/]]
+** DONE Preparar material del Máster de CA
+   CLOSED: [2016-04-20 mié 14:47]
+
+*** Material para la presentación
+
+http://www.alanzucconi.com/2016/04/06/evolutionary-coputation-1/
+** TODO [#A] Preparar CAEPIA, MAEB
+   DEADLINE: <2016-05-20 mar>
+** TODO [#A] Preparar/Repasar clase de AS
+   DEADLINE: <2016-06-03 vie ++1w> SCHEDULED: <2016-06-02 jue ++1w>
+   :PROPERTIES:
+   :ORDERED:  t
+   :LAST_REPEAT: [2016-04-25 lun 18:42]
+   :END:
+   - State "DONE"       from "TODO"       [2016-04-25 lun 18:42]
+   - State "DONE"       from "TODO"       [2016-04-25 lun 15:10]
+   - State "DONE"       from "TODO"       [2016-04-17 dom 15:05]
+   - State "DONE"       from "TODO"       [2016-04-14 jue 12:17]
+   - State "DONE"       from "TODO"       [2016-04-14 jue 12:17]
+   - State "DONE"       from "TODO"       [2016-04-13 mié 17:05]
+   :LOGBOOK:
+   CLOCK: [2016-04-12 mar 18:29]--[2016-04-13 mié 00:13] =>  5:44
+   CLOCK: [2016-04-12 mar 17:36]--[2016-04-12 mar 17:39] =>  0:03
+   CLOCK: [2016-04-12 mar 16:30]--[2016-04-12 mar 17:35] =>  1:05
+   :END:
+** TODO Incorporar un simple analizador de logs de Apache y Nginx.
+
+http://www.tecmint.com/goaccess-a-real-time-apache-and-nginx-web-server-log-analyzer/
+** DONE Registrar el portátil de Amalia en el registro
+   CLOSED: [2016-04-30 sáb 10:40]
+
+https://www.toshiba.es/registration/registration-form/
+** TODO Mirar Machine Learning visual
+
+http://haifengl.github.io/smile/index.html#classification
+ 
+** TODO Considerar para combinatorios de AS
+
+https://punkrockor.com/2014/04/04/the-traveling-salesman-problem-challenge-for-cheeseheads/
+** TODO Material para CA
+
+http://www.turingfinance.com/fitness-landscape-analysis-for-computational-finance/
+** DONE Enviar curriculum para Ivan, proyecto BBVA.
+   CLOSED: [2016-04-17 dom 15:35]
+   :LOGBOOK:
+   CLOCK: [2016-04-17 dom 15:09]--[2016-04-17 dom 15:34] =>  0:25
+   CLOCK: [2016-04-17 dom 12:49]--[2016-04-17 dom 15:09] =>  2:20
+   :END:
+** DONE 
+   CLOSED: [2016-04-30 sáb 10:40]
+  
+   [[mu4e:msgid:93CD41460474C64BAF84BEE8618C32113F170656@MBXEUR02.usersad.everis.int][RE: Agenda propuesta para evento con everis]]
+** DONE Votar en las eleciones
+   CLOSED: [2016-04-20 mié 14:45] SCHEDULED: <2016-04-18 lun 11:00>
+  
+   [[mu4e:msgid:1916248435.1460975436548.JavaMail.tavira@morrigan][{TAVIRA-ESI-CA} Elecciones a Director/a de la ESI]]
+** TODO Integrar un anuncio parecido en el portal de DSS
+  
+   [[mu4e:msgid:CAHNEebDMUDfjfQD4Vzzg67mjMDtqzaApBP51MB03MuHRk46t+Q@mail.gmail.com][Fwd: 21714061_15_16_01: Jornada Everis en ESI]]
+
+** DONE Implementar en C++ usando el Armadillo los ejercicios del Máster. 
+   CLOSED: [2016-04-30 sáb 10:40]
+
+** DONE Ofrecer también en Python.
+   CLOSED: [2016-04-30 sáb 10:40]
+
+** TODO Buscar librería en Java para similar.
+** TODO Mirar eventos
+
+*** Paralelo
+   http://activisiongamescience.github.io/2016/04/19/IPython-Parallel-Introduction/
+  
+   [[mu4e:msgid:e2e180baf855ac797ef407fc7935465b27d.20160421150320@mail51.atl91.mcsv.net][Python Weekly - Issue  240]]
+** TODO Coger datos del L-SHADE
+  
+https://sites.google.com/site/tanaberyoji/home
+** TODO Documento
+  
+   [[mu4e:msgid:5dda28ec3d8047a98cebf71b60ed47e7@ex0.auburn.edu][Important - request and format for IEEE EC TF annual report - due May 13]]
+** TODO Ver página pbpython.com
+
+http://pbpython.com/
+** TODO Añadir a mi lista de enlaces interesantes
+  
+https://www.semanticscholar.org/
+** TODO [#A] Publicar en la web
+  
+   [[mu4e:msgid:006501d1ac21$e4bc77f0$ae3567d0$@esi][asignaciones PFC]]
+** TODO [#A] Terminar sección 2.2.2 (más largo)
+  
+   [[mu4e:msgid:D520B8F5-EA88-476E-99C2-AE0F6878B41A@uca.es][Re: Completar la sección 2.2.]]
+** TODO Incluir certificado en página web Apache
+  
+https://certbot.eff.org/#ubuntutrusty-apache
+* TODO Configurar postfix para Emacs
+
+** Para enviar usando postfix desde emacs
+http://pragmaticemacs.com/emacs/using-postfix-instead-of-smtpmail-to-send-email-in-mu4e/
+
+** Para que postfix use los servidores SMTP en vez de directamente
+
+https://www.linode.com/docs/email/postfix/postfix-smtp-debian7
+
+** Usando varios en postfix en base al dominio
+
+https://www.howtoforge.com/community/threads/postfix-multiple-relayhosts.46282/
+
+* TODO Actualizar la web con los nuevos exámenes para Junio y Septiembre, y cambios en calendario
+  
+  [[mu4e:msgid:1519899152.1646.1461754762180.JavaMail.tomcat@draco][Para actualizar la Web de la ESI.]]
+* TODO Configurar dropbox como un repositorio Git
+
+https://github.com/anishathalye/git-remote-dropbox
+* TODO Descargar datos del seminario (cuenta Dropbox)
+  
+  [[mu4e:msgid:571E0BBC.1030400@decsai.ugr.es][Re: {Sci2s} Seminario en Ciencia de Datos (viernes 22 abril)]]
+* DONE Revisar las activades registradas
+  CLOSED: [2016-04-30 sáb 10:41]
+  
+  [[mu4e:msgid:571E0C07.5010405@uca.es][Fwd: CONSULTA DEL REGISTRO DE ACTIVIDADES PROFESORADO (PDA) Y COMIENZO DEL PLAZO DE ALEGACIONES PARA EL PROFESORADO]]
+* Pelican 
+
+** TODO Mirar cómo publicar usando org para pelican
+
+https://kerunix.com/Blog%20with%20Emacs%20and%20Pelican%20-%20even%20better%20!.html
+
+** TODO Enlace usando org-mode
+
+https://danlamanna.com/blogging-with-org-mode-pelican-fabric-and-emacs-lisp.html
+
+** TODO Colgar tareas en HTML con plantillas de forma automática
+
+https://github.com/fniessen/org-html-themes
+
+
+* Machine Learning 
+
+** Curso de Google sobre ML
+
+https://www.youtube.com/watch?v=cKxRvEZd3Mw
+
+** Tensor Tutorial
+
+https://github.com/aymericdamien/TensorFlow-Examples
+
+** Mirar Machine Learning visual
+
+http://haifengl.github.io/smile/index.html#classification
+ 
+** Revisar Dive into Maquine Learning
+
+https://github.com/hangtwenty/dive-into-machine-learning
+
+** Data Set públicos
+
+*** Reddit Data Sets
+
+https://www.reddit.com/r/datasets
+
+*** Muy bien organizados
+https://github.com/caesar0301/awesome-public-datasets
+
+*** Otros datasets (no grandes)
+https://github.com/datasets/
+
+*** UCI para Machine Learning
+http://archive.ics.uci.edu/ml/
+
+*** Competiciones de Machine Learning
+https://www.kaggle.com/
+
+
+** Para hacer con el Go
+
+https://github.com/maxpumperla/betago
+
+* DONE [#A] Preparar CV simplificado del ministerio para el proyecto
+  CLOSED: [2016-04-18 lun 16:30] SCHEDULED: <2016-04-17 dom>
+
+* DONE Enviar a Amalia
+  CLOSED: [2016-05-16 lun 18:23]
+
+http://www.elobservador.com.uy/como-se-ve-hoy-el-nino-del-meme-mas-famoso-del-mundo-n905920
+
+* Escribir a Suganthan y Antonio La Torre
+  :LOGBOOK:
+  CLOCK: [2016-05-16 lun 18:31]--[2016-05-16 lun 18:57] =>  0:26
+  CLOCK: [2016-05-16 lun 18:30]--[2016-05-16 lun 18:31] =>  0:01
+  :END:
