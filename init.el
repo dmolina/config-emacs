@@ -628,13 +628,10 @@
 (autoload 'comint-dynamic-complete-filename "comint" nil t)
 (global-set-key "\M-]" 'comint-dynamic-complete-filename)
 
-;; (org-babel-do-load-languages
-;;  'org-babel-load-languages
-;;  '((python . t)
-;;    (sh . t)
-;;    (python . t)
-;;    (R . t)
-;;    ))
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)
+   ))
 
 ; Put reftex to integrate C-c [ for references
 (defun org-mode-reftex-setup ()
