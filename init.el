@@ -1502,6 +1502,7 @@ mark current word before calling `TeX-font'."
 
 ; Configure mu4e
 (load-user-file "mail.el")
+(load-user-file "rsync.el")
 
 ; Sunrise
 ; (add-to-list 'package-archives '("SC" . "http://joseito.republika.pl/sunrise-commander/") t)
