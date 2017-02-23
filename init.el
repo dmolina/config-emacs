@@ -1019,11 +1019,6 @@
 (package-initialize)
 
 
-;; Standard Jedi.el setting
-;(add-hook 'python-mode-hook 'jedi:setup)
-(add-hook 'python-mode-hook 'jedi:ac-setup)
-(setq jedi:complete-on-dot t)
-
 ;; Type:
 ;;     M-x package-install RET jedi RET
 ;;     M-x jedi:install-server RET
@@ -1583,11 +1578,6 @@ mark current word before calling `TeX-font'."
   :defer t
   )
 
-;(use-package writeroom-mode
-;  :ensure t
-;  :defer t)
-
-
 ; Set the material theme
 (use-package material-theme
   :ensure t
@@ -1603,7 +1593,6 @@ mark current word before calling `TeX-font'."
 ; C-x C-j move to current directory
 ;(use-package dired-x
 ;  :ensure t)
-
 
 (concat
   (propertize (format-time-string "%A, ") 'face 'font-lock-keyword-face)
