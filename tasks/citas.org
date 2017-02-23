@@ -1,0 +1,200 @@
+* DONE Examen de ASW en el aula FS17
+  CLOSED: [2017-02-22 mié 13:50] SCHEDULED: <2016-12-12 lun 16:00> DEADLINE: <2016-12-12 lun 16:00>
+  :PROPERTIES:
+  :ID:       2e25c218-693a-4bfb-ace5-36ea54e886b9
+  :END:
+
+<2016-12-12 lun 16:00>
+
+* DONE Charla con Antonio LaTorre
+  CLOSED: [2016-12-05 lun 15:37] DEADLINE: <2016-11-26 sáb 16:00> SCHEDULED: <2016-11-25 vie 16:00>
+  :PROPERTIES:
+  :ID:       781bc5b9-e0d3-44ab-8dc0-8c9c42349439
+  :END:
+
+[2016-11-25 vie 16:00]
+
+
+* DONE Reunión de comisión de Doctorado en la sala P104
+  CLOSED: [2016-12-05 lun 15:37] SCHEDULED: <2016-11-30 mié 13:00>
+  :PROPERTIES:
+  :ID:       9945cc93-9adc-465d-93af-92e136cf643f
+  :END:
+
+<2016-11-30 mié 13:00>
+
+* DONE Charla sobre seguridad en API Rest, Aula D14
+  CLOSED: [2016-12-05 lun 15:37] SCHEDULED: <2016-11-29 mar 16:00>
+  :PROPERTIES:
+  :ID:       728bf3f9-e301-4b0d-8100-d68bc07e5426
+  :END:
+
+<2016-11-29 mar 16:00>
+* DONE Consejo Ordinario 
+  CLOSED: [2017-02-22 mié 13:50] SCHEDULED: <2017-01-30 lun 12:30>
+  :PROPERTIES:
+  :ID:       dc7ed4b3-1636-4bad-9511-9802b0fe20df
+  :END:
+  
+<2017-01-30 lun 12:30>
+
+* DONE Examen ASW aula FS09
+  CLOSED: [2017-02-16 jue 11:47] DEADLINE: <2017-02-07 mar> SCHEDULED: <2017-02-07 mar 09:00-13:00>
+  :PROPERTIES:
+  :ID:       2865f8ce-ce65-42e5-9cf8-74a3714cfd42
+  :END:
+
+<2017-02-07 mar 09:00>
+
+* DONE Examen AS aula B01
+  CLOSED: [2017-02-01 mié 08:46] DEADLINE: <2017-01-27 vie 09:00> SCHEDULED: <2017-01-27 vie 09:00>
+  :PROPERTIES:
+  :ID:       54427214-5692-48f0-b588-e151ff2ceb6a
+  :END:
+
+<2017-01-27 vie 09:00>
+
+* DONE Examen distribuido FS12
+  CLOSED: [2017-02-22 mié 13:50] DEADLINE: <2017-02-01 mié 09:00> SCHEDULED: <2017-02-01 mié 09:00>
+  :PROPERTIES:
+  :ID:       e1f5d179-155d-435e-b131-3ce8473bf55a
+  :END:
+
+<2017-02-01 mié 09:00>
+* DONE Enviar firmado el Learning Agreement a Ernesto y firmado el TFG
+  CLOSED: [2017-02-16 jue 11:47] SCHEDULED: <2017-01-26 jue 11:40>
+  :PROPERTIES:
+  :ID:       1def5b9f-9a85-4057-9651-84a83ab46d29
+  :END:
+
+<2017-01-26 jue 11:40> 
+* DONE Revisión dentista
+  CLOSED: [2017-02-16 jue 11:47] SCHEDULED: <2017-02-06 lun 17:00>
+  :PROPERTIES:
+  :ID:       54131cc6-09e6-486f-9c9c-4dfa39404902
+  :END:
+  
+<2017-02-06 lun 17:00>
+* TODO PFC Javier Suarez Baños
+  SCHEDULED: <2017-02-23 jue 13:00>
+  :PROPERTIES:
+  :ID:       98f1ac74-8fe9-446a-b549-4e6d8adc4e08
+  :END:
+
+<2017-02-23 jue 13:00>
+  SCHEDULED: <2017-02-23 jue>
+* TODO PFC Benito José Jiménez García
+  SCHEDULED: <2017-02-23 jue 12:00-13:00>
+  :PROPERTIES:
+  :ID:       55044324-adea-4d77-b9e8-559f605a5ae0
+  :END:
+ 
+<2017-02-23 jue 12:00-13:00>
+* TODO TFG Raúl Daniel García Molina
+  SCHEDULED: <2017-02-24 vie 10:00-11:00>
+  :PROPERTIES:
+  :ID:       c521a87b-bae3-42ae-9017-e1f2bd37ca3a
+  :END:
+  
+
+<2017-02-24 vie 10:00>
+* DONE Reunión con José Cerejido
+  CLOSED: [2017-02-16 jue 11:48] SCHEDULED: <2017-02-16 jue 10:00>
+  :PROPERTIES:
+  :ID:       aa6f9aeb-78b6-40d2-af18-884facbfbb97
+  :END:
+  
+<2017-02-16 jue 10:00>
+* Comisión Doctorado en la Sala P-104
+  SCHEDULED: <2017-02-23 jue 11:30>
+  :PROPERTIES:
+  :ID:       8c10df6c-b8c3-409e-9124-ed36fd6cdf60
+  :END:
+<2017-02-23 jue 11:30>
+
+* TODO Tutorías ESI (Despacho)
+  SCHEDULED: <2017-02-23 jue 10:00-12:00 +1w>
+  :PROPERTIES:
+  :ID:       7b8afb40-7137-4178-936c-ce2ed60cba22
+  :LAST_REPEAT: [2017-02-22 mié 13:51]
+  :END:
+
+  - State "DONE"       from "TODO"       [2017-02-22 mié 13:51]
+<2017-02-23 jue 10:00-12:00 +1w>
+* DONE Recoger a Swagatan Das en el Aeropuerto
+  CLOSED: [2017-02-22 mié 13:51] SCHEDULED: <2017-02-17 vie 09:50>
+  :PROPERTIES:
+  :ID:       d4c76752-4313-4d67-aadf-ab3d97538f03
+  :END:
+  
+<2017-02-17 vie 09:50>
+* TODO Clase de AS (Teoría), Aula C07
+  SCHEDULED: <2017-03-01 mié 08:30-10:30 +1w>
+  :PROPERTIES:
+  :ID:       ace04123-0a65-4dbb-ad16-cc9b761d2365
+  :LAST_REPEAT: [2017-02-22 mié 13:50]
+  :END:
+ 
+  - State "DONE"       from "TODO"       [2017-02-22 mié 13:50]
+  - State "DONE"       from "TODO"       [2017-02-22 mié 13:50]
+<2017-03-01 mié 08:30-10:30 +1w>
+* TODO Clase de AS (Extensión), C07
+  SCHEDULED: <2017-02-22 mié 10:30-11:30>
+  :PROPERTIES:
+  :ID:       52a74b0c-ab89-4b1c-bde5-49c704ceba56
+  :END:
+  
+<2017-02-22 mié 10:30-11:30>
+* TODO Clase de AS (Práctica), C09
+  SCHEDULED: <2017-03-01 mié 10:30-13:00 +1w>
+  :PROPERTIES:
+  :ID:       613be7cb-3f92-429c-b113-767670faab70
+  :END:
+ 
+<2017-03-01 mié 10:30-13:00 +1w>
+
+* TODO Seminario SD, C02
+  SCHEDULED: <2017-03-07 mar 13:00-14:00 +1w>
+  :PROPERTIES:
+  :ID:       0dda0967-bd61-4379-b2e1-704d51d1cb92
+  :END:
+<2017-03-07 mar 13:00-14:00 +1w>
+
+* TODO Seminario SD, C01
+  SCHEDULED: <2017-03-07 mar 15:00-16:00 +1w>
+  :PROPERTIES:
+  :ID:       9b7b5945-f7d3-4cc7-a7d1-7c2599b03a2c
+  :END:
+<2017-03-07 mar 15:00-16:00 +1w>
+
+* TODO Clase de SD, C01
+  SCHEDULED: <2017-03-07 mar 16:00-18:00 +1w>
+  :PROPERTIES:
+  :ID:       7db7d6bf-73b6-4609-ac7f-1554134d56cb
+  :END:
+
+<2017-03-07 mar 16:00-18:00 +1w>
+
+* DONE Clase de SD, C01
+  CLOSED: [2017-02-22 mié 13:51] SCHEDULED: <2017-02-21 mar 15:00-17:00>
+  :PROPERTIES:
+  :ID:       47291ab8-dfee-4574-b2f9-f27dadd006da
+  :END:
+
+<2017-02-21 mar 15:00-17:00> 
+
+* DONE Seminario de SD, C01
+  CLOSED: [2017-02-22 mié 13:51] SCHEDULED: <2017-02-21 mar 17:00-18:00>
+  :PROPERTIES:
+  :ID:       2f22c0fa-c4ae-46ef-9f8c-cf7f7fdf9fdb
+  :END:
+
+<2017-02-21 mar 17:00-18:00> 
+* TODO Reunión con Ana
+  SCHEDULED: <2017-02-23 jue 10:00-10:30>
+  :PROPERTIES:
+  :ID:       25264a81-ba6c-4eb4-9677-65d04f27c089
+  :END:
+  [[file:~/Mail/uca/Drafts/cur/1487781963.e8cbf8f625ecec66.quixote:2,DS][file:~/Mail/uca/Drafts/cur/1487781963.e8cbf8f625ecec66.quixote:2,DS]]
+
+<2017-02-23 jue 10:00-10:30>
