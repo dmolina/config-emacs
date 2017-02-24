@@ -77,7 +77,6 @@ Because I work a lot in Python, these are the important configurations:
 - **C-:** to go a specific char.
 - **C-;** to go a specific pair of chairs.
 - **C--** Change to previous buffer.
-- **C-c t** to translate a work from Spanish<->English (with *C-n* and *C-p* change direction).
-- **C-c C-r** Copy using the rsync tool.
+- **C-c t* to translate a work from Spanish<->English (with *C-n* and *C-p* change direction).
 
 - **C-M-+/-** to zoom in and zoom out (globally with zoom-frm).
