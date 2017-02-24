@@ -1092,10 +1092,6 @@
   "Clear the appt-time-msg-list."
   (setq appt-time-msg-list nil))
 
-(use-package magit
-  :ensure t
-  :bind  ("C-x g" . magit-status))
-
 (eval-after-load "eww"
   '(progn (define-key eww-mode-map "f" 'eww-lnum-follow)
           (define-key eww-mode-map "F" 'eww-lnum-universal)))
@@ -1751,7 +1747,6 @@ mark current word before calling `TeX-font'."
   :config
 (add-hook 'org-mode-hook 'poly-org-mode)
 )
-
 ; Add modes for HTML editing
 (load-user-file "config_web.el")
 
@@ -1800,3 +1795,11 @@ mark current word before calling `TeX-font'."
   :ensure t
   :config
   (async-bytecomp-package-mode 1))
+(use-package magit
+  :ensure t
+  :bind  ("C-x g" . magit-status))
+
+(use-package magithub
+  :ensure t
+  :after magit
+  :config (magithub-feature-autoinject t))
