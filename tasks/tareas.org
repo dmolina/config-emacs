@@ -606,6 +606,11 @@ https://github.com/jalbersol/plantumlqeditor
    CLOSED: [2017-02-01 mié 08:46] DEADLINE: <2016-10-25 mar>
   
    [[mu4e:msgid:1090727768.1476948500176.JavaMail.tavira@morrigan][INFORMACIÓN UCA Trámite de alegaciones de la propuesta de modificación del Documento de Política de Seguridad]]
+** TODO Revisar Erasmus
+
+https://movilidadinternacional.uca.es/index.php/
+** TODO Terminar tarea 
+** TODO 
 
 * TODO Configurar postfix para Emacs
 
@@ -708,3 +713,229 @@ http://www.elobservador.com.uy/como-se-ve-hoy-el-nino-del-meme-mas-famoso-del-mu
   CLOSED: [2017-02-22 mié 13:50] DEADLINE: <2016-11-17 jue>
 
 https://mc.manuscriptcentral.com/cyb-ieee
+
+* TODO [#A] Preparar versión del artículo de CEC'2017
+  SCHEDULED: <2017-03-16 jue> DEADLINE: <2017-03-16 jue>
+
+** Acceso
+
+http://ieee-cis.org/conferences/cec2017/upload.php?PaperID=17196
+
+Password: j632g85d4
+
+** [0/3] Revisores
+
++ [ ] Revisor 1
+
+    The paper proposes an analysis among winners of different CEC benchmarks. 
+    There is not enough contribution in this paper in terms of proposing new 
+    ideas, it is all about comparisons between previous winners. However, I have 
+    the following comments:   
+
+  - [ ] 1. In abstract, it is stated that: "Unfortunately, each year there are 
+  new proposals using a new benchmark, so there is not guarantee that the 
+  winners of one year are actually better than winners of previous 
+  competitions." Your point here is not clear, please clarify in a better way 
+  as now organizers of CEC benchmarks propose new benchmark every two or three 
+  years not every year. Moreover, usually in terms of comparisons, the 
+  organizers take in their account the winner of previous benchmark and 
+  include it in the comparison of new benchmark.  
+
+  + [ ] In section II: "We have not taken in account the CEC'2016 
+  competition, because in that competition no new benchmark was
+   proposed but the proposals were compared with a previous one, and
+   for each previous considered benchmark the winner, UMOEAII [7]
+   actually improved the previous winner, SPS-L-SHADE-EIG [11]." For
+   CEC'16, the UMOEAsII is not only the winner, it is the joint winner
+   with LSHADE-EpSin. Please correct this and add LSHADE-EpSin.
+
+  + [ ] 1. As soon as you stated that CEC'16 used CEC'14 benchmark problems, 
+   then you should also use the winners of this competition too which are: 
+   UMOEAsII and LSHADE-EpSin. LSHADE-EpSin clearly improves the performance of 
+   LSHADE and should be added as well. 
+
+  + [ ] 1. In section III, it has been stated that the majority of algorithms 
+    are implemented in Java while actually all of them if not all are 
+    implemented in Matlab. What is your point to implement the algorithms again 
+    using Java while the sources codes are available? As soon as you are testing 
+    those algorithms on different benchmarks then you cannot guarantee that your 
+    implementation is 100% similar to original codes.  
+    1. As soon as this paper is submitted to CEC'17 session, I strongly 
+    recommend the authors to use the new proposed benchmark to compare previous 
+    winners as this session is mainly organized for this new benchmark problems.
+
++ [ ] Revisor 2
+
+    In this paper, a comparison among winners in different competitions using the 
+    different benchmarks is presented. Although several results are presented, the 
+    paper is poorly written and presented. The authors missed other algorithms 
+    which showed better performance than those presented in this paper. One or 
+    more algorithms are cited to wrong references. Overall, the paper lacks the 
+    novelty and quality.
+
++ [ ] Revisor 3
+
+  1. [ ] Idea of inclusion of winner of previous competitions to
+     compare the performance of new algorithms is unique.
+    
+  2. [ ] Paper presentation can be more better, if they include CEC-2017 problem suite.
+    
+  3. [ ] It will be intresting, if Authors also comment about the
+     difference of characteristics of problem suites.
+
+** Texto
+Dear Author(s),
+
+Congratulations! On behalf of the IEEE CEC 2017 Technical Program Committee
+and Technical Chairs, we are pleased to inform you that your paper:
+
+    Paper ID:   17196
+    Author(s):  Molina Daniel, Moreno-Garcia Francisco and Herrera Francisco
+    Title:      Analysis among winners of different IEEE CEC competitions on Real-parameters Optimization: Is there always improvement?
+
+has been accepted for presentation at the IEEE CEC 2017 and for publication in
+the conference proceedings published by IEEE. This email provides you with all
+the information you require to complete your paper and submit it for inclusion
+in the proceedings. A notification of the presentation format (oral or poster)
+will be sent by March 30, 2017. 
+
+Please read this email carefully. Here are the steps you must follow:
+
+1. Please see the REVIEWERS' COMMENTS for your paper at the end of this email,
+which are intended to help you to improve your paper for final publication.
+The listed comments should be addressed, as acceptance is conditional on
+appropriate response to the requirements and comments.
+
+2. Please prepare your manuscript for final camera ready submission. Papers
+are limited to eight (8) pages in length (up to 10 with extra cost), must be
+IEEE Xplore compliant, and must follow the formatting instructions provided
+at:
+
+    http://www.cec2017.org/#camera_ready
+
+When you have completed your paper and are ready to submit it, please go to:
+
+    http://ieee-cis.org/conferences/cec2017/upload.php?PaperID=17196
+
+to submit your final camera-ready paper.  (The above line should be one long
+URL and you may need to paste it back together if your email client broke it
+into several lines.)  On this page you will need to use the following
+password:
+
+    j632g85d4
+
+which is valid only for a single submission of your final camera-ready paper
+and you cannot submit any subsequent revision. Final papers MUST be submitted
+by March 16, 2017. Any paper submitted after this date run the risk of not
+being included in the proceedings. The paper must be re-submitted even if the
+reviewers indicated that no changes are required.
+
+IMPORTANT: Please note that once you submit your paper, you cannot submit any
+subsequent revision. All papers submitted through the web site are considered
+to be in final form and ready for publication.  Do not submit your paper until
+you are ready.  A good suggestion is to have a few colleagues review your
+paper to provide final remarks on its suitability before submitting it through
+the web site. In addition, please note that it is the author's responsibility
+to ensure that all figures/plots can be printed and comprehended in black and
+white.
+
+3. Register for the conference via http://www.cec2017.org
+
+IMPORTANT: Each paper must have a corresponding registered author (full
+registration) to be included in the proceedings. Papers that do not have an
+associated registered author will not be included in the proceedings. The
+deadline for author registration is March 31, 2017 so be sure to register by
+that time to ensure that your paper is included in the proceedings.
+Registering after the deadline may mean that your paper may not appear in the
+proceedings. Please ensure that you complete your registration in time. Each
+full registration covers (without extra cost) a maximum of two papers. Each
+paper requires one full registration (even if all authors of the paper are
+students, i.e., a student registration does not cover any paper).
+
+4. Make your hotel reservation early. You can find useful hotel information
+via http://www.cec2017.org/#venue
+
+5. Find out if you need a VISA to enter Spain, and submit your visa
+application early if a visa is needed (do not wait until the last minute). For
+updated information on visa exemptions and requirements, refer to
+https://www.schengenvisa.cc
+
+For an invitation letter from IEEE CEC 2017 for your visa application, please
+contact us at info@cec2017.org.
+
+6. All papers have been reviewed in the same manner with the same standards
+and no distinction will be made between oral and poster papers in the
+proceedings.
+
+If you have any questions regarding the reviews of your paper, please contact
+Jose A. Lozano <cec2017@ieee-cis.org>.
+
+Sincerely,
+Jose A. Lozano
+IEEE CEC 2017 General Chair
+
+
+                          REVIEWERS' COMMENTS
+
+----------------------------------------------
+REVIEW NO. 1
+
+Comments to the authors:
+    The paper proposes an analysis among winners of different CEC benchmarks. 
+    There is not enough contribution in this paper in terms of proposing new 
+    ideas, it is all about comparisons between previous winners. However, I have 
+    the following comments:   
+    1.	In abstract, it is stated that: "Unfortunately, each year there are 
+    new proposals using a new benchmark, so there is not guarantee that the 
+    winners of one year are actually better than winners of previous 
+    competitions." Your point here is not clear, please clarify in a better way 
+    as now organizers of CEC benchmarks propose new benchmark every two or three 
+    years not every year. Moreover, usually in terms of comparisons, the 
+    organizers take in their account the winner of previous benchmark and 
+    include it in the comparison of new benchmark.  
+    2.	In section II: "We have not taken in account the CEC'2016 
+    competition, because in that competition no new benchmark was proposed but 
+    the proposals were compared with a previous one, and for each previous 
+    considered benchmark the winner, UMOEAII [7] actually improved the previous 
+    winner, SPS-L-SHADE-EIG [11]." For CEC'16, the UMOEAsII is not only the 
+    winner, it is the joint winner with LSHADE-EpSin. Please correct this and 
+    add LSHADE-EpSin.
+    3.	As soon as you stated that CEC'16 used CEC'14 benchmark problems, 
+    then you should also use the winners of this competition too which are: 
+    UMOEAsII and LSHADE-EpSin. LSHADE-EpSin clearly improves the performance of 
+    LSHADE and should be added as well. 
+    4.	In section III, it has been stated that the majority of algorithms 
+    are implemented in Java while actually all of them if not all are 
+    implemented in Matlab. What is your point to implement the algorithms again 
+    using Java while the sources codes are available? As soon as you are testing 
+    those algorithms on different benchmarks then you cannot guarantee that your 
+    implementation is 100% similar to original codes.  
+    5.	 As soon as this paper is submitted to CEC'17 session, I strongly 
+    recommend the authors to use the new proposed benchmark to compare previous 
+    winners as this session is mainly organized for this new benchmark problems.
+
+----------------------------------------------
+REVIEW NO. 2
+
+Comments to the authors:
+    In this paper, a comparison among winners in different competitions using the 
+    different benchmarks is presented. Although several results are presented, the 
+    paper is poorly written and presented. The authors missed other algorithms 
+    which showed better performance than those presented in this paper. One or 
+    more algorithms are cited to wrong references. Overall, the paper lacks the 
+    novelty and quality.
+
+----------------------------------------------
+REVIEW NO. 3
+
+Comments to the authors:
+    1) Idea of inclusion of winner of previous competitions to compare the performance 
+    of new algorithms is unique.
+    
+    2) Paper presentation can be more better, if they include CEC-2017 problem suite.
+    
+    3) It will be intresting, if Authors also comment about the difference of 
+    characteristics of problem suites.
+
+
+ 
