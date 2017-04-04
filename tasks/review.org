@@ -1114,8 +1114,8 @@ http://ees.elsevier.com/asoc/default.asp
 [[file:~/Descargas/revisar/ASOC-D-16-01103.pdf][file:~/Descargas/revisar/ASOC-D-16-01103.pdf]]
 
 
-* Swarm and Evolutionary Computation
-  DEADLINE: <2017-01-04 mié>
+* DONE Swarm and Evolutionary Computation
+  CLOSED: [2017-03-16 jue 12:03] DEADLINE: <2017-01-04 mié>
 
 ** Title: Voxelisation in the 3-D Fly Algorithm for PET
 
